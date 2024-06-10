@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import SectionHeader from "../Common/SectionHeader";
-
+import Link from 'next/link'
 const Pricing = () => {
   return (
     <>
@@ -12,9 +12,9 @@ const Pricing = () => {
           <div className="animate_top mx-auto text-center">
             <SectionHeader
               headerInfo={{
-                title: `PRICING PLANS`,
-                subtitle: `Simple Pricing`,
-                description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor eros. Donec vitae tortor lacus. Phasellus aliquam ante in maximus.`,
+                title: `SHOWCASE EVENTS`,
+                subtitle: `Celebrating Excellence`,
+                description: `Highlighted events hosted by the Academic and Career Council at IIT Kanpur`,
               }}
             />
           </div>
@@ -31,43 +31,45 @@ const Pricing = () => {
             />
           </div>
           <div className="flex flex-wrap justify-center gap-7.5 lg:flex-nowrap xl:gap-12.5">
-            {/* <!-- Pricing Item --> */}
             <div className="animate_top group relative rounded-lg border border-stroke bg-white p-7.5 shadow-solid-10 dark:border-strokedark dark:bg-blacksection dark:shadow-none md:w-[45%] lg:w-1/3 xl:p-12.5">
               <h3 className="mb-7.5 text-3xl font-bold text-black dark:text-white xl:text-sectiontitle3">
-                $10{" "}
-                <span className="text-regular text-waterloo dark:text-manatee">
-                  /month
-                </span>
+                CAREER CONNECT
               </h3>
-              <h4 className="mb-2.5 text-para2 font-medium text-black dark:text-white">
-                Small Pack
-              </h4>
-              <p>Lorem ipsum dolor sit amet, consec adipisicing elit.</p>
+              <h6 className="mb-2.5 text-lg font-medium text-black dark:text-white">
+                An Annual Flagship Event, 10-12 February, 2023
+              </h6>
+              <p className='mt-6'>The Academics and Career Council organized CAREER CONNECT, a three-day event for all undergraduate and postgraduate students, from 10th to 12th February 2023.</p>
 
               <div className="mt-9 border-t border-stroke pb-12.5 pt-9 dark:border-strokedark">
                 <ul>
-                  <li className="mb-4 text-black last:mb-0 dark:text-manatee">
-                    300 GB Storage
+                  <li className="mb-4 text-black font-bold last:mb-0 dark:text-manatee">
+                    Planned events
                   </li>
                   <li className="mb-4 text-black last:mb-0 dark:text-manatee">
-                    Unlimited Photos and Videos
+                    Programming Pathshala
                   </li>
-                  <li className="mb-4 text-black opacity-40 last:mb-0 dark:text-manatee">
-                    Exclusive Support
+                  <li className="mb-4 text-black last:mb-0 dark:text-manatee">
+                    Product Management
                   </li>
-                  <li className="mb-4 text-black opacity-40 last:mb-0 dark:text-manatee">
-                    Custom Branding Strategy
+                  <li className="mb-4 text-black last:mb-0 dark:text-manatee">
+                    Crypto Trading Hackathon
                   </li>
+                  <li className="mb-4 text-black last:mb-0 dark:text-manatee">
+                    Unorthodox Career Choices
+                  </li>
+
                 </ul>
               </div>
 
               <button
-                aria-label="Get the Plan button"
+                aria-label="Explore more about the event"
                 className="group/btn inline-flex items-center gap-2.5 font-medium text-primary transition-all duration-300 dark:text-white dark:hover:text-primary"
               >
-                <span className="duration-300 group-hover/btn:pr-2">
-                  Get the Plan
-                </span>
+                <Link href='https://career-connect.anciitk.in/'>
+                  <span className="duration-300 group-hover/btn:pr-2">
+                    Explore More
+                  </span>
+                </Link>
                 <svg
                   width="14"
                   height="14"
@@ -81,48 +83,44 @@ const Pricing = () => {
                 </svg>
               </button>
             </div>
-
-            {/* <!-- Pricing Item --> */}
             <div className="animate_top group relative rounded-lg border border-stroke bg-white p-7.5 shadow-solid-10 dark:border-strokedark dark:bg-blacksection dark:shadow-none md:w-[45%] lg:w-1/3 xl:p-12.5">
-              <div className="absolute -right-3.5 top-7.5 -rotate-90 rounded-bl-full rounded-tl-full bg-primary px-4.5 py-1.5 text-metatitle font-medium uppercase text-white">
-                popular
-              </div>
-
               <h3 className="mb-7.5 text-3xl font-bold text-black dark:text-white xl:text-sectiontitle3">
-                $59{" "}
-                <span className="text-regular text-waterloo dark:text-manatee">
-                  /month
-                </span>
+                NSRC
               </h3>
-              <h4 className="mb-2.5 text-para2 font-medium text-black dark:text-white">
-                Medium Pack
-              </h4>
-              <p>Lorem ipsum dolor sit amet, consec adipisicing elit.</p>
+              <h6 className="mb-2.5 text-lg font-medium text-black dark:text-white">
+              IIT Kanpur hosted the 5th National Students' Research Convention.
+              </h6>
+              <p className='mt-6'>The three-day annual event, the 5th National Students’ Research Convention 2023 (NSRC ’23), took place from 3-5 March, 2023, with the theme 'MedTech and Healthcare: The Welfare of Humanity'.</p>
 
               <div className="mt-9 border-t border-stroke pb-12.5 pt-9 dark:border-strokedark">
                 <ul>
-                  <li className="mb-4 text-black last:mb-0 dark:text-manatee">
-                    300 GB Storage
+                  <li className="mb-4 text-black font-bold last:mb-0 dark:text-manatee">
+                  Competition Themes at NSRC
                   </li>
                   <li className="mb-4 text-black last:mb-0 dark:text-manatee">
-                    Unlimited Photos and Videos
+                  Biomechanics & Biophysics
                   </li>
                   <li className="mb-4 text-black last:mb-0 dark:text-manatee">
-                    Exclusive Support
+                  Medical imaging
                   </li>
-                  <li className="mb-4 text-black opacity-40 last:mb-0 dark:text-manatee">
-                    Custom Branding Strategy
+                  <li className="mb-4 text-black last:mb-0 dark:text-manatee">
+                  Medical instrumentations
+                  </li>
+                  <li className="mb-4 text-black last:mb-0 dark:text-manatee">
+                  Medical sensing & Implant
                   </li>
                 </ul>
               </div>
 
               <button
-                aria-label="Get the Plan button"
+                aria-label="Explore more about the event"
                 className="group/btn inline-flex items-center gap-2.5 font-medium text-primary transition-all duration-300 dark:text-white dark:hover:text-primary"
               >
-                <span className="duration-300 group-hover/btn:pr-2">
-                  Get the Plan
-                </span>
+                <Link href='https://www.iitk.ac.in/new/national-students-research-convention-23'>
+                  <span className="duration-300 group-hover/btn:pr-2">
+                    Explore More
+                  </span>
+                </Link>
                 <svg
                   width="14"
                   height="14"
@@ -136,44 +134,44 @@ const Pricing = () => {
                 </svg>
               </button>
             </div>
-
-            {/* <!-- Pricing Item --> */}
             <div className="animate_top group relative rounded-lg border border-stroke bg-white p-7.5 shadow-solid-10 dark:border-strokedark dark:bg-blacksection dark:shadow-none md:w-[45%] lg:w-1/3 xl:p-12.5">
               <h3 className="mb-7.5 text-3xl font-bold text-black dark:text-white xl:text-sectiontitle3">
-                $189{" "}
-                <span className="text-regular text-waterloo dark:text-manatee">
-                  /month
-                </span>
+                IRS
               </h3>
-              <h4 className="mb-2.5 text-para2 font-medium text-black dark:text-white">
-                Large Pack
-              </h4>
-              <p>Lorem ipsum dolor sit amet, consec adipisicing elit.</p>
+              <h6 className="mb-2.5 text-lg font-medium text-black dark:text-white">
+              Institute Research Symposium 2023 from January 7-8
+              </h6>
+              <p className='mt-6'>Academics and Career Council organised IRS where the PG and UG students of IIT Kanpur from various engineering, sciences, and humanities disciplines showcased their research to the larger community.</p>
 
               <div className="mt-9 border-t border-stroke pb-12.5 pt-9 dark:border-strokedark">
                 <ul>
-                  <li className="mb-4 text-black last:mb-0 dark:text-manatee">
-                    300 GB Storage
+                  <li className="mb-4 text-black font-bold last:mb-0 dark:text-manatee">
+                  Professors at the Symposium
                   </li>
                   <li className="mb-4 text-black last:mb-0 dark:text-manatee">
-                    Unlimited Photos and Videos
+                  Prof. SN Tripathi
                   </li>
                   <li className="mb-4 text-black last:mb-0 dark:text-manatee">
-                    Exclusive Support
+                  Prof. Manoj Harbola
                   </li>
                   <li className="mb-4 text-black last:mb-0 dark:text-manatee">
-                    Custom Branding Strategy
+                  Prof. Sandeep Verma
+                  </li>
+                  <li className="mb-4 text-black last:mb-0 dark:text-manatee">
+                  Prof. Abhay Karandikar, Director of IIT Kanpur
                   </li>
                 </ul>
               </div>
 
               <button
-                aria-label="Get the Plan button"
+                aria-label="Explore more about the event"
                 className="group/btn inline-flex items-center gap-2.5 font-medium text-primary transition-all duration-300 dark:text-white dark:hover:text-primary"
               >
-                <span className="duration-300 group-hover/btn:pr-2">
-                  Get the Plan
-                </span>
+                <Link href='https://www.iitk.ac.in/new/irs-2023'>
+                  <span className="duration-300 group-hover/btn:pr-2">
+                    Explore More
+                  </span>
+                </Link>
                 <svg
                   width="14"
                   height="14"
