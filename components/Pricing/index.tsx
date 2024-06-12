@@ -32,17 +32,21 @@ const Pricing = () => {
           </div>
           <div className="flex flex-wrap justify-center gap-7.5 lg:flex-nowrap xl:gap-12.5">
             <div className="animate_top group relative rounded-lg border border-stroke bg-white p-7.5 shadow-solid-10 dark:border-strokedark dark:bg-blacksection dark:shadow-none md:w-[45%] lg:w-1/3 xl:p-12.5">
-              <h3 className="mb-7.5 text-3xl font-bold text-black dark:text-white xl:text-sectiontitle3">
+            <Image
+              src="/images/anc-logo.png"
+              width={250}
+              height={250}
+              alt="Dotted"
+              className="dark:hidden"
+            />
+              <h6 className="mb-2.5 mt-6 text-2xl font-bold text-black dark:text-white">
                 CAREER CONNECT
-              </h3>
-              <h6 className="mb-2.5 text-lg font-medium text-black dark:text-white">
-                An Annual Flagship Event, 10-12 February, 2023
               </h6>
               <p className='mt-6'>The Academics and Career Council organized CAREER CONNECT, a three-day event for all undergraduate and postgraduate students, from 10th to 12th February 2023.</p>
 
               <div className="mt-9 border-t border-stroke pb-12.5 pt-9 dark:border-strokedark">
                 <ul>
-                  <li className="mb-4 text-black font-bold last:mb-0 dark:text-manatee">
+                  <li className="mb-4 text-black text-lg font-bold last:mb-0 dark:text-manatee">
                     Planned events
                   </li>
                   <li className="mb-4 text-black last:mb-0 dark:text-manatee">
@@ -84,30 +88,34 @@ const Pricing = () => {
               </button>
             </div>
             <div className="animate_top group relative rounded-lg border border-stroke bg-white p-7.5 shadow-solid-10 dark:border-strokedark dark:bg-blacksection dark:shadow-none md:w-[45%] lg:w-1/3 xl:p-12.5">
-              <h3 className="mb-7.5 text-3xl font-bold text-black dark:text-white xl:text-sectiontitle3">
+            <Image
+              src="/images/anc-logo.png"
+              width={250}
+              height={250}
+              alt="Dotted"
+              className="dark:hidden"
+            />
+              <h6 className="mb-2.5 text-2xl font-bold mt-6 text-black dark:text-white">
                 NSRC
-              </h3>
-              <h6 className="mb-2.5 text-lg font-medium text-black dark:text-white">
-              IIT Kanpur hosted the 5th National Students' Research Convention.
               </h6>
-              <p className='mt-6'>The three-day annual event, the 5th National Students’ Research Convention 2023 (NSRC ’23), took place from 3-5 March, 2023, with the theme 'MedTech and Healthcare: The Welfare of Humanity'.</p>
+              <p className='mt-6'>The 5th National Students’ Research Convention 2023 (NSRC ’23), took place from 3-5 March, 2023, with the theme 'MedTech and Healthcare: The Welfare of Humanity'.</p>
 
               <div className="mt-9 border-t border-stroke pb-12.5 pt-9 dark:border-strokedark">
                 <ul>
-                  <li className="mb-4 text-black font-bold last:mb-0 dark:text-manatee">
-                  Competition Themes at NSRC
+                  <li className="mb-4 text-black text-md font-bold last:mb-0 dark:text-manatee">
+                    Competition Themes at NSRC
                   </li>
                   <li className="mb-4 text-black last:mb-0 dark:text-manatee">
-                  Biomechanics & Biophysics
+                    Biomechanics & Biophysics
                   </li>
                   <li className="mb-4 text-black last:mb-0 dark:text-manatee">
-                  Medical imaging
+                    Medical imaging
                   </li>
                   <li className="mb-4 text-black last:mb-0 dark:text-manatee">
-                  Medical instrumentations
+                    Medical instrumentations
                   </li>
                   <li className="mb-4 text-black last:mb-0 dark:text-manatee">
-                  Medical sensing & Implant
+                    Medical sensing & Implant
                   </li>
                 </ul>
               </div>
@@ -135,30 +143,34 @@ const Pricing = () => {
               </button>
             </div>
             <div className="animate_top group relative rounded-lg border border-stroke bg-white p-7.5 shadow-solid-10 dark:border-strokedark dark:bg-blacksection dark:shadow-none md:w-[45%] lg:w-1/3 xl:p-12.5">
-              <h3 className="mb-7.5 text-3xl font-bold text-black dark:text-white xl:text-sectiontitle3">
+            <Image
+              src="/images/anc-logo.png"
+              width={250}
+              height={250}
+              alt="Dotted"
+              className="dark:hidden"
+            />
+              <h6 className="mb-2.5 text-2xl font-bold mt-6 text-black dark:text-white">
                 IRS
-              </h3>
-              <h6 className="mb-2.5 text-lg font-medium text-black dark:text-white">
-              Institute Research Symposium 2023 from January 7-8
               </h6>
-              <p className='mt-6'>Academics and Career Council organised IRS where the PG and UG students of IIT Kanpur from various engineering, sciences, and humanities disciplines showcased their research to the larger community.</p>
+              <p className='mt-6'>Academics and Career Council organised IRS where the PG and UG students of IIT Kanpur from various engineering and sciences disciplines showcased their research to the larger community.</p>
 
               <div className="mt-9 border-t border-stroke pb-12.5 pt-9 dark:border-strokedark">
                 <ul>
-                  <li className="mb-4 text-black font-bold last:mb-0 dark:text-manatee">
-                  Professors at the Symposium
+                  <li className="mb-4 text-black text-md font-bold last:mb-0 dark:text-manatee">
+                    Professors at the Symposium
                   </li>
                   <li className="mb-4 text-black last:mb-0 dark:text-manatee">
-                  Prof. SN Tripathi
+                    Prof. SN Tripathi
                   </li>
                   <li className="mb-4 text-black last:mb-0 dark:text-manatee">
-                  Prof. Manoj Harbola
+                    Prof. Manoj Harbola
                   </li>
                   <li className="mb-4 text-black last:mb-0 dark:text-manatee">
-                  Prof. Sandeep Verma
+                    Prof. Sandeep Verma
                   </li>
                   <li className="mb-4 text-black last:mb-0 dark:text-manatee">
-                  Prof. Abhay Karandikar, Director of IIT Kanpur
+                    Prof. Abhay Karandikar
                   </li>
                 </ul>
               </div>
