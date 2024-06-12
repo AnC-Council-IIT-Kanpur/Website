@@ -37,7 +37,6 @@ const Pricing = () => {
               width={250}
               height={250}
               alt="Dotted"
-              className="dark:hidden"
             />
               <h6 className="mb-2.5 mt-6 text-2xl font-bold text-black dark:text-white">
                 CAREER CONNECT
@@ -93,7 +92,6 @@ const Pricing = () => {
               width={250}
               height={250}
               alt="Dotted"
-              className="dark:hidden"
             />
               <h6 className="mb-2.5 text-2xl font-bold mt-6 text-black dark:text-white">
                 NSRC
@@ -148,7 +146,6 @@ const Pricing = () => {
               width={250}
               height={250}
               alt="Dotted"
-              className="dark:hidden"
             />
               <h6 className="mb-2.5 text-2xl font-bold mt-6 text-black dark:text-white">
                 IRS
