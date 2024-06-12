@@ -39,7 +39,7 @@ const Pricing = () => {
               alt="Dotted"
             />
               <h6 className="mb-2.5 mt-6 text-2xl font-bold text-black dark:text-white">
-                CAREER CONNECT
+                Career Connect
               </h6>
               <p className='mt-6'>The Academics and Career Council organized CAREER CONNECT, a three-day event for all undergraduate and postgraduate students, from 10th to 12th February 2023.</p>
 
