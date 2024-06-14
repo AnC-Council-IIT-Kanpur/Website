@@ -1,38 +1,43 @@
-import image1 from "@/public/images/user/user-01.png";
-import image2 from "@/public/images/user/user-02.png";
+import image1 from "./id1.jpg";
+import image2 from "./id2.jpg";
+import image3 from './id3.jpg'
+import image4 from './id4.jpg'
 import { Testimonial } from "@/types/testimonial";
 
 export const testimonialData: Testimonial[] = [
   {
     id: 1,
-    name: "Devid Smith",
-    designation: "Founter @democompany",
+    name: "Vishal Himmatsinghka",
+    designation: "a Y21 pursuing a B.Tech in Electrical Engineering at IIT Kanpur",
     image: image1,
-    content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris hendrerit, ligula sit amet cursus tincidunt, lorem sem elementum nisi, convallis fringilla ante nibh non urna.",
-  },
-  {
+    intern: "Working as software developement intern at Atlassian",
+    content:"Every error like any failure hides a lesson; persist, just never give up",
+   } ,
+   {
     id: 2,
-    name: "Jhon Abraham",
-    designation: "Founter @democompany",
+    name: "Siddhant Singh",
+    designation: "a Y21 student pursuing Mechanical Engineering at IIT Kanpur",
     image: image2,
+    intern: "Working as a Trading Analyst intern at Axxela",
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris hendrerit, ligula sit amet cursus tincidunt, lorem sem elementum nisi, convallis fringilla ante nibh non urna.",
+      "Grit and perseverance are your greatest allies. Don’t lose them, and you will find a way.",
   },
   {
     id: 3,
-    name: "Devid Smith",
-    designation: "Founter @democompany",
-    image: image1,
+    name: "Diptansu",
+    designation: "  Y21 student pursuing Chemical Engineering at IIT Kanpur ",
+    image: image3,
+    intern: "Interning at Hindustan Unilever as an RnD engineer",
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris hendrerit, ligula sit amet cursus tincidunt, lorem sem elementum nisi, convallis fringilla ante nibh non urna.",
+      "Be calm and composed before and during your interviews. Don’t worry too much and remember plenty of opportunities will be waiting for you.",
   },
   {
     id: 4,
-    name: "Jhon Abraham",
-    designation: "Founter @democompany",
-    image: image2,
+    name: "Siddharth Maurya",
+    designation: "a Y21 student pursuing Chemical engineering at IIT Kanpur ",
+    image: image4,
+    intern: "Interning as a Strategy and Consulting Associate at Accenture",
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris hendrerit, ligula sit amet cursus tincidunt, lorem sem elementum nisi, convallis fringilla ante nibh non urna.",
+      "In the pursuit of excellence, persistence stands as it’s twin sister. Keep your tenacity alive and consistently offer your best effort, for there’s always a greater reward waiting ahead”",
   },
 ];
