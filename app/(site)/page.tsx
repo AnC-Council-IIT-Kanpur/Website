@@ -2,8 +2,10 @@ import { Metadata } from "next";
 import Hero from "@/components/Hero";
 import Brands from "@/components/Brands";
 import Feature from "@/components/Features";
+import Team from "@/components/Teams";
 import About from "@/components/About";
 import FeaturesTab from "@/components/FeaturesTab";
+import TeamsTab from "@/components/TeamsTab";
 import FunFact from "@/components/FunFact";
 import Integration from "@/components/Integration";
 import CTA from "@/components/CTA";
@@ -25,8 +27,10 @@ export default function Home() {
       <Hero />
       <Brands />
       <Feature />
+      <Team />
       <About />
       <FeaturesTab />
+      <TeamsTab />
       <FunFact />
       <Integration />
       <CTA />

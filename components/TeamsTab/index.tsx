@@ -1,12 +1,12 @@
 "use client";
 import Image from "next/image";
 import { useState } from "react";
-import FeaturesTabItem from "./FeaturesTabItem";
-import featuresTabData from "./featuresTabData";
+import TeamsTabItem from "./TeamsTabItems";
+import teamsTabData from "./teamsTabData";
 
 import { motion } from "framer-motion";
 
-const FeaturesTab = () => {
+const TeamsTab = () => {
   const [currentTab, setCurrentTab] = useState("tabOne");
 
   return (
@@ -127,12 +127,12 @@ const FeaturesTab = () => {
             viewport={{ once: true }}
             className="animate_top mx-auto max-w-c-1154"
           >
-            {featuresTabData.map((feature, key) => (
+            {teamsTabData.map((team, key) => (
               <div
-                className={feature.id === currentTab ? "block" : "hidden"}
+                className={team.id === currentTab ? "block" : "hidden"}
                 key={key}
               >
-                <FeaturesTabItem featureTab={feature} />
+                <TeamsTabItem featureTab={team} />
               </div>
             ))}
           </motion.div>
@@ -144,4 +144,4 @@ const FeaturesTab = () => {
   );
 };
 
-export default FeaturesTab;
+export default TeamsTab;

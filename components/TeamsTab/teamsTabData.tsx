@@ -1,6 +1,6 @@
-import { FeatureTab } from "@/types/featureTab";
+import { TeamTab } from "@/types/teamTab";
 
-const featuresTabData: FeatureTab[] = [
+const teamsTabData: TeamTab[] = [
   {
     id: "tabOne",
     title: "Solid Has Neat & Clean User Interface.",
@@ -27,4 +27,4 @@ const featuresTabData: FeatureTab[] = [
   },
 ];
 
-export default featuresTabData;
+export default teamsTabData;
