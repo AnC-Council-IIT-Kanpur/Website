@@ -56,12 +56,10 @@ const FunFact = () => {
             className="animate_top mx-auto mb-12.5 px-4 text-center md:w-4/5 md:px-0 lg:mb-17.5 lg:w-2/3 xl:w-1/2"
           >
             <h2 className="mb-4 text-3xl font-bold text-black dark:text-white xl:text-sectiontitle3">
-              Trusted by Global Companies.
+            Welcome to Fun Facts!
             </h2>
             <p className="mx-auto lg:w-11/12">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-              convallis tortor eros. Donec vitae tortor lacus. Phasellus aliquam
-              ante in maximus.
+            Discover a world of knowledge with our collection of educational fun facts! From groundbreaking scientific discoveries to intriguing historical tidbits, our fun facts are designed to inspire curiosity and spark a love for learning. While we strive to provide accurate and up-to-date information, please note that some facts may be simplified for entertainment purposes. For more detailed and comprehensive explanations, we encourage you to explore further through our academic resources and courses.
             </p>
           </motion.div>
 
@@ -85,9 +83,14 @@ const FunFact = () => {
               className="animate_top text-center"
             >
               <h3 className="mb-2.5 text-3xl font-bold text-black dark:text-white xl:text-sectiontitle3">
-                500K
+              General Education
               </h3>
-              <p className="text-lg lg:text-para2">World Wide Clients</p>
+              <p className="text-lg lg:text-para2">
+              The Concept of Zero: The number zero was invented by ancient mathematicians in India around the 5th century.
+              </p>
+              <p className="text-lg lg:text-para2">
+              Human Brain Storage: The human brain can hold around 2.5 petabytes (or a million gigabytes) of information.
+              </p>
             </motion.div>
             <motion.div
               variants={{
@@ -108,9 +111,14 @@ const FunFact = () => {
               className="animate_top text-center"
             >
               <h3 className="mb-2.5 text-3xl font-bold text-black dark:text-white xl:text-sectiontitle3">
-                1M+
+              Science and Technology
               </h3>
-              <p className="text-lg lg:text-para2">Downloads</p>
+              <p className="text-lg lg:text-para2">
+                Periodic Table: Dmitri Mendeleev created the first periodic table in 1869 and predicted the existence and properties of elements yet to be discovered.
+              </p>
+              <p className="text-lg lg:text-para2">
+                Internet Growth: It took the internet just four years to reach 50 million users. It took television 13 years to reach the same milestone.
+              </p>
             </motion.div>
             <motion.div
               variants={{
@@ -131,9 +139,70 @@ const FunFact = () => {
               className="animate_top text-center"
             >
               <h3 className="mb-2.5 text-3xl font-bold text-black dark:text-white xl:text-sectiontitle3">
-                865
+              Mathematics
               </h3>
-              <p className="text-lg lg:text-para2">Winning Award</p>
+              <p className="text-lg lg:text-para2">
+                Mathematical Pi: Pi (π) is an irrational number, meaning it has an infinite number of digits that never repeat. The current record for memorizing pi is over 70,000 digits.
+              </p>
+              <p className="text-lg lg:text-para2">
+                Fibonacci Sequence: The Fibonacci sequence, where each number is the sum of the two preceding ones, appears frequently in nature, such as in the arrangement of leaves on a stem.
+              </p>
+            </motion.div>
+            <motion.div
+              variants={{
+                hidden: {
+                  opacity: 0,
+                  y: -20,
+                },
+
+                visible: {
+                  opacity: 1,
+                  y: 0,
+                },
+              }}
+              initial="hidden"
+              whileInView="visible"
+              transition={{ duration: 1, delay: 0.8 }}
+              viewport={{ once: true }}
+              className="animate_top text-center"
+            >
+              <h3 className="mb-2.5 text-3xl font-bold text-black dark:text-white xl:text-sectiontitle3">
+              Space and Astronomy
+              </h3>
+              <p className="text-lg lg:text-para2">
+                Galaxies: There are more stars in the universe than grains of sand on all the beaches on Earth.
+              </p>
+              <p className="text-lg lg:text-para2">
+                Moon Footprints: The footprints left by astronauts on the Moon will likely remain there for millions of years because there is no wind or water to erode them.
+              </p>
+            </motion.div>
+            <motion.div
+              variants={{
+                hidden: {
+                  opacity: 0,
+                  y: -20,
+                },
+
+                visible: {
+                  opacity: 1,
+                  y: 0,
+                },
+              }}
+              initial="hidden"
+              whileInView="visible"
+              transition={{ duration: 1, delay: 0.8 }}
+              viewport={{ once: true }}
+              className="animate_top text-center"
+            >
+              <h3 className="mb-2.5 text-3xl font-bold text-black dark:text-white xl:text-sectiontitle3">
+              Careers and Professional Development
+              </h3>
+              <p className="text-lg lg:text-para2">
+                Lifelong Learning: According to the World Economic Forum, 65% of children entering primary school today will end up working in jobs that do not yet exist.
+              </p>
+              <p className="text-lg lg:text-para2">
+                First Job: Steve Jobs once worked at Atari as a technician before co-founding Apple Inc.
+              </p>
             </motion.div>
           </div>
         </div>
