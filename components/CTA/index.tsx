@@ -29,12 +29,22 @@ const CTA = () => {
               className="animate_left md:w-[70%] lg:w-1/2"
             >
               <h2 className="mb-4 w-11/12 text-3xl font-bold text-black dark:text-white xl:text-sectiontitle4">
-                Join With Us Today & Increase Your Productivity
+                Inspirational Quotes : A way to start fresh.
               </h2>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-                convallis tortor eros. Donec vitae tortor lacus. Phasellus
-                aliquam ante in maximus.
+              "The best way to predict the future is to create it." - Peter Drucker
+              </p>
+              <p>
+                "Success is not the key to happiness. Happiness is the key to success. If you love what you are doing, you will be successful." - Albert Schweitzer
+              </p>
+              <p>
+                "The only limit to our realization of tomorrow is our doubts of today." - Franklin D. Roosevelt
+              </p>
+              <p>
+                "Education is the most powerful weapon which you can use to change the world." - Nelson Mandela
+              </p>
+              <p>
+                "The future belongs to those who believe in the beauty of their dreams." - Eleanor Roosevelt
               </p>
             </motion.div>
             <motion.div
