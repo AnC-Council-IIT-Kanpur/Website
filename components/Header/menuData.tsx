@@ -9,7 +9,7 @@ const menuData: Menu[] = [
   },
   {
     id: 2,
-    title: "Features",
+    title: "About Us",
     newTab: false,
     path: "/#features",
   },
@@ -19,59 +19,59 @@ const menuData: Menu[] = [
     newTab: false,
     path: "/blog",
   },
-  {
-    id: 2.3,
-    title: "Docs",
-    newTab: false,
-    path: "/docs",
-  },
+  // {
+  //   id: 2.3,
+  //   title: "Docs",
+  //   newTab: false,
+  //   path: "/docs",
+  // },
   {
     id: 3,
-    title: "Pages",
+    title: "Wings",
     newTab: false,
     submenu: [
       {
         id: 31,
-        title: "Blog Grid",
+        title: "Career Development Wing",
         newTab: false,
-        path: "/blog",
+        path: "/blog", //change
       },
       {
         id: 34,
-        title: "Sign In",
+        title: "Research Wing",
         newTab: false,
-        path: "/auth/signin",
+        path: "/auth/signin", //change
       },
       {
         id: 35,
-        title: "Sign Up",
+        title: "Web Wing",
         newTab: false,
-        path: "/auth/signup",
+        path: "/auth/signup", //change
       },
       {
         id: 35,
-        title: "Docs",
+        title: "International Relationship",
         newTab: false,
-        path: "/docs",
+        path: "/docs", //change
       },
       {
         id: 35.1,
-        title: "Support",
+        title: "UG Academics",
         newTab: false,
-        path: "/support",
+        path: "/support", //change
       },
       {
         id: 36,
-        title: "404",
+        title: "PG Academics",
         newTab: false,
-        path: "/error",
+        path: "/error", //change
       },
     ],
   },
 
   {
     id: 4,
-    title: "Support",
+    title: "Contact Us",
     newTab: false,
     path: "/support",
   },
