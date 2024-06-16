@@ -2,7 +2,7 @@
 import Image from "next/image";
 import SectionHeader from "../Common/SectionHeader";
 import Link from 'next/link'
-const Pricing = () => {
+const MainEvents = () => {
   return (
     <>
       {/* <!-- ===== Pricing Table Start ===== --> */}
@@ -202,4 +202,4 @@ const Pricing = () => {
   );
 };
 
-export default Pricing;
+export default MainEvents;
