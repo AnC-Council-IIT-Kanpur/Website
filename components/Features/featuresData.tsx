@@ -3,46 +3,53 @@ import { Feature } from "@/types/feature";
 const featuresData: Feature[] = [
   {
     id: 1,
-    icon: "/images/icon/icon-01.svg",
-    title: "Crafted for SaaS",
+    icon: "/images/logo/anc_logo2.png",
+    title: "Academics Wing",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.",
+      "The link between students and the institute's policy makers which ensures that a student's academic life at IITK runs smoothly.",
   },
   {
     id: 2,
-    icon: "/images/icon/icon-02.svg",
-    title: "High-quality Design",
+    icon: "/images/logo/anc_logo2.png",
+    title: "Career Development Wing",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.",
+      "The Wing aimed at providing students with providing proper guidance and helping them develop careers in the fields that align with their professional interests.",
   },
   {
     id: 3,
-    icon: "/images/icon/icon-03.svg",
-    title: "Next.js 13 + TypeScript",
+    icon: "/images/logo/anc_logo2.png",
+    title: "Research Wing",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.",
+      "The Wing dedicated to fostering and encouraging research enthusiasm among students, ultimately helping to cultivate innovators and future leaders.",
   },
   {
     id: 4,
-    icon: "/images/icon/icon-04.svg",
-    title: "Sanity Blog and Docs",
+    icon: "/images/logo/anc_logo2.png",
+    title: "International Relations Wing",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.",
+      "The IR Wing is the one which undertakes the responsibility of improving collaborations of the Institute and its foreign counterparts.",
   },
   {
     id: 5,
-    icon: "/images/icon/icon-05.svg",
-    title: "DB, Auth and Stripe",
+    icon: "/images/logo/anc_logo2.png",
+    title: "Web Wing",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.",
+      "The Web Wing is the one which is behind the digitization of the AnC council and the expansion of its reach through the creation of this very website.",
   },
   {
     id: 6,
-    icon: "/images/icon/icon-06.svg",
-    title: "Regular Free Updates",
+    icon: "/images/logo/anc_logo2.png",
+    title: "Media & Publicity Wing",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.",
+      "The Wing primarily dedicated to boosting the visibility and engagement in the events of the AnC Council.",
   },
+  {
+    id: 7,
+    icon: "/images/logo/anc_logo2.png",
+    title: "Outreach & Finance Wing",
+    description:
+      "The Outreach and Finance Wing is the one responsible for the keeping precise financial records, managing budgets and overseeing cash flow in the overall activities of the AnC Council.",
+  }
 ];
 
 export default featuresData;
