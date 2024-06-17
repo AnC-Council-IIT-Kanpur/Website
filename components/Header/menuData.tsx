@@ -75,6 +75,12 @@ const menuData: Menu[] = [
     newTab: false,
     path: "/support",
   },
+  {
+    id: 5,
+    title : "Research Wing",
+    newTab: false,
+    path: "Wings/research",
+  }
 ];
 
 export default menuData;
