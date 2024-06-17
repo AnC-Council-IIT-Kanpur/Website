@@ -20,9 +20,9 @@ const Testimonial = () => {
           <div className="animate_top mx-auto text-center">
             <SectionHeader
               headerInfo={{
-                title: `TESTIMONIALS`,
-                subtitle: `Client’s Testimonials`,
-                description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor eros. Donec vitae tortor lacus. Phasellus aliquam ante in maximus.`,
+                title: `SUCCESS STORIES`,
+                subtitle: `Campus Chronicles `,
+                description: `Stories of Triumph and Transformation`,
               }}
             />
           </div>
@@ -56,6 +56,7 @@ const Testimonial = () => {
               autoplay={{
                 delay: 2500,
                 disableOnInteraction: false,
+                
               }}
               pagination={{
                 clickable: true,
