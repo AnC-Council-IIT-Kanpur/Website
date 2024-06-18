@@ -13,11 +13,9 @@ const Feature = () => {
           {/* <!-- Section Title Start --> */}
           <SectionHeader
             headerInfo={{
-              title: "SOLID FEATURES",
-              subtitle: "Core Features of Solid",
-              description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-            convallis tortor eros. Donec vitae tortor lacus. Phasellus aliquam
-            ante in maximus.`,
+              title: "Core Structure of the ANC Council",
+              subtitle: "Wings Under the AnC Council",
+              description: `The Academics and Career Council primarily has seven wings to ensure efficient operation`,
             }}
           />
           {/* <!-- Section Title End --> */}

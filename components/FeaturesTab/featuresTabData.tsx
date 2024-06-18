@@ -3,28 +3,33 @@ import { FeatureTab } from "@/types/featureTab";
 const featuresTabData: FeatureTab[] = [
   {
     id: "tabOne",
-    title: "Solid Has Neat & Clean User Interface.",
-    desc1: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ultricies lacus non fermentum ultrices. Fusce consectetur le.`,
-    desc2: `    Nam id eleifend dui, id iaculis purus. Etiam lobortis neque nec finibus sagittis. Nulla ligula nunc egestas ut.`,
-    image: "/images/features/features-light-01.png",
-    imageDark: "/images/features/features-dark-01.svg",
+    title: "Personalized Academic Support",
+    desc1: `Recognizing that each student has unique academic needs, AnC offers personalized support to help them overcome challenges and excel in their studies. This includes tutoring, study groups, and one-on-one counseling sessions focused on specific subjects or academic concerns. By providing targeted assistance, AnC helps students improve their academic performance, build confidence, and achieve their educational goals.`,
+    desc2: ` Learn More -> `,
+    image: "/images/features/academic.jpg",
+    imageDark: "/images/features/academic.jpg",
   },
   {
     id: "tabTwo",
-    title: "Ready to Use Pages You Need for a SaaS Business.",
-    desc1: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ultricies lacus non fermentum ultrices. Fusce consectetur le.`,
-    desc2: `    Nam id eleifend dui, id iaculis purus. Etiam lobortis neque nec finibus sagittis. Nulla ligula nunc egestas ut.`,
-    image: "/images/features/features-light-01.png",
-    imageDark: "/images/features/features-dark-01.svg",
+    title: "Skill Development Workshop",
+    desc1: `
+
+    To ensure students are well-rounded and industry-ready, AnC conducts regular skill development workshops. These sessions cover a wide range of topics, including communication skills, leadership, teamwork, and technical proficiencies. By participating in these workshops, students gain essential soft skills and practical knowledge that are vital for their personal and professional growth, making them more competitive in the job market. `,
+    desc2: ` Learn More ->  `,
+    image: "/images/features/workshop.jpg",
+    imageDark: "/images/features/workshop.jpg",
   },
   {
     id: "tabThree",
-    title: "Functional Blog, DB, Auth and Many More",
-    desc1: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ultricies lacus non fermentum ultrices. Fusce consectetur le.`,
-    desc2: `Nam id eleifend dui, id iaculis purus. Etiam lobortis neque nec finibus sagittis. Nulla ligula nunc egestas ut.`,
-    image: "/images/features/features-light-01.png",
-    imageDark: "/images/features/features-dark-01.svg",
+    title: "Research & Internship Opportunities",
+    desc1: `
+   
+    AnC actively assists students in finding valuable research and internship opportunities that complement their academic interests. By partnering with industry leaders and academic institutions, AnC ensures that students have access to hands-on experiences that enhance their skills and knowledge. These opportunities not only bolster students’ resumes but also provide practical insights and professional networks that are crucial for their future careers.`,
+    desc2: `Learn More ->`,
+    image: "/images/features/internship.jpg",
+    imageDark: "/images/features/internship.jpg",
   },
+  
 ];
 
 export default featuresTabData;
