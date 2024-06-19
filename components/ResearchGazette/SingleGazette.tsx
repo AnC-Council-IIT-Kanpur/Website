@@ -1,9 +1,8 @@
 import React from "react";
-import { Gazette } from "@/types/gazette";
 import { motion } from "framer-motion";
 import Image from "next/image";
 
-const SingleGazette = ({ gazette }: { gazette: Gazette }) => {
+const SingleGazette = ({ gazette }) => {
   const { icon, title, description, pdfUrl } = gazette;
 
   return (
