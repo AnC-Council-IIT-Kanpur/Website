@@ -28,8 +28,6 @@ const ResearchPage = () => {
         <PastSessions />
         <DirectorNote />
         <NoteSection />
-        
-      
     </div>
   );
 };
