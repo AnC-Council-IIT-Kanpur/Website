@@ -309,7 +309,7 @@ const Footer = () => {
               className="animate_top"
             >
               <p>
-                &copy; {new Date().getFullYear()} Solid. All rights reserved
+                &copy; {new Date().getFullYear()} AnC Council, IIT Kanpur. All rights reserved
               </p>
             </motion.div>
 
