@@ -46,7 +46,7 @@ const Footer = () => {
                 </a>
 
                 <p className="mb-10 mt-5">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                The AnC Council of the IIT Kanpur is a council directly placed under the Student's Gymkhana, that aims to foster all needs related to academics and research for the campus dwellers.
                 </p>
 
                 <p className="mb-1.5 text-sectiontitle uppercase tracking-[5px]">
@@ -56,7 +56,7 @@ const Footer = () => {
                   href="#"
                   className="text-itemtitle font-medium text-black dark:text-white"
                 >
-                  hello@solid.com
+                  anc@iitk.ac.in
                 </a>
               </motion.div>
 
@@ -97,7 +97,7 @@ const Footer = () => {
                         href="#"
                         className="mb-3 inline-block hover:text-primary"
                       >
-                        Product
+                        Academics
                       </a>
                     </li>
                     <li>
@@ -105,7 +105,7 @@ const Footer = () => {
                         href="#"
                         className="mb-3 inline-block hover:text-primary"
                       >
-                        Careers
+                        Research
                       </a>
                     </li>
                     <li>
@@ -113,7 +113,15 @@ const Footer = () => {
                         href="#"
                         className="mb-3 inline-block hover:text-primary"
                       >
-                        Pricing
+                        Int. Relations
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        className="mb-3 inline-block hover:text-primary"
+                      >
+                        Career Dev.
                       </a>
                     </li>
                   </ul>
@@ -138,7 +146,7 @@ const Footer = () => {
                   className="animate_top"
                 >
                   <h4 className="mb-9 text-itemtitle2 font-medium text-black dark:text-white">
-                    Support
+                    Info
                   </h4>
 
                   <ul>
@@ -147,7 +155,7 @@ const Footer = () => {
                         href="#"
                         className="mb-3 inline-block hover:text-primary"
                       >
-                        Company
+                        About Us
                       </a>
                     </li>
                     <li>
@@ -155,7 +163,7 @@ const Footer = () => {
                         href="#"
                         className="mb-3 inline-block hover:text-primary"
                       >
-                        Press media
+                        Team
                       </a>
                     </li>
                     <li>
@@ -163,7 +171,7 @@ const Footer = () => {
                         href="#"
                         className="mb-3 inline-block hover:text-primary"
                       >
-                        Our Blog
+                        Our Works
                       </a>
                     </li>
                     <li>
@@ -171,10 +179,10 @@ const Footer = () => {
                         href="#"
                         className="mb-3 inline-block hover:text-primary"
                       >
-                        Contact Us
+                        Gallery
                       </a>
                     </li>
-                  </ul>
+                  </ul> 
                 </motion.div>
 
                 <motion.div
@@ -195,7 +203,7 @@ const Footer = () => {
                   viewport={{ once: true }}
                   className="animate_top"
                 >
-                  <h4 className="mb-9 text-itemtitle2 font-medium text-black dark:text-white">
+                  {/* <h4 className="mb-9 text-itemtitle2 font-medium text-black dark:text-white">
                     Newsletter
                   </h4>
                   <p className="mb-4 w-[90%]">
@@ -236,12 +244,12 @@ const Footer = () => {
                         </svg>
                       </button>
                     </div>
-                  </form>
+                  </form> */}
                 </motion.div>
               </div>
             </div>
           </div>
-          {/* <!-- Footer Top --> */}
+          {/* <!-- Footer Top -->
 
           {/* <!-- Footer Bottom --> */}
           <div className="flex flex-col flex-wrap items-center justify-center gap-5 border-t border-stroke py-7 dark:border-strokedark lg:flex-row lg:justify-between lg:gap-0">
@@ -301,7 +309,7 @@ const Footer = () => {
               className="animate_top"
             >
               <p>
-                &copy; {new Date().getFullYear()} Solid. All rights reserved
+                &copy; {new Date().getFullYear()} AnC Council, IIT Kanpur. All rights reserved
               </p>
             </motion.div>
 
@@ -325,7 +333,7 @@ const Footer = () => {
             >
               <ul className="flex items-center gap-5">
                 <li>
-                  <a href="#" aria-label="social icon">
+                  <a href="https://www.facebook.com/ANCIITK?mibextid=ZbWKwL" aria-label="social icon">
                     <svg
                       className="fill-[#D1D8E0] transition-all duration-300 hover:fill-primary"
                       width="24"
@@ -349,7 +357,7 @@ const Footer = () => {
                   </a>
                 </li>
                 <li>
-                  <a href="#" aria-label="social icon">
+                  <a href="https://www.instagram.com/anciitk?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" aria-label="social icon">
                     <svg
                       className="fill-[#D1D8E0] transition-all duration-300 hover:fill-primary"
                       width="24"
@@ -360,7 +368,7 @@ const Footer = () => {
                     >
                       <g clipPath="url(#clip0_48_1502)">
                         <path
-                          d="M22.162 5.65593C21.3985 5.99362 20.589 6.2154 19.76 6.31393C20.6337 5.79136 21.2877 4.96894 21.6 3.99993C20.78 4.48793 19.881 4.82993 18.944 5.01493C18.3146 4.34151 17.4803 3.89489 16.5709 3.74451C15.6615 3.59413 14.7279 3.74842 13.9153 4.18338C13.1026 4.61834 12.4564 5.30961 12.0771 6.14972C11.6978 6.98983 11.6067 7.93171 11.818 8.82893C10.1551 8.74558 8.52832 8.31345 7.04328 7.56059C5.55823 6.80773 4.24812 5.75098 3.19799 4.45893C2.82628 5.09738 2.63095 5.82315 2.63199 6.56193C2.63199 8.01193 3.36999 9.29293 4.49199 10.0429C3.828 10.022 3.17862 9.84271 2.59799 9.51993V9.57193C2.59819 10.5376 2.93236 11.4735 3.54384 12.221C4.15532 12.9684 5.00647 13.4814 5.95299 13.6729C5.33661 13.84 4.6903 13.8646 4.06299 13.7449C4.32986 14.5762 4.85 15.3031 5.55058 15.824C6.25117 16.345 7.09712 16.6337 7.96999 16.6499C7.10247 17.3313 6.10917 17.8349 5.04687 18.1321C3.98458 18.4293 2.87412 18.5142 1.77899 18.3819C3.69069 19.6114 5.91609 20.2641 8.18899 20.2619C15.882 20.2619 20.089 13.8889 20.089 8.36193C20.089 8.18193 20.084 7.99993 20.076 7.82193C20.8949 7.2301 21.6016 6.49695 22.163 5.65693L22.162 5.65593Z"
+                          d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"
                           fill=""
                         />
                       </g>
@@ -373,7 +381,7 @@ const Footer = () => {
                   </a>
                 </li>
                 <li>
-                  <a href="#" aria-label="social icon">
+                  <a href="https://www.linkedin.com/company/anciitk/" aria-label="social icon">
                     <svg
                       className="fill-[#D1D8E0] transition-all duration-300 hover:fill-primary"
                       width="24"
