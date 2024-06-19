@@ -27,15 +27,15 @@ export default function Home() {
       <Feature />
       <About />
       <FeaturesTab />
-      <FunFact />
-      <Integration />
-      <CTA />
-      <FAQ />
-      <Testimonial />
+      {/* <FunFact /> */}
+      {/* <Integration /> */}
+      {/* <CTA /> */}
       <MainEvents />
-      <Pricing />
-      <Contact />
+      <Testimonial />
+      {/* <Pricing /> */}
+      {/* <Contact /> */}
       <Blog />
+      <FAQ />
     </main>
   );
 }

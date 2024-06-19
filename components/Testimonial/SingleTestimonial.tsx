@@ -10,17 +10,15 @@ const SingleTestimonial = ({ review }: { review: Testimonial }) => {
           <h3 className="mb-1.5 text-metatitle3 text-black dark:text-white">
             {name}
           </h3>
-          <p>{designation}</p>
-        
           <p>{intern}</p>
+          <p>{designation}</p>
         </div >
-        <div className="relative w-15 h-15 ">
-        <Image width={60} height={50} className="rounded-full object-cover" src={image} alt={name} />
+        <div className="relative">
+        <Image className="rounded-full w-[50px] h-[50px] object-cover" src={image} alt={name} />
         </div>
         
       </div>
-
-      <p>{content}</p>
+      <p className="h-14 overflow-hidden line-clamp-3">{content}</p>
     </div>
   );
 };

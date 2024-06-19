@@ -9,25 +9,25 @@ const menuData: Menu[] = [
   },
   {
     id: 2,
-    title: "About Us",
+    title: "Wings",
     newTab: false,
     path: "/#features",
   },
   {
     id: 2.1,
-    title: "Blog",
+    title: "Blogs",
     newTab: false,
     path: "/blog",
   },
-  // {
-  //   id: 2.3,
-  //   title: "Docs",
-  //   newTab: false,
-  //   path: "/docs",
-  // },
+  {
+    id: 2.3,
+    title: "Resources",
+    newTab: false,
+    path: "/docs",
+  },
   {
     id: 3,
-    title: "Wings",
+    title: "Links",
     newTab: false,
     submenu: [
       {
@@ -71,16 +71,18 @@ const menuData: Menu[] = [
 
   {
     id: 4,
-    title: "Contact Us",
+    title: "Team",
     newTab: false,
     path: "/support",
-  },
-  {
-    id: 5,
-    title : "Research Wing",
-    newTab: false,
-    path: "Wings/research",
   }
 ];
 
 export default menuData;
+
+// ,
+//   {
+//     id: 5,
+//     title : "Research Wing",
+//     newTab: false,
+//     path: "Wings/research",
+//   }

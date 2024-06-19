@@ -33,29 +33,28 @@ const Hero = () => {
           <div className="flex lg:items-center lg:gap-8 xl:gap-32.5">
             <div className=" md:w-1/2">
               <h4 className="mb-4.5 text-lg font-medium text-black dark:text-white">
-                Explore Academics and Career Development at IITK
+                🧭 Explore AnC Council at IITK
               </h4>
               <h1 className="mb-5 pr-16 text-3xl font-bold text-black dark:text-white xl:text-hero ">
                 Academics and Career Council,
-                <span className="relative ml-1 inline-block before:absolute before:bottom-2.5 before:left-0 before:-z-1 before:h-3 before:w-full before:bg-titlebg dark:before:bg-titlebgdark ">
+                <span className="relative ml-1 inline-block before:absolute before:bottom-2.5 before:left-0 before:-z-1 before:h-3 before:w-full">
+                {/* before:bg-titlebg dark:before:bg-titlebgdark  */}
                   IIT Kanpur
                 </span>
               </h1>
               <p>
-                The Academics and Career Council at IIT Kanpur, under the
-                Student's Gymkhana, is dedicated to empowering students with all
-                their academic and research needs. Whether you are an
-                Undergraduate or a Postgraduate student, we are here to help you
-                with your academic and career-related queries and help you to
-                achieve your goals.
+                Under the Student's Gymkhana, we are dedicated to empowering students with all their academic, research, and career needs. Whether you are an undergraduate or postgraduate student, we are here to assist you with your academic and career-related queries and help you achieve your goals.
               </p>
 
-              <div className="mt-10 font-bold text-black">
-                Scroll down for more information related to AnC Wings and Clubs.
-              </div>
+              <button
+                aria-label="get started button"
+                className="mt-10 flex rounded-full bg-black px-7.5 py-2.5 text-white duration-300 ease-in-out hover:bg-blackho dark:bg-btndark dark:hover:bg-blackho"
+              >
+                Explore {" ->"}
+              </button>
             </div>
 
-            <div className="animate_right hidden md:w-1/2 lg:block overflow-hidden">
+            {/* <div className="animate_right hidden md:w-1/2 lg:block overflow-hidden">
               <div
                 className="flex transition-transform duration-500"
                 style={{ transform: `translateX(-${currentIndex * 100}%)` }}
@@ -72,7 +71,47 @@ const Hero = () => {
                   </div>
                 ))}
               </div>
+            </div> */}
+
+            <div className="animate_right hidden md:w-1/2 lg:block">
+              <div className="relative 2xl:-mr-7.5">
+                <Image
+                  src="/images/shape/shape-01.png"
+                  alt="shape"
+                  width={46}
+                  height={246}
+                  className="absolute -left-11.5 top-0"
+                />
+                <Image
+                  src="/images/shape/shape-03.svg"
+                  alt="shape"
+                  width={21.64}
+                  height={21.66}
+                  className="absolute -right-6.5 bottom-0 z-1"
+                />
+                <div className=" relative aspect-[700/444] w-full">
+                  <div className="animate_right hidden md:w-full lg:block overflow-hidden rounded-2xl shadow-2xl">
+                    <div
+                      className="flex transition-transform duration-500"
+                      style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+                    >
+                      {images.map((src, index) => (
+                        <div key={index} className="w-full h-[400px] flex-shrink-0">
+                          <Image
+                            src={src}
+                            width={500}
+                            height={400}
+                            alt={`Slide ${index}`}
+                            className="w-full"
+                          />
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
+
           </div>
         </div>
       </section>
