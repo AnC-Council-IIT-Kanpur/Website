@@ -40,7 +40,7 @@ const menuData: Menu[] = [
         id: 34,
         title: "Research Wing",
         newTab: false,
-        path: "/auth/signin", //change
+        path: "/wings/research", //change
       },
       {
         id: 35,

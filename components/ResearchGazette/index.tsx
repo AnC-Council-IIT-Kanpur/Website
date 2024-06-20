@@ -2,15 +2,14 @@
 
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import researchGazetteData from "./ResearchGazetteData";
-import SingleGazette from "./SingleGazette";
 import SectionHeader from "../Common/SectionHeader";
+import SingleGazette from "./SingleGazette";
 
-const ResearchGazette = () => {
+const ResearchGazette = ({ data, headerInfo }) => {
   const [filterYear, setFilterYear] = useState("");
   const [filterArea, setFilterArea] = useState("");
 
-  const filteredGazettes = researchGazetteData.filter((gazette) => {
+  const filteredGazettes = data.filter((gazette) => {
     return (
       (filterYear ? gazette.year === parseInt(filterYear) : true) &&
       (filterArea ? gazette.area.toLowerCase().includes(filterArea.toLowerCase()) : true)
@@ -20,13 +19,7 @@ const ResearchGazette = () => {
   return (
     <section id="research-gazettes" className="py-20 lg:py-25 xl:py-30">
       <div className="mx-auto max-w-c-1315 px-4 md:px-8 xl:px-0">
-        <SectionHeader
-          headerInfo={{
-            title: "RESEARCH GAZETTES",
-            subtitle: "Archive of Previous Year's Research Gazettes",
-            description: `Downloadable PDF versions of each gazette with summaries. Filter by year or research area.`,
-          }}
-        />
+        <SectionHeader headerInfo={headerInfo} />
 
         <motion.div
           className="mb-8 flex justify-center gap-4"
@@ -56,8 +49,8 @@ const ResearchGazette = () => {
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5 }}
         >
-          {filteredGazettes.map((gazette, key) => (
-            <SingleGazette gazette={gazette} key={key} />
+          {filteredGazettes.map((gazette) => (
+            <SingleGazette gazette={gazette} key={gazette.id} />
           ))}
         </motion.div>
       </div>

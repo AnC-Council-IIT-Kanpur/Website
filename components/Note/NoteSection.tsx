@@ -1,16 +1,20 @@
 "use client";
 
+import React, { useState } from "react";
 import Image from "next/image";
-import { useState } from "react";
-import NoteItem from "./NoteItem";
-import noteData from "./noteData";
 import { motion } from "framer-motion";
+import NoteItem from "./NoteItem";
+import { Note } from "@/types/note";
 
-const NoteSection = () => {
-  const [currentTab, setCurrentTab] = useState("noteAlumni");
+interface NoteSectionProps {
+  notes: Note[];
+}
+
+const NoteSection: React.FC<NoteSectionProps> = ({ notes }) => {
+  const [currentTab, setCurrentTab] = useState(notes[0].id);
 
   return (
-    <section className="relative py-20  ">
+    <section className="relative py-20">
       <div className="container mx-auto px-4 md:px-8 xl:px-0">
         <div className="absolute -top-16 -z-1 mx-auto h-[350px] w-[90%]">
           <Image
@@ -39,9 +43,9 @@ const NoteSection = () => {
           viewport={{ once: true }}
           className="animate_top mb-10 flex flex-wrap justify-center rounded-lg border border-stroke bg-white shadow-lg dark:border-strokedark dark:bg-blacksection md:flex-nowrap md:items-center lg:gap-8 xl:mb-14 xl:gap-12"
         >
-          {noteData.map((note, index) => (
+          {notes.map((note, index) => (
             <div
-              key={index}
+              key={note.id}
               onClick={() => setCurrentTab(note.id)}
               className={`relative flex w-full cursor-pointer items-center gap-4 border-b border-stroke px-6 py-4 last:border-0 dark:border-strokedark md:w-auto md:border-0 xl:px-16 xl:py-6 ${
                 currentTab === note.id
@@ -75,8 +79,8 @@ const NoteSection = () => {
           viewport={{ once: true }}
           className="animate_top mx-auto max-w-3xl"
         >
-          {noteData.map((note, index) => (
-            <div className={note.id === currentTab ? "block" : "hidden"} key={index}>
+          {notes.map((note) => (
+            <div className={note.id === currentTab ? "block" : "hidden"} key={note.id}>
               <NoteItem note={note} />
             </div>
           ))}

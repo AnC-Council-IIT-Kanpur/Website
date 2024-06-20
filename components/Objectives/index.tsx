@@ -2,33 +2,8 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faComments, faBullhorn, faObjectGroup, faMagic } from '@fortawesome/free-solid-svg-icons';
 
-
-const objectives = [
-  {
-    icon: faComments,
-    title: "Increase Awareness and Promote Research Culture",
-    text: "Raise awareness about the variety of research activities on campus among the student community. Foster a thriving research culture by motivating students to engage in research activities.",
-  },
-  {
-    icon: faBullhorn,
-    title: "Showcase Excellence and Provide Support and Guidance",
-    text: "Offer support and guidance to budding researchers and research enthusiasts. Highlight and give voice to students excelling in the field of research.",
-  },
-  {
-    icon: faObjectGroup,
-    title: "Organise Events and Cultivate Interests",
-    text: "Conduct events, talks, and sessions related to various aspects of research and career opportunities. Encourage research interests among students and provide platforms to showcase their research potential.",
-  },
-  {
-    icon: faMagic,
-    title: "Manage Online Presence and Alumni Engagement",
-    text: "Oversee the research portal on the council’s website, NSRC and IRS official sites, and social media handles. Engage with alumni who are active in research to mentor current students and provide networking opportunities.",
-  },
-];
-
-const ObjectivesSection: React.FC = () => {
+const ObjectivesSection = ({ title, objectives }) => {
   return (
     <section id="objectives" className="overflow-hidden pb-20 pt-35 md:pt-40 xl:pb-25 xl:pt-46">
       <div className="mx-auto max-w-c-1390 px-4 md:px-8 2xl:px-0">
@@ -40,7 +15,7 @@ const ObjectivesSection: React.FC = () => {
           className="text-center mb-10"
         >
           <h2 className="text-3xl font-bold text-gray-800 dark:text-white">
-            Our Objectives
+            {title}
           </h2>
           <div className="w-20 h-1 mx-auto mt-2 bg-gradient-to-r from-blue-500 to-blue-700"></div>
         </motion.div>
