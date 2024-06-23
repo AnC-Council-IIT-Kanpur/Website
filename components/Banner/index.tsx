@@ -9,7 +9,13 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import SectionHeaderTop from "../Common/SectionHeaderTop";
 
-const Banner = () => {
+interface BannerProps {
+  title: string;
+  subtitle: string;
+  description: string;
+}
+
+const Banner: React.FC<BannerProps> = ({ title, subtitle, description }) => {
 
 
   return (
@@ -90,9 +96,9 @@ const Banner = () => {
               <div className="mx-auto max-w-c-1315 px-4 md:px-8 xl:px-0">
                 <SectionHeaderTop
                   headerInfo={{
-                    title: "RESEARCH WING",
-                    subtitle: "Pioneering Research for a Better Future",
-                    description: `The Research Wing of the council aims at cultivating and promoting research interests in the student community. It aims to provide students the freedom and opportunities to work upon diverse areas of business, technology and existing industrial and national challenges as well as pursue their own ideas so as to become innovators and future leaders.`,
+                    title,
+                    subtitle,
+                    description,
                   }}
                 />
               </div>
