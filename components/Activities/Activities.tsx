@@ -2,20 +2,29 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import activitiesData from "./activitiesData";
+// import activitiesData from "./activitiesData";
 import ActivityCard from "./ActivityCard";
 import SectionHeader from "../Common/SectionHeader";
 
-const Activities = () => {
+interface Activity{
+  icon:any;
+  name:string;
+  text:string;
+}
+interface activitiesData{
+  activitiesData:Activity[]
+}
+interface Info{
+  title:string;
+  subtitle:string;
+  description:string;
+}
+const Activities = ({activitiesData: activitiesData, Info: Info}) => {
   return (
     <section id="activities" className="py-20 lg:py-25 xl:py-30" >
       <div className="mx-auto max-w-c-1390 px-4 md:px-8 xl:px-0">
         <SectionHeader
-          headerInfo={{
-            title: "OUR ACTIVITIES",
-            subtitle: "Discover Our Wide Range of Activities",
-            description: `Explore various activities organized by our team, including events, workshops, and more. Get involved and enhance your experience.`,
-          }}
+          headerInfo={Info}
         />
 
         <motion.div
