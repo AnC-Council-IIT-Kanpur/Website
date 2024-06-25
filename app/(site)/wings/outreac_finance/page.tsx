@@ -132,71 +132,6 @@ const activitiesHeader = {
 
 
 
-const headerInfo = {
-  title: "DIRECTOR’S NOTE",
-  subtitle: "Director’s Note on Research",
-  description: `A personal note from the Director about the importance and impact of research at IIT-Kanpur.
-                ○ A slideshow of quotes from prominent researchers on campus.
-                ○ Each slide should include the quote, the researcher’s name, and their photo.`,
-};
-
-const quotes = [
-  {
-    id: 1,
-    name: "Dr. Alice Johnson",
-    designation: "Professor of Physics",
-    image: "/images/researcher/researcher-03.jpg",
-    content: "Research at IIT-Kanpur is paving the way for groundbreaking advancements in science and technology. Our efforts are aimed at making a global impact.",
-  },
-  {
-    id: 2,
-    name: "Dr. Bob Smith",
-    designation: "Head of Chemistry Department",
-    image: "/images/researcher/researcher-03.jpg",
-    content: "Innovation and curiosity drive our research. At IIT-Kanpur, we are committed to pushing the boundaries of knowledge and solving real-world problems.",
-  },
-  {
-    id: 3,
-    name: "Dr. Carol White",
-    designation: "Director of Research",
-    image: "/images/researcher/researcher-03.jpg",
-    content: "Our research initiatives are focused on creating sustainable solutions for the future. We believe in the power of collaboration and interdisciplinary research.",
-  },
-  {
-    id: 4,
-    name: "Dr. David Brown",
-    designation: "Associate Professor of Engineering",
-    image: "/images/researcher/researcher-03.jpg",
-    content: "The research community at IIT-Kanpur is dedicated to excellence and innovation. We are constantly exploring new frontiers and making significant contributions to society.",
-  },
-];
-
-
-const noteData: Note[] = [
-  {
-    id: "noteAlumni",
-    title: "Note to Alumni",
-    content: `Esteemed alumni are invited to stay connected with IIT-Kanpur. They can reach out via the
-      provided mailing address or contact details to share and guide the institution about research
-      opportunities, including internships. Alumni are encouraged to join the alumni WhatsApp
-      community to remain connected and contribute to the IIT-Kanpur research network perpetually.`,
-  },
-  {
-    id: "noteProfessors",
-    title: "Note to Professors",
-    content: `Distinguished professors are encouraged to stay in touch with IIT-Kanpur. They can connect
-      through the provided contact details and mailing address to inform the institution about research
-      opportunities and collaborations. Professors are invited to join the WhatsApp community to
-      engage and contribute to the ongoing research initiatives at IIT-Kanpur.`,
-  },
-];
-
-
-
-
-
-
-
 
 
 
@@ -219,8 +154,7 @@ const ResearchPage = () => {
       objectives={objectives} />
         <Activities headerInfo={activitiesHeader} 
       activities={activitiesData} />
-        <DirectorNote headerInfo={headerInfo} quotes={quotes}/>
-        <NoteSection notes={noteData}/>
+       
         
       
     </div>
