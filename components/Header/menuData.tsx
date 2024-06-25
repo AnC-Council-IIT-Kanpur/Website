@@ -66,6 +66,12 @@ const menuData: Menu[] = [
         newTab: false,
         path: "/error", //change
       },
+      {
+        id: 37,
+        title: "Outreach and Finance",
+        newTab: false,
+        path: "/wings/outreac_finance", //change
+      }
     ],
   },
 
