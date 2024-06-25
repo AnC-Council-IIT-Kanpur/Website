@@ -58,7 +58,7 @@ const menuData: Menu[] = [
         id: 35.1,
         title: "UG Academics",
         newTab: false,
-        path: "/support", //change
+        path: "/wings/UGacads", //change
       },
       {
         id: 36,
