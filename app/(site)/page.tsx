@@ -3,9 +3,13 @@ import Hero from "@/components/Hero";
 import Brands from "@/components/Brands";
 import Feature from "@/components/Features";
 import Team from "@/components/Teams";
+import Career from "@/components/Career";
+import International from "@/components/International";
 import About from "@/components/About";
 import FeaturesTab from "@/components/FeaturesTab";
 import TeamsTab from "@/components/TeamsTab";
+import CareersTab from "@/components/CareersTab";
+import InternationalsTab from "@/components/InternationalsTab";
 import FunFact from "@/components/FunFact";
 import Integration from "@/components/Integration";
 import CTA from "@/components/CTA";
@@ -28,9 +32,14 @@ export default function Home() {
       <Brands />
       <Feature />
       <Team />
+      <Career/>
+      <International/>
       <About />
       <FeaturesTab />
       <TeamsTab />
+      <CareersTab/>
+      <InternationalsTab/>
+
       {/* <FunFact /> */}
       {/* <Integration /> */}
       {/* <CTA /> */}
