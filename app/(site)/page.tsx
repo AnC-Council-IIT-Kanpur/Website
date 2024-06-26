@@ -28,7 +28,6 @@ export default function Home() {
       <Hero />
       <Brands />
       <Feature />
-      <Team />
       <About />
       <FeaturesTab />
       <TeamsTab />

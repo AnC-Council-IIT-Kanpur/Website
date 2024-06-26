@@ -1,0 +1,26 @@
+import { Metadata } from "next";
+import Team from "@/components/Teams";
+import SectionHeaderTop from "@/components/Common/SectionHeaderTop";
+import { cdevTeamData, researchTeamData } from "@/components/Teams/teamsData";
+
+export const metadata: Metadata = {
+  title: "Next.js Starter Template for SaaS Startups - Solid SaaS Boilerplate",
+  description: "This is Home for Solid Pro",
+};
+
+const headerInfo = {
+  title: "Meet the Team",
+  subtitle: "The team behind AnC Council",
+  description: `Our team is passionate and dedicated to making a positive impact on the campus community. We collaborate, using our diverse skills to address the needs of the campus junta and create a more inclusive environment for all.`}
+
+export default function Home() {
+  return (
+    <main>
+      <div className="mt-50 mb-50">
+        <SectionHeaderTop headerInfo={headerInfo}/>
+      </div>
+      <Team teamSectionData={researchTeamData}/>
+      <Team teamSectionData={cdevTeamData}/>
+    </main>
+  );
+}
