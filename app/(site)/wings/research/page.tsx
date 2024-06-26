@@ -10,7 +10,9 @@ import DirectorNote from "@/components/Quote/DirectorNote";
 import NoteSection from "@/components/Note/NoteSection";
 import { Note } from "@/types/note";
 
+
 import { faComments, faBullhorn, faObjectGroup, faMagic, faCalendarAlt, faStar, faDatabase, faGraduationCap, faGlobe, faHandsHelping } from '@fortawesome/free-solid-svg-icons';
+
 
 
 

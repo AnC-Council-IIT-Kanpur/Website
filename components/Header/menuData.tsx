@@ -58,7 +58,7 @@ const menuData: Menu[] = [
         id: 35.1,
         title: "UG Academics",
         newTab: false,
-        path: "/support", //change
+        path: "/wings/UGacads", //change
       },
       {
         id: 36,
@@ -66,6 +66,12 @@ const menuData: Menu[] = [
         newTab: false,
         path: "/error", //change
       },
+      {
+        id: 37,
+        title: "Outreach and Finance",
+        newTab: false,
+        path: "/wings/outreac_finance", //change
+      }
     ],
   },
 
@@ -73,7 +79,7 @@ const menuData: Menu[] = [
     id: 4,
     title: "Team",
     newTab: false,
-    path: "/support",
+    path: "/team",
   }
 ];
 

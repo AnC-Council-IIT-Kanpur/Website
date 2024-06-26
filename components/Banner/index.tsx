@@ -47,8 +47,9 @@ const Banner = ({ banners, title, description, socialLinks }) => {
             whileInView="visible"
             transition={{ duration: 0.5, delay: 0.1 }}
             viewport={{ once: true }}
-            className="md:w-1/2"
+            className="md:w-1/2 "
           >
+            <div className="bg-white bg-opacity-75 dark:bg-black dark:bg-opacity-75 p-6 rounded">
             <h4 className="mb-4.5 text-lg font-medium text-black dark:text-white">
               🏛️ {title}
             </h4>
@@ -98,6 +99,7 @@ const Banner = ({ banners, title, description, socialLinks }) => {
                   ))}
                 </ul>
               </motion.div>
+            </div>
             </div>
           </motion.div>
           <div className="md:w-1/2 mt-10 lg:mt-0"></div>
