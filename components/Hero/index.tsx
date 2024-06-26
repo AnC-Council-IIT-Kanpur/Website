@@ -50,7 +50,7 @@ const Hero = () => {
                 achieve your goals.
               </p>
 
-              <div className="mt-10 font-bold text-black">
+              <div className="mt-10 font-bold text-black dark:text-white">
                 Scroll down for more information related to AnC Wings and Clubs.
               </div>
             </div>

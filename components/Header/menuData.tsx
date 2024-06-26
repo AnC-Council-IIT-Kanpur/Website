@@ -27,7 +27,7 @@ const menuData: Menu[] = [
   // },
   {
     id: 3,
-    title: "Wings",
+    title: "Wings and Club",
     newTab: false,
     submenu: [
       {
@@ -66,6 +66,12 @@ const menuData: Menu[] = [
         newTab: false,
         path: "/error", //change
       },
+      {
+        id: 37,
+        title: "Product Club",
+        newTab: false,
+        path: "/Wings/ProductClub",
+      },
     ],
   },
 
@@ -79,7 +85,7 @@ const menuData: Menu[] = [
     id: 5,
     title : "Research Wing",
     newTab: false,
-    path: "Wings/research",
+    path: "/Wings/research",
   }
 ];
 

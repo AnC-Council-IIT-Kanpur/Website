@@ -27,6 +27,7 @@ const ResearchPage = () => {
         <ResearchGazette />
         <PastSessions />
         <DirectorNote />
+        <FeaturesTab />
         <NoteSection />
         
       
