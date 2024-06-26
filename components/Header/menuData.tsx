@@ -34,7 +34,7 @@ const menuData: Menu[] = [
         id: 31,
         title: "Career Development Wing",
         newTab: false,
-        path: "/blog", //change
+        path: "/wings/cdev", //change
       },
       {
         id: 34,
