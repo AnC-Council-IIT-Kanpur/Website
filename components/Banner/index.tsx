@@ -7,16 +7,6 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
-import SectionHeaderTop from "../Common/SectionHeaderTop";
-
-interface BannerProps {
-  title: string;
-  subtitle: string;
-  description: string;
-}
-
-const Banner: React.FC<BannerProps> = ({ title, subtitle, description }) => {
-
 const Banner = ({ banners, title, description, socialLinks }) => {
   return (
     <section className="relative overflow-hidden pb-20 pt-35 md:pt-40 xl:pb-25 xl:pt-46">
@@ -59,22 +49,6 @@ const Banner = ({ banners, title, description, socialLinks }) => {
             viewport={{ once: true }}
             className="md:w-1/2 "
           >
-
-            <section id="research-gazettes" className="py-20 lg:py-25 xl:py-30">
-              <div className="mx-auto max-w-c-1315 px-4 md:px-8 xl:px-0">
-                <SectionHeaderTop
-                  headerInfo={{
-                    title,
-                    subtitle,
-                    description,
-                  }}
-                />
-              </div>
-
-            </section>
-            {/* <h4 className="mb-4.5 text-lg font-medium text-black dark:text-white">
-              🏛️ Welcome to IIT-Kanpur's Research Wing
-
             <div className="bg-white bg-opacity-75 dark:bg-black dark:bg-opacity-75 p-6 rounded">
             <h4 className="mb-4.5 text-lg font-medium text-black dark:text-white">
               🏛️ {title}
