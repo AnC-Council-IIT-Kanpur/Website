@@ -6,8 +6,14 @@ import Activities from "@/components/Activities/Activities";
 import CalendarView from "@/components/CalenderView";
 import ResearchGazette from "@/components/ResearchGazette";
 import PastSessions from "@/components/PastSessions";
+import DirectorNote from "@/components/Quote/DirectorNote";
+import NoteSection from "@/components/Note/NoteSection";
+import { Note } from "@/types/note";
 
-import { faComments, faBullhorn, faObjectGroup, faMagic, faCalendarAlt, faStar, faDatabase, faGraduationCap, faGlobe, faHandsHelping, faBullseye } from '@fortawesome/free-solid-svg-icons';
+import { faComments, faBullhorn, faObjectGroup, faMagic, faCalendarAlt, faStar, faDatabase, faGraduationCap, faGlobe, faHandsHelping } from '@fortawesome/free-solid-svg-icons';
+
+
+
 
 export const metadata: Metadata = {
   title: "Career Development Wing Page",
@@ -52,7 +58,7 @@ const socialLinks = [
 
 const description = {
   title: "Providing an Extraordinary Boost in Career",
-  // highlight: "a Better Future",
+  // highlight: "sit emet (slogan)",
   text: "The Career Development Wing of the council aims to provide students proper guidance in Career related aspects and helps them develop careers in the fields that align with their professional interests."
 };
 
@@ -80,9 +86,10 @@ const objectives = [
   },
   {
     icon: faMagic,
+    // title: "Helping Students in Choosing the Best Careers",
     title: "Career Counselling",
     text: "Our mission is to assist the students in navigating their career paths and equipping them with the essential skills, knowledge, and resources necessary for success in their chosen fields.",
-  },
+  }
 ];
 
 
@@ -90,32 +97,32 @@ const activitiesData = [
   {
     icon: faCalendarAlt,
     name: "Event Organisation",
-    text: "Plan and organise a variety of events such as talks, sessions, and workshops covering career options, guidance, and departmental orientations. Organise sessions including highly-qualified speakers from various fields to motivate students.",
+    text: "Plan and organise a variety of events such as talks, sessions, and workshops covering career options, research opportunities, guidance, and departmental orientations. Organise a lab tour for new students to familiarise them with the campus research environment.",
   },
   {
     icon: faStar,
-    name: "Career Guidance",
-    text: "Plan and execute numerous events to spread awareness about various career opportunities and prepare students for the same. High-professionals come as speakers to provide guidance about their respective fields.",
+    name: "Flagship Events",
+    text: "Plan and execute the annual National Students’ Research Convention (NSRC) and Institute Research Symposium (IRS). Introduce new ideas for these events and ensure their smooth and efficient implementation.",
   },
   {
-    icon: faHandsHelping,
-    name: "Career Connect",
-    text: "Annual Flagship event conducted every year in the first week of March.  This event aims to inspire and empower both undergraduate and postgraduate students by providing them with the necessary tools and information to make well-informed decisions in their professional, social, and personal lives.",
+    icon: faDatabase,
+    name: "Information Management",
+    text: "Collate and maintain a database of research projects, including lists of professors, their current projects, student involvement, and available research positions with qualifications required. Collaborate with the DORD office to organise and streamline campus research projects and activities.",
   },
   {
     icon: faGraduationCap,
-    name: "Internship and Placement Preparation",
-    text: "Host workshops on resume-making, Group Discussions and Interview preparations. Conducting mock interviews so that they get a maximum chance of being shortlisted and are able to create a good impression.",
+    name: "Funding and Grant Support",
+    text: "Host workshops on writing research proposals and applying for grants. Provide a database of available funding opportunities and deadlines. Highlight success stories and achievements in research to motivate and inspire students.",
   },
   {
-    icon: faBullseye,
-    name: "Upskilling",
-    text: "Conduct numerous sessions to upgrade skills of students to current industry requirements. Provide best resources to students so that they can make best use of their free time to learn new skills.",
+    icon: faGlobe,
+    name: "Online Management",
+    text: "Manage the research portal on the council’s website, ensuring it is up-to-date and user-friendly. Maintain the official websites for NSRC and IRS. Oversee the social media presence for the research wing and related activities.",
   },
   {
     icon: faHandsHelping,
-    name: "Alumni Sessions",
-    text: "Alumni will connect with the students to foster a sense of community, promote learning beyond the classroom, and provide valuable connections and resources as the students navigate their academic and professional journeys.",
+    name: "Support and Guidance",
+    text: "Provide guidance sessions for students interested in research. Offer support to students working on research projects through mentorship and resources. Promote research activities and achievements through various channels to increase visibility.",
   },
 ];
 
@@ -127,8 +134,8 @@ const activitiesHeader = {
 
 
 const calendarInfo = {
-  title: "Upcoming Talks & Seminars",
-  description: `The Research wing routinely conducts a number of events, talks, and sessions, covering various aspects of research and work (including career options, research opportunities (on & off campus), guidance sessions, departmental orientation sessions, and technical workshops). Managers of the wing bear the responsibility of organizing these sessions with the assistance of the council secretaries.
+  title: "Upcoming Sessions & Workshops",
+  description: `The Career Development wing routinely conducts a number of events, workshops, and sessions which are aimed towards the comprehensive enhancement of the skills of the students. Through these events, the students get enlightened about the various career opportunities available. They get the chance to expand their knowledge about career options and on & off campus research opportunities. The wing also organises guidance sessions, departmental orientation sessions, and technical workshops for the students. Managers of the wing bear the responsibility of organizing these sessions with the assistance of the council secretaries.
   Join us for insightful talks and seminars hosted by leading experts in various fields. Stay updated with our calendar to never miss an event.`,
   buttonText: "View Calendar",
   buttonUrl: "#"
@@ -142,73 +149,27 @@ const PastSessionsHeader = {
   description: "Find resources like presentations and recordings of our past sessions.",
 };
 
-const BlogsHeader = {
-    title: "BLOGS",
-    subtitle: "Details of Our Blog Series",
-    description: "Find resources like presentations and recordings of our blogs.",
-  };
-
 const sessions = [
   {
-    title: "Group Discussions",
-    description: "A session for Y22s and Y21s for GD preparation.",
-    image: "/images/banner/GD.jpg", // Add the path to the image
+    title: "Session 1: Introduction to React",
+    description: "An introductory session on React fundamentals.",
+    image: "/images/banner/session1.jpg", // Add the path to the image
     resources: [
-      { type: "Presentation", link: "https://www.instagram.com/p/C8P2_7wOMkD/?utm_source=ig_web_copy_link", label: "View Presentation" },
+      { type: "Presentation", link: "#", label: "View Presentation" },
       { type: "Recording", link: "#", label: "Watch Recording" },
     ],
   },
   {
-    title: "Resume Making Session",
-    description: "A session to mentor Y22s and Y21s for resume-making.",
-    image: "/images/banner/resume.jpg", // Add the path to the image
+    title: "Session 2: Advanced JavaScript",
+    description: "A deep dive into advanced JavaScript concepts.",
+    image: "/images/banner/session2.jpg", // Add the path to the image
     resources: [
-      { type: "Presentation", link: "https://www.instagram.com/p/C8Oh6Z2RVdE/?utm_source=ig_web_copy_link", label: "View Presentation" },
-      { type: "Recording", link: "#", label: "Watch Recording" },
-    ],
-  },
-  {
-    title: "Internship Training Program - For Quant",
-    description: "A training program for Y22s to mentor them for Quant profile.",
-    image: "/images/banner/quant.jpg", // Add the path to the image
-    resources: [
-      { type: "Presentation", link: "https://www.instagram.com/p/C6jVF61xg2a/?utm_source=ig_web_copy_link", label: "View Presentation" },
+      { type: "Presentation", link: "#", label: "View Presentation" },
       { type: "Recording", link: "#", label: "Watch Recording" },
     ],
   },
   // Add more sessions as needed
 ];
-
-const Blogs = [
-    {
-      title: "The More You Know",
-      description: "For Quant Profile by Varun Tokas",
-      image: "/images/banner/quantBlog.jpg", // Add the path to the image
-      resources: [
-        { type: "Presentation", link: "#", label: "View Presentation" },
-        { type: "Recording", link: "#", label: "Watch Recording" },
-      ],
-    },
-    {
-      title: "The More You Know",
-      description: "For Core Profile by Pranjal Singh",
-      image: "/images/banner/coreBlog.jpg", // Add the path to the image
-      resources: [
-        { type: "Presentation", link: "#", label: "View Presentation" },
-        { type: "Recording", link: "#", label: "Watch Recording" },
-      ],
-    },
-    {
-      title: "The More You Know",
-      description: "For Finance Profile by Siddhant Singh",
-      image: "/images/banner/financeBlog.jpg", // Add the path to the image
-      resources: [
-        { type: "Presentation", link: "#", label: "View Presentation" },
-        { type: "Recording", link: "#", label: "Watch Recording" },
-      ],
-    },
-    // Add more sessions as needed
-  ];
 
 
 const headerInfo = {
@@ -250,40 +211,75 @@ const quotes = [
   },
 ];
 
-const CareerCHeader = {
-    title: "CAREER CONNECT",
-    subtitle: "Previous Years' Career Connect",
-    description: `Details about our Annual Flagship event`,
-  };
-  
-const CareerCData = [
-    {
-      id: 1,
-      icon: "/images/icon/icon-01.svg",
-      title: "CAREER CONNECT 2023",
-      description: "Career Connect held in 2023.",
-      pdfUrl: "#",
-      year: 2023,
-      area: "Technology",
-    },
-    {
-      id: 2,
-      icon: "/images/icon/icon-qc.svg",
-      title: "CAREER CONNECT 2022",
-      description: "Career Connect held in 2022.",
-      pdfUrl: "#",
-      year: 2022,
-      area: "Science",
-    },
-    // Add more gazette data as needed
-   
-  ];
+
+const noteData: Note[] = [
+  {
+    id: "noteAlumni",
+    title: "Note to Alumni",
+    content: `Esteemed alumni are invited to stay connected with IIT-Kanpur. They can reach out via the
+      provided mailing address or contact details to share and guide the institution about research
+      opportunities, including internships. Alumni are encouraged to join the alumni WhatsApp
+      community to remain connected and contribute to the IIT-Kanpur research network perpetually.`,
+  },
+  {
+    id: "noteProfessors",
+    title: "Note to Professors",
+    content: `Distinguished professors are encouraged to stay in touch with IIT-Kanpur. They can connect
+      through the provided contact details and mailing address to inform the institution about research
+      opportunities and collaborations. Professors are invited to join the WhatsApp community to
+      engage and contribute to the ongoing research initiatives at IIT-Kanpur.`,
+  },
+];
+
+const ResearchGazetteHeader = {
+  title: "Resources",
+  subtitle: "Archive of Preparation Material",
+  description: `This is mostly intended for keeping up your momentum from now onwards till tests and interviews, so that you don’t get depleted of preparation material at any stage.`,
+};
+
+const researchGazetteData = [
+  {
+    id: 1,
+    icon: "/images/icon/icon-01.svg",
+    title: "Resume Repositories",
+    description: "Links to resumes of seniors who have successfully secured positions in leading firms.",
+    pdfUrl: "/pdfs/research-gazette-2023.pdf",
+    year: 2023,
+    area: "Technology",
+  },
+  {
+    id: 2,
+    icon: "/images/icon/icon-qc.svg",
+    title: "Preparation Resources",
+    description: "Resources for the students to prepare for internships and placements for various domains.",
+    pdfUrl: "/pdfs/research-gazette-2022.pdf",
+    year: 2022,
+    area: "Science",
+  },
+  // Add more gazette data as needed
+ 
+];
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 const ResearchPage = () => {
   return (
     <div>
         <Banner banners={banners} 
-      title="Welcome to Career Development Wing"
+      title="Welcome to IIT-Kanpur's Career Development Wing" 
       description={description} 
       socialLinks={socialLinks} />
         <ObjectivesSection title="Our Objectives" 
@@ -291,8 +287,12 @@ const ResearchPage = () => {
         <Activities headerInfo={activitiesHeader} 
       activities={activitiesData} />
         <CalendarView calendarInfo={calendarInfo}/>
-        <ResearchGazette headerInfo={CareerCHeader} data={CareerCData}/>
+        <ResearchGazette headerInfo={ResearchGazetteHeader} data={researchGazetteData}/>
         <PastSessions PastSessionsHeader={PastSessionsHeader} sessions={sessions} />
+        <DirectorNote headerInfo={headerInfo} quotes={quotes}/>
+        <NoteSection notes={noteData}/>
+        
+      
     </div>
   );
 };
