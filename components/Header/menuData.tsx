@@ -71,6 +71,12 @@ const menuData: Menu[] = [
         title: "Outreach and Finance",
         newTab: false,
         path: "/wings/outreac_finance", //change
+      },
+      {
+        id: 38,
+        title: "Product Club",
+        newTab: false,
+        path: "/Wings/ProductClub",
       }
     ],
   },
@@ -84,11 +90,3 @@ const menuData: Menu[] = [
 ];
 
 export default menuData;
-
-// ,
-//   {
-//     id: 5,
-//     title : "Research Wing",
-//     newTab: false,
-//     path: "Wings/research",
-//   }

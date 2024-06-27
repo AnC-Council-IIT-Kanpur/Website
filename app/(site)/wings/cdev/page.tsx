@@ -6,15 +6,8 @@ import Activities from "@/components/Activities/Activities";
 import CalendarView from "@/components/CalenderView";
 import ResearchGazette from "@/components/ResearchGazette";
 import PastSessions from "@/components/PastSessions";
-import DirectorNote from "@/components/Quote/DirectorNote";
-import NoteSection from "@/components/Note/NoteSection";
-import { Note } from "@/types/note";
-import Team from "./Teams";
 
 import { faComments, faBullhorn, faObjectGroup, faMagic, faCalendarAlt, faStar, faDatabase, faGraduationCap, faGlobe, faHandsHelping, faBullseye } from '@fortawesome/free-solid-svg-icons';
-
-
-
 
 export const metadata: Metadata = {
   title: "Career Development Wing Page",
@@ -28,8 +21,8 @@ const banners = [
     className: 'dark:hidden',
     slides: [
       { src: '/images/banner/anciitk_cover.jpeg', alt: 'Slide 1' },
-      { src: '/images/banner/light-02.jpeg', alt: 'Slide 2' },
-      { src: '/images/banner/light-03.jpeg', alt: 'Slide 3' }
+      { src: '/images/banner/image2.jpeg', alt: 'Slide 2' },
+      { src: '/images/banner/image3.jpg', alt: 'Slide 3' }
     ]
   },
   {
@@ -58,9 +51,9 @@ const socialLinks = [
 ];
 
 const description = {
-  title: "Pioneering Research for",
-  highlight: "a Better Future",
-  text: "The Research Wing of the council aims at cultivating and promoting research interests in the student community. It aims to provide students the freedom and opportunities to work upon diverse areas of business, technology and existing industrial and national challenges as well as pursue their own ideas so as to become innovators and future leaders."
+  title: "Providing an Extraordinary Boost in Career",
+  // highlight: "a Better Future",
+  text: "The Career Development Wing of the council aims to provide students proper guidance in Career related aspects and helps them develop careers in the fields that align with their professional interests."
 };
 
 
@@ -69,23 +62,26 @@ const description = {
 const objectives = [
   {
     icon: faComments,
-    title: "Increase Awareness and Promote Research Culture ",
-    text: "Raise awareness about the variety of research activities on campus among the student community. Foster a thriving research culture by motivating students to engage in research activities.",
+    // title: "To Organise Tests, Workshops and guiding sessions for Skills ",
+    // title: "Providing Assistance to Students for upskilling them",
+    title: "Career Preparation",
+    text: "We organize workshops and training programs to develop essential professional skills, including communication, leadership, and technical expertise. ",
   },
   {
     icon: faBullhorn,
-    title: "Showcase Excellence and Provide Support and Guidance",
-    text: "Offer support and guidance to budding researchers and research enthusiasts. Highlight and give voice to students excelling in the field of research.",
+    title: "Calling the best Internship Opportunities for Students",
+    text: "We aim to call internship oportunities by the government and private agencies and companies for the students.",
   },
   {
     icon: faObjectGroup,
-    title: "Organise Events and Cultivate Interests",
-    text: "Conduct events, talks, and sessions related to various aspects of research and career opportunities. Encourage research interests among students and provide platforms to showcase their research potential.",
+    // title: "To Contact Alumni & Professionals in Diverse Career Fields",
+    title: "Career Awareness",
+    text: "We contact our alums as well as other professionals to help our students connect with them so that they get knowledge and get enlightened in developing careers in diverse areas.",
   },
   {
     icon: faMagic,
-    title: "Manage Online Presence and Alumni Engagement",
-    text: "Oversee the research portal on the council’s website, NSRC and IRS official sites, and social media handles. Engage with alumni who are active in research to mentor current students and provide networking opportunities.",
+    title: "Career Counselling",
+    text: "Our mission is to assist the students in navigating their career paths and equipping them with the essential skills, knowledge, and resources necessary for success in their chosen fields.",
   },
 ];
 
@@ -254,55 +250,6 @@ const quotes = [
   },
 ];
 
-
-const noteData: Note[] = [
-  {
-    id: "noteAlumni",
-    title: "Note to Alumni",
-    content: `Esteemed alumni are invited to stay connected with IIT-Kanpur. They can reach out via the
-      provided mailing address or contact details to share and guide the institution about research
-      opportunities, including internships. Alumni are encouraged to join the alumni WhatsApp
-      community to remain connected and contribute to the IIT-Kanpur research network perpetually.`,
-  },
-  {
-    id: "noteProfessors",
-    title: "Note to Professors",
-    content: `Distinguished professors are encouraged to stay in touch with IIT-Kanpur. They can connect
-      through the provided contact details and mailing address to inform the institution about research
-      opportunities and collaborations. Professors are invited to join the WhatsApp community to
-      engage and contribute to the ongoing research initiatives at IIT-Kanpur.`,
-  },
-];
-
-const ResearchGazetteHeader = {
-  title: "RESEARCH GAZETTES",
-  subtitle: "Archive of Previous Year's Research Gazettes",
-  description: `Downloadable PDF versions of each gazette with summaries. Filter by year or research area.`,
-};
-
-const researchGazetteData = [
-  {
-    id: 1,
-    icon: "/images/icon/icon-01.svg",
-    title: "Research Gazette 2023",
-    description: "Summary of research activities and achievements in 2023.",
-    pdfUrl: "/pdfs/research-gazette-2023.pdf",
-    year: 2023,
-    area: "Technology",
-  },
-  {
-    id: 2,
-    icon: "/images/icon/icon-qc.svg",
-    title: "Research Gazette 2022",
-    description: "Summary of research activities and achievements in 2022.",
-    pdfUrl: "/pdfs/research-gazette-2022.pdf",
-    year: 2022,
-    area: "Science",
-  },
-  // Add more gazette data as needed
- 
-];
-
 const CareerCHeader = {
     title: "CAREER CONNECT",
     subtitle: "Previous Years' Career Connect",
@@ -332,42 +279,20 @@ const CareerCData = [
    
   ];
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 const ResearchPage = () => {
   return (
     <div>
         <Banner banners={banners} 
-      title="Welcome to IIT-Kanpur's Research Wing" 
+      title="Welcome to Career Development Wing"
       description={description} 
       socialLinks={socialLinks} />
         <ObjectivesSection title="Our Objectives" 
       objectives={objectives} />
         <Activities headerInfo={activitiesHeader} 
       activities={activitiesData} />
-        <Team />
         <CalendarView calendarInfo={calendarInfo}/>
-        <ResearchGazette headerInfo={ResearchGazetteHeader} data={researchGazetteData}/>
         <ResearchGazette headerInfo={CareerCHeader} data={CareerCData}/>
-        <PastSessions  PastSessionsHeader={BlogsHeader} sessions={Blogs}/>
         <PastSessions PastSessionsHeader={PastSessionsHeader} sessions={sessions} />
-        <DirectorNote headerInfo={headerInfo} quotes={quotes}/>
-        <NoteSection notes={noteData}/>
-        
-      
     </div>
   );
 };
