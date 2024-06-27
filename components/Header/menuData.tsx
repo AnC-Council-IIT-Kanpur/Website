@@ -76,7 +76,7 @@ const menuData: Menu[] = [
         id: 38,
         title: "Product Club",
         newTab: false,
-        path: "/Wings/ProductClub",
+        path: "/wings/productclub",
       }
     ],
   },

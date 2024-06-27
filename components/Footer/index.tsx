@@ -126,7 +126,7 @@ const Footer = () => {
                     </li>
                     <li>
                       <a
-                        href="/Wings/ProductClub"
+                        href="/wings/productclub"
                         className="mb-3 inline-block hover:text-primary"
                       >
                         Product Club

@@ -33,9 +33,12 @@ const ObjectivesSection = ({ title, objectives }) => {
                 icon={objective.icon}
                 className="text-4xl mb-4 p-4 bg-gradient-to-br from-blue-500 to-blue-700 text-white rounded-full shadow-md transition-all duration-500 transform hover:rotate-12"
               />
-              <h3 className="text-xl font-semibold mb-2 text-gray-800 dark:text-white">
+              <h3 className="text-xl text-center font-semibold mb-2 text-gray-800 dark:text-white">
                 {objective.title}
               </h3>
+              <h4 className="text-xxl text-center font-bold text-blue-500 mb-2">
+                {objective.rank}
+              </h4>
               <p className="text-sm text-gray-600 dark:text-gray-300 text-center">
                 {objective.text}
               </p>
