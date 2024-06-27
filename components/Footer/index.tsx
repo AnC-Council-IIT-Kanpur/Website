@@ -124,6 +124,14 @@ const Footer = () => {
                         Career Dev.
                       </a>
                     </li>
+                    <li>
+                      <a
+                        href="/Wings/ProductClub"
+                        className="mb-3 inline-block hover:text-primary"
+                      >
+                        Product Club
+                      </a>
+                    </li>
                   </ul>
                 </motion.div>
 

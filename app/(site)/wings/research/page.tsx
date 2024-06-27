@@ -9,13 +9,7 @@ import PastSessions from "@/components/PastSessions";
 import DirectorNote from "@/components/Quote/DirectorNote";
 import NoteSection from "@/components/Note/NoteSection";
 import { Note } from "@/types/note";
-
-
 import { faComments, faBullhorn, faObjectGroup, faMagic, faCalendarAlt, faStar, faDatabase, faGraduationCap, faGlobe, faHandsHelping } from '@fortawesome/free-solid-svg-icons';
-
-
-
-
 
 export const metadata: Metadata = {
   title: "Research Wing Page",
@@ -257,21 +251,6 @@ const researchGazetteData = [
   // Add more gazette data as needed
  
 ];
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 const ResearchPage = () => {
   return (
