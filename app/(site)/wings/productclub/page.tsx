@@ -52,9 +52,9 @@ const socialLinks = [
 ];
 
 const description = {
-  title: "Pioneering Research for",
-  highlight: "a Better Future",
-  text: "The Research Wing of the council aims at cultivating and promoting research interests in the student community. It aims to provide students the freedom and opportunities to work upon diverse areas of business, technology and existing industrial and national challenges as well as pursue their own ideas so as to become innovators and future leaders."
+  title: "Innovating Solutions for",
+  highlight: "a Sustainable Future",
+  text: "The Product Club at IIT-Kanpur is dedicated to enhance creativity and innovation among students. We provide opportunities to explore product design, development, and entrepreneurship, helping students to transform their ideas into real-world solutions."
 };
 
 
@@ -67,9 +67,9 @@ const ProductPage = () => {
         <CalendarView />
         <ResearchGazette />
         <PastSessions />
-        <DirectorNote />
+        {/* <DirectorNote /> */}
         <FeaturesTab />
-        <NoteSection />
+        {/* <NoteSection /> */}
 
     </div>
   );
