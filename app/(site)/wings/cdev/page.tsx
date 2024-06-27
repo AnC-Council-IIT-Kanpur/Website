@@ -6,15 +6,8 @@ import Activities from "@/components/Activities/Activities";
 import CalendarView from "@/components/CalenderView";
 import ResearchGazette from "@/components/ResearchGazette";
 import PastSessions from "@/components/PastSessions";
-import DirectorNote from "@/components/Quote/DirectorNote";
-import NoteSection from "@/components/Note/NoteSection";
-import { Note } from "@/types/note";
-import Team from "./Teams";
 
 import { faComments, faBullhorn, faObjectGroup, faMagic, faCalendarAlt, faStar, faDatabase, faGraduationCap, faGlobe, faHandsHelping, faBullseye } from '@fortawesome/free-solid-svg-icons';
-
-
-
 
 export const metadata: Metadata = {
   title: "Career Development Wing Page",
@@ -257,55 +250,6 @@ const quotes = [
   },
 ];
 
-
-const noteData: Note[] = [
-  {
-    id: "noteAlumni",
-    title: "Note to Alumni",
-    content: `Esteemed alumni are invited to stay connected with IIT-Kanpur. They can reach out via the
-      provided mailing address or contact details to share and guide the institution about research
-      opportunities, including internships. Alumni are encouraged to join the alumni WhatsApp
-      community to remain connected and contribute to the IIT-Kanpur research network perpetually.`,
-  },
-  {
-    id: "noteProfessors",
-    title: "Note to Professors",
-    content: `Distinguished professors are encouraged to stay in touch with IIT-Kanpur. They can connect
-      through the provided contact details and mailing address to inform the institution about research
-      opportunities and collaborations. Professors are invited to join the WhatsApp community to
-      engage and contribute to the ongoing research initiatives at IIT-Kanpur.`,
-  },
-];
-
-const ResearchGazetteHeader = {
-  title: "Resources",
-  subtitle: "Archive of Preparation Material",
-  description: `This is mostly intended for keeping up your momentum from now onwards till tests and interviews, so that you don’t get depleted of preparation material at any stage.`,
-};
-
-const researchGazetteData = [
-  {
-    id: 1,
-    icon: "/images/icon/icon-01.svg",
-    title: "Resume Repositories",
-    description: "Links to resumes of seniors who have successfully secured positions in leading firms.",
-    pdfUrl: "/pdfs/research-gazette-2023.pdf",
-    year: 2023,
-    area: "Technology",
-  },
-  {
-    id: 2,
-    icon: "/images/icon/icon-qc.svg",
-    title: "Preparation Resources",
-    description: "Resources for the students to prepare for internships and placements for various domains.",
-    pdfUrl: "/pdfs/research-gazette-2022.pdf",
-    year: 2022,
-    area: "Science",
-  },
-  // Add more gazette data as needed
- 
-];
-
 const CareerCHeader = {
     title: "CAREER CONNECT",
     subtitle: "Previous Years' Career Connect",
@@ -335,42 +279,20 @@ const CareerCData = [
    
   ];
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 const ResearchPage = () => {
   return (
     <div>
         <Banner banners={banners} 
-      title="Welcome to IIT-Kanpur's Career Development Wing" 
+      title="Welcome to Career Development Wing"
       description={description} 
       socialLinks={socialLinks} />
         <ObjectivesSection title="Our Objectives" 
       objectives={objectives} />
         <Activities headerInfo={activitiesHeader} 
       activities={activitiesData} />
-        <Team />
         <CalendarView calendarInfo={calendarInfo}/>
-        <ResearchGazette headerInfo={ResearchGazetteHeader} data={researchGazetteData}/>
         <ResearchGazette headerInfo={CareerCHeader} data={CareerCData}/>
-        <PastSessions  PastSessionsHeader={BlogsHeader} sessions={Blogs}/>
         <PastSessions PastSessionsHeader={PastSessionsHeader} sessions={sessions} />
-        <DirectorNote headerInfo={headerInfo} quotes={quotes}/>
-        <NoteSection notes={noteData}/>
-        
-      
     </div>
   );
 };
