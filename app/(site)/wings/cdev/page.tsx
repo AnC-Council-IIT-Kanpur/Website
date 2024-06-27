@@ -9,17 +9,16 @@ import PastSessions from "@/components/PastSessions";
 import DirectorNote from "@/components/Quote/DirectorNote";
 import NoteSection from "@/components/Note/NoteSection";
 import { Note } from "@/types/note";
+import Team from "./Teams";
 
-
-import { faComments, faBullhorn, faObjectGroup, faMagic, faCalendarAlt, faStar, faDatabase, faGraduationCap, faGlobe, faHandsHelping } from '@fortawesome/free-solid-svg-icons';
-
+import { faComments, faBullhorn, faObjectGroup, faMagic, faCalendarAlt, faStar, faDatabase, faGraduationCap, faGlobe, faHandsHelping, faBullseye } from '@fortawesome/free-solid-svg-icons';
 
 
 
 
 export const metadata: Metadata = {
-  title: "Research Wing Page",
-  description: "This is the Research Wing page for ANC council",
+  title: "Career Development Wing Page",
+  description: "This is the Career Development Wing page for ANC council",
   // other metadata
 };
 
@@ -95,32 +94,32 @@ const activitiesData = [
   {
     icon: faCalendarAlt,
     name: "Event Organisation",
-    text: "Plan and organise a variety of events such as talks, sessions, and workshops covering career options, research opportunities, guidance, and departmental orientations. Organise a lab tour for new students to familiarise them with the campus research environment.",
+    text: "Plan and organise a variety of events such as talks, sessions, and workshops covering career options, guidance, and departmental orientations. Organise sessions including highly-qualified speakers from various fields to motivate students.",
   },
   {
     icon: faStar,
-    name: "Flagship Events",
-    text: "Plan and execute the annual National Students’ Research Convention (NSRC) and Institute Research Symposium (IRS). Introduce new ideas for these events and ensure their smooth and efficient implementation.",
-  },
-  {
-    icon: faDatabase,
-    name: "Information Management",
-    text: "Collate and maintain a database of research projects, including lists of professors, their current projects, student involvement, and available research positions with qualifications required. Collaborate with the DORD office to organise and streamline campus research projects and activities.",
-  },
-  {
-    icon: faGraduationCap,
-    name: "Funding and Grant Support",
-    text: "Host workshops on writing research proposals and applying for grants. Provide a database of available funding opportunities and deadlines. Highlight success stories and achievements in research to motivate and inspire students.",
-  },
-  {
-    icon: faGlobe,
-    name: "Online Management",
-    text: "Manage the research portal on the council’s website, ensuring it is up-to-date and user-friendly. Maintain the official websites for NSRC and IRS. Oversee the social media presence for the research wing and related activities.",
+    name: "Career Guidance",
+    text: "Plan and execute numerous events to spread awareness about various career opportunities and prepare students for the same. High-professionals come as speakers to provide guidance about their respective fields.",
   },
   {
     icon: faHandsHelping,
-    name: "Support and Guidance",
-    text: "Provide guidance sessions for students interested in research. Offer support to students working on research projects through mentorship and resources. Promote research activities and achievements through various channels to increase visibility.",
+    name: "Career Connect",
+    text: "Annual Flagship event conducted every year in the first week of March.  This event aims to inspire and empower both undergraduate and postgraduate students by providing them with the necessary tools and information to make well-informed decisions in their professional, social, and personal lives.",
+  },
+  {
+    icon: faGraduationCap,
+    name: "Internship and Placement Preparation",
+    text: "Host workshops on resume-making, Group Discussions and Interview preparations. Conducting mock interviews so that they get a maximum chance of being shortlisted and are able to create a good impression.",
+  },
+  {
+    icon: faBullseye,
+    name: "Upskilling",
+    text: "Conduct numerous sessions to upgrade skills of students to current industry requirements. Provide best resources to students so that they can make best use of their free time to learn new skills.",
+  },
+  {
+    icon: faHandsHelping,
+    name: "Alumni Sessions",
+    text: "Alumni will connect with the students to foster a sense of community, promote learning beyond the classroom, and provide valuable connections and resources as the students navigate their academic and professional journeys.",
   },
 ];
 
@@ -147,27 +146,73 @@ const PastSessionsHeader = {
   description: "Find resources like presentations and recordings of our past sessions.",
 };
 
+const BlogsHeader = {
+    title: "BLOGS",
+    subtitle: "Details of Our Blog Series",
+    description: "Find resources like presentations and recordings of our blogs.",
+  };
+
 const sessions = [
   {
-    title: "Session 1: Introduction to React",
-    description: "An introductory session on React fundamentals.",
-    image: "/images/banner/light-03.jpeg", // Add the path to the image
+    title: "Group Discussions",
+    description: "A session for Y22s and Y21s for GD preparation.",
+    image: "/images/banner/GD.jpg", // Add the path to the image
     resources: [
-      { type: "Presentation", link: "#", label: "View Presentation" },
+      { type: "Presentation", link: "https://www.instagram.com/p/C8P2_7wOMkD/?utm_source=ig_web_copy_link", label: "View Presentation" },
       { type: "Recording", link: "#", label: "Watch Recording" },
     ],
   },
   {
-    title: "Session 2: Advanced JavaScript",
-    description: "A deep dive into advanced JavaScript concepts.",
-    image: "/images/banner/light-03.jpeg", // Add the path to the image
+    title: "Resume Making Session",
+    description: "A session to mentor Y22s and Y21s for resume-making.",
+    image: "/images/banner/resume.jpg", // Add the path to the image
     resources: [
-      { type: "Presentation", link: "#", label: "View Presentation" },
+      { type: "Presentation", link: "https://www.instagram.com/p/C8Oh6Z2RVdE/?utm_source=ig_web_copy_link", label: "View Presentation" },
+      { type: "Recording", link: "#", label: "Watch Recording" },
+    ],
+  },
+  {
+    title: "Internship Training Program - For Quant",
+    description: "A training program for Y22s to mentor them for Quant profile.",
+    image: "/images/banner/quant.jpg", // Add the path to the image
+    resources: [
+      { type: "Presentation", link: "https://www.instagram.com/p/C6jVF61xg2a/?utm_source=ig_web_copy_link", label: "View Presentation" },
       { type: "Recording", link: "#", label: "Watch Recording" },
     ],
   },
   // Add more sessions as needed
 ];
+
+const Blogs = [
+    {
+      title: "The More You Know",
+      description: "For Quant Profile by Varun Tokas",
+      image: "/images/banner/quantBlog.jpg", // Add the path to the image
+      resources: [
+        { type: "Presentation", link: "#", label: "View Presentation" },
+        { type: "Recording", link: "#", label: "Watch Recording" },
+      ],
+    },
+    {
+      title: "The More You Know",
+      description: "For Core Profile by Pranjal Singh",
+      image: "/images/banner/coreBlog.jpg", // Add the path to the image
+      resources: [
+        { type: "Presentation", link: "#", label: "View Presentation" },
+        { type: "Recording", link: "#", label: "Watch Recording" },
+      ],
+    },
+    {
+      title: "The More You Know",
+      description: "For Finance Profile by Siddhant Singh",
+      image: "/images/banner/financeBlog.jpg", // Add the path to the image
+      resources: [
+        { type: "Presentation", link: "#", label: "View Presentation" },
+        { type: "Recording", link: "#", label: "Watch Recording" },
+      ],
+    },
+    // Add more sessions as needed
+  ];
 
 
 const headerInfo = {
@@ -258,6 +303,35 @@ const researchGazetteData = [
  
 ];
 
+const CareerCHeader = {
+    title: "CAREER CONNECT",
+    subtitle: "Previous Years' Career Connect",
+    description: `Details about our Annual Flagship event`,
+  };
+  
+const CareerCData = [
+    {
+      id: 1,
+      icon: "/images/icon/icon-01.svg",
+      title: "CAREER CONNECT 2023",
+      description: "Career Connect held in 2023.",
+      pdfUrl: "#",
+      year: 2023,
+      area: "Technology",
+    },
+    {
+      id: 2,
+      icon: "/images/icon/icon-qc.svg",
+      title: "CAREER CONNECT 2022",
+      description: "Career Connect held in 2022.",
+      pdfUrl: "#",
+      year: 2022,
+      area: "Science",
+    },
+    // Add more gazette data as needed
+   
+  ];
+
 
 
 
@@ -284,8 +358,11 @@ const ResearchPage = () => {
       objectives={objectives} />
         <Activities headerInfo={activitiesHeader} 
       activities={activitiesData} />
+        <Team />
         <CalendarView calendarInfo={calendarInfo}/>
         <ResearchGazette headerInfo={ResearchGazetteHeader} data={researchGazetteData}/>
+        <ResearchGazette headerInfo={CareerCHeader} data={CareerCData}/>
+        <PastSessions  PastSessionsHeader={BlogsHeader} sessions={Blogs}/>
         <PastSessions PastSessionsHeader={PastSessionsHeader} sessions={sessions} />
         <DirectorNote headerInfo={headerInfo} quotes={quotes}/>
         <NoteSection notes={noteData}/>
