@@ -16,7 +16,7 @@ const Banner = ({ banners, title, description, socialLinks }) => {
             key={index}
             modules={[Pagination, Navigation, Autoplay]}
             pagination={{ clickable: true }}
-            navigation={true}
+            navigation={false}
             autoplay={{ delay: banner.delay, disableOnInteraction: false }}
             loop={true}
             speed={2000}
