@@ -150,7 +150,7 @@ const researchTeamMebers: Team[] = [
 const researchTeamData: TeamSection = {
   title: "Meet Our",
   subtitle: "Research Wing Team",
-  description: "Brain behind the innovation, contact them for any query",
+  description: "Innovators driving progress, contact us for any questions",
   teams: researchTeamMebers
 }
 
@@ -185,7 +185,7 @@ const acadesTeamMebers: Team[] = [
 const acadesTeamData: TeamSection = {
   title: "Meet Our",
   subtitle: "Academics Wing Team",
-  description: "Brain behind the innovation, contact them for any query",
+  description: "Minds shaping the future, contact us for any inquiries",
   teams: acadesTeamMebers
 }
 
@@ -232,7 +232,7 @@ const interNationalTeamMebers: Team[] = [
 const interNationalTeamData: TeamSection = {
   title: "Meet Our",
   subtitle: "International Relation Wing Team",
-  description: "Brain behind the innovation, contact them for any query",
+  description: "Trailblazers in the industry, reach out for any information",
   teams: interNationalTeamMebers
 }
 
@@ -292,7 +292,7 @@ const pclubTeamMebers: Team[] = [
 const pclubTeamData: TeamSection = {
   title: "Meet Our",
   subtitle: "Product Club Team",
-  description: "Brain behind the innovation, contact them for any query",
+  description: "Creators of cutting-edge solutions, reach out for any questions",
   teams: pclubTeamMebers
 }
 
@@ -327,7 +327,7 @@ const outreachTeamMebers: Team[] = [
 const outreachTeamData: TeamSection = {
   title: "Meet Our",
   subtitle: "Outreach and Finance Wing Team",
-  description: "Brain behind the innovation, contact them for any query",
+  description: "Boost your outreach efforts, contact our experts today",
   teams:  outreachTeamMebers
 }
 
@@ -351,7 +351,7 @@ const mediaTeamMebers: Team[] = [
 const mediaTeamData: TeamSection = {
   title: "Meet Our",
   subtitle: "Media and Public Wing Team",
-  description: "Brain behind the innovation, contact them for any query",
+  description: "Leading the way in media solutions, we're here to assist you",
   teams:  mediaTeamMebers
 }
 
