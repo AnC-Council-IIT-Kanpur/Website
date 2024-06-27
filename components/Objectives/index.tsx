@@ -3,7 +3,6 @@ import React from "react";
 import { motion } from "framer-motion";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-
 interface Objective {
   icon:any;
   title:string;
@@ -14,6 +13,7 @@ interface ObjectiveSectionProps {
   // defining objectives as an array of Objective object : [{icon1,title1,text1},{icon2,title2,text2}]
 }
 const ObjectivesSection: React.FC<ObjectiveSectionProps> = ({objectives}) => {
+
   return (
     <section id="objectives" className="overflow-hidden pb-20 pt-35 md:pt-40 xl:pb-25 xl:pt-46">
       <div className="mx-auto max-w-c-1390 px-4 md:px-8 2xl:px-0">
@@ -25,7 +25,7 @@ const ObjectivesSection: React.FC<ObjectiveSectionProps> = ({objectives}) => {
           className="text-center mb-10"
         >
           <h2 className="text-3xl font-bold text-gray-800 dark:text-white">
-            Our Objectives
+            {title}
           </h2>
           <div className="w-20 h-1 mx-auto mt-2 bg-gradient-to-r from-blue-500 to-blue-700"></div>
         </motion.div>

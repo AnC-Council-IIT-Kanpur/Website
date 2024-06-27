@@ -1,5 +1,6 @@
 "use client";
 
+import React from "react";
 import SectionHeader from "../Common/SectionHeader";
 import { Autoplay, Pagination } from "swiper";
 import "swiper/css";
@@ -7,23 +8,19 @@ import "swiper/css/pagination";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { motion } from "framer-motion";
 import SingleQuote from "./SingleQuote";
-import { quoteData } from "./quoteData";
+import { Quote, HeaderInfo } from "@/types/quote";
 
-const DirectorNote = () => {
+interface DirectorNoteProps {
+  headerInfo: HeaderInfo;
+  quotes: Quote[];
+}
+
+const DirectorNote: React.FC<DirectorNoteProps> = ({ headerInfo, quotes }) => {
   return (
-    <section className="py-16  ">
+    <section className="py-16">
       <div className="container mx-auto px-4 md:px-8 xl:px-0">
-        {/* Section Title */}
         <div className="text-center mb-12">
-          <SectionHeader
-            headerInfo={{
-              title: `DIRECTOR’S NOTE`,
-              subtitle: `Director’s Note on Research`,
-              description: `A personal note from the Director about the importance and impact of research at IIT-Kanpur.
-              ○ A slideshow of quotes from prominent researchers on campus.
-              ○ Each slide should include the quote, the researcher’s name, and their photo.`,
-            }}
-          />
+          <SectionHeader headerInfo={headerInfo} />
         </div>
       </div>
 
@@ -46,7 +43,7 @@ const DirectorNote = () => {
           modules={[Autoplay, Pagination]}
           className="py-8"
         >
-          {quoteData.map((quote) => (
+          {quotes.map((quote) => (
             <SwiperSlide key={quote.id}>
               <SingleQuote quote={quote} />
             </SwiperSlide>

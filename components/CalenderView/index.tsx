@@ -1,12 +1,10 @@
 "use client";
 
+import React from "react";
 import { motion } from "framer-motion";
-interface CalenderProps{
-  title:string;
-  content:string;
-  link:string;
-}
+
 const CalendarView: React.FC<CalenderProps> = ({title,content,link}) => {
+
   return (
     <section className="relative overflow-hidden pb-20 pt-35 md:pt-40 xl:pb-25 xl:pt-46">
       <div className="mx-auto max-w-c-1390 px-4 md:px-8 2xl:px-0">
@@ -19,6 +17,7 @@ const CalendarView: React.FC<CalenderProps> = ({title,content,link}) => {
           whileInView="visible"
           transition={{ duration: 0.5, delay: 0.1 }}
           viewport={{ once: true }}
+          className="text-center mb-10"
         >
           <h2 className="mb-5 text-3xl font-bold text-black dark:text-white">
             {title}
@@ -28,11 +27,12 @@ const CalendarView: React.FC<CalenderProps> = ({title,content,link}) => {
           </p>
           <a
             href={link}
+
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block rounded-full bg-primary px-7.5 py-2.5 text-white duration-300 ease-in-out hover:bg-primary-dark"
           >
-            View Calendar
+            {buttonText}
           </a>
         </motion.div>
       </div>

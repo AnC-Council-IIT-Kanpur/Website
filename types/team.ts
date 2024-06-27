@@ -5,6 +5,14 @@ export type Team = {
     designation: string;
     role:string;
     description: string;
-    
+    phone: string;
+    email: string;
+    linkedin: string;
   };
   
+export type TeamSection = {
+    title: string;
+    subtitle: string;
+    description: string;
+    teams: Team[];
+}
