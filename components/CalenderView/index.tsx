@@ -3,8 +3,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-const CalendarView = ({ calendarInfo }) => {
-  const { title, description, buttonText, buttonUrl } = calendarInfo;
+const CalendarView: React.FC<CalenderProps> = ({title,content,link}) => {
 
   return (
     <section className="relative overflow-hidden pb-20 pt-35 md:pt-40 xl:pb-25 xl:pt-46">
@@ -20,14 +19,15 @@ const CalendarView = ({ calendarInfo }) => {
           viewport={{ once: true }}
           className="text-center mb-10"
         >
-          <h2 className="text-3xl font-bold text-gray-800 dark:text-white mb-5">
+          <h2 className="mb-5 text-3xl font-bold text-black dark:text-white">
             {title}
           </h2>
-          <p className="text-lg text-black dark:text-white mb-5">
-            {description}
+          <p className="mb-5 text-lg text-black dark:text-white">
+            {content}
           </p>
           <a
-            href={buttonUrl}
+            href={link}
+
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block rounded-full bg-primary px-7.5 py-2.5 text-white duration-300 ease-in-out hover:bg-primary-dark"
