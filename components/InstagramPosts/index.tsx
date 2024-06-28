@@ -1,15 +1,13 @@
-"use client";
-
-import { useEffect } from "react";
+'use client'
+import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation, Autoplay } from "swiper";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import { instagramLinkData } from "./instagramLinkData"; // Adjust the import path as per your project structure
 
-const CalendarView = () => {
+const InstagramPosts = ({ title, postList }) => {
   useEffect(() => {
     const script = document.createElement("script");
     script.src = "https://www.instagram.com/embed.js";
@@ -36,37 +34,12 @@ const CalendarView = () => {
           }}
           initial="hidden"
           whileInView="visible"
-          transition={{ duration: 0.5, delay: 0.1 }}
-          viewport={{ once: true }}
-        >
-          <h2 className="mb-5 text-3xl font-bold text-black dark:text-white">
-            Upcoming Events & Workshops
-          </h2>
-          <p className="mb-5 text-lg text-black dark:text-white">
-            The Product Club organizes a variety of events and workshops aimed at innovation and entrepreneurship among students. Join us for engaging sessions on product development, startup strategies, and industry insights. Stay updated with our calendar to participate in our upcoming activities.
-          </p>
-          <a
-            href="#"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block rounded-full bg-primary px-7.5 py-2.5 text-white duration-300 ease-in-out hover:bg-primary-dark"
-          >
-            View Calendar
-          </a>
-        </motion.div>
-        <motion.div
-          variants={{
-            hidden: { opacity: 0, y: 20 },
-            visible: { opacity: 1, y: 0 },
-          }}
-          initial="hidden"
-          whileInView="visible"
           transition={{ duration: 0.5, delay: 0.2 }}
           viewport={{ once: true }}
           className="mt-10"
         >
           <h3 className="mb-5 text-2xl font-bold text-black dark:text-white">
-            Latest Posts
+            {title}
           </h3>
           <Swiper
             spaceBetween={30}
@@ -77,9 +50,9 @@ const CalendarView = () => {
             autoplay={{ delay: 5000, disableOnInteraction: false }}
             loop={true}
             speed={2000}
-            className="h-full dark:block object-cover w-full  transition-opacity duration-500 ease-in-out"
+            className="h-full dark:block object-cover w-full transition-opacity duration-500 ease-in-out"
           >
-            {instagramLinkData.map((post) => (
+            {postList.map((post) => (
               <SwiperSlide key={post.id}>
                 <div className="instagram-post" style={{ maxWidth: "540px", margin: "0 auto" }}>
                   <blockquote
@@ -109,4 +82,4 @@ const CalendarView = () => {
   );
 };
 
-export default CalendarView;
+export default InstagramPosts;

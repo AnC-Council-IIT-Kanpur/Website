@@ -3,11 +3,11 @@ import ObjectivesSection from "@/components/Objectives";
 import { Metadata } from "next";
 import Activities from "@/components/Activities/Activities";
 import CalendarView from "@/components/CalenderView";
+import ProductClubFeaturesTab from "@/components/InstagramPosts"
 import PastCollaborators from "@/components/ProductClubPastCollaboration";
 import ResearchGazette from "@/components/ResearchGazette";
 import PastSessions from "@/components/PastSessions";
 import DirectorNote from "@/components/Quote/DirectorNote";
-import ProductClubFeaturesTab from "@/components/ProductClubFeaturesTab";
 import NoteSection from "@/components/Note/NoteSection";
 import Banner from "@/components/Banner";
 import activitiesData from "./activitiesData";
@@ -15,6 +15,8 @@ import noteData from "./noteData";
 import { faTrophy, faComments, faBullhorn, faObjectGroup, faMagic } from '@fortawesome/free-solid-svg-icons';
 import caseBookData from "./CaseBookData";
 import { productClubQuoteData } from "./productClubQuoteData";
+import Feature from "@/components/Features";
+import { instagramLinkData } from "./instagramLinkData";
 
 
 export const metadata: Metadata = {
@@ -192,11 +194,11 @@ const ProductPage = () => {
         <Activities headerInfo={ProductHeader} activities={activitiesData} />
         <ObjectivesSection title={"Our Achivements"} objectives={achivements}/>
         <CalendarView calendarInfo={calendarInfo} />
+        <ProductClubFeaturesTab title={"Latest Posts"} postList={instagramLinkData} />
         <PastCollaborators />
         <ResearchGazette headerInfo={caseBookHeaderInfo} data={caseBookData} />
         <PastSessions PastSessionsHeader={pastHeaderInfo} sessions={sessions}/>
         <DirectorNote headerInfo={quoteHeaderInfo} quotes={productClubQuoteData}/>
-        <ProductClubFeaturesTab />
         <NoteSection notes={noteData}/>
 
     </div>
