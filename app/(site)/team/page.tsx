@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 import Team from "@/components/Teams";
 import SectionHeaderTop from "@/components/Common/SectionHeaderTop";
-import { cdevTeamData, researchTeamData } from "@/components/Teams/teamsData";
+import { cdevTeamData, researchTeamData , acadesTeamData ,interNationalTeamData , pclubTeamData ,outreachTeamData ,  mediaTeamData } from "@/components/Teams/teamsData";
 
 export const metadata: Metadata = {
   title: "Next.js Starter Template for SaaS Startups - Solid SaaS Boilerplate",
@@ -19,8 +19,14 @@ export default function Home() {
       <div className="mt-50 mb-50">
         <SectionHeaderTop headerInfo={headerInfo}/>
       </div>
-      <Team teamSectionData={researchTeamData}/>
       <Team teamSectionData={cdevTeamData}/>
+      <Team teamSectionData={researchTeamData}/>
+      <Team teamSectionData={acadesTeamData}/>
+      <Team teamSectionData={interNationalTeamData}/>
+      <Team teamSectionData={pclubTeamData}/>
+      <Team teamSectionData={outreachTeamData}/>
+      <Team teamSectionData={mediaTeamData}/>
+
     </main>
   );
 }
