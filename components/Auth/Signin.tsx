@@ -49,7 +49,7 @@ const Signin = () => {
             viewport={{ once: true }}
             className="animate_top rounded-lg bg-white px-7.5 pt-7.5 shadow-solid-8 dark:border dark:border-strokedark dark:bg-black xl:px-15 xl:pt-15"
           >
-            <h2 className="mb-15 text-center text-3xl font-semibold text-black dark:text-white xl:text-sectiontitle2">
+            <h2 className="text-3xl font-semibold text-center text-black mb-15 dark:text-white xl:text-sectiontitle2">
               Login to Your Account
             </h2>
             <div className="flex flex-col">
@@ -113,9 +113,9 @@ const Signin = () => {
                 </button>
               </div>
             </div>
-            <div className="mb-10 flex items-center justify-center">
+            <div className="flex items-center justify-center mb-10">
               <span className="dark:bg-stroke-dark hidden h-[1px] w-full max-w-[200px] bg-stroke dark:bg-strokedark sm:block"></span>
-              <p className="text-body-color dark:text-body-color-dark w-full px-5 text-center text-base">
+              <p className="w-full px-5 text-base text-center text-body-color dark:text-body-color-dark">
                 Or, login with your email
               </p>
               <span className="dark:bg-stroke-dark hidden h-[1px] w-full max-w-[200px] bg-stroke dark:bg-strokedark sm:block"></span>
@@ -146,11 +146,11 @@ const Signin = () => {
 
               <div className="flex flex-wrap items-center gap-10 md:justify-between xl:gap-15">
                 <div className="flex flex-wrap gap-4 md:gap-10">
-                  <div className="mb-4 flex items-center">
+                  <div className="flex items-center mb-4">
                     <input
                       id="default-checkbox"
                       type="checkbox"
-                      className="peer sr-only"
+                      className="sr-only peer"
                     />
                     <span className="group mt-1 flex h-5 min-w-[20px] items-center justify-center rounded border-gray-300 bg-gray-100 text-blue-600 peer-checked:bg-primary dark:border-gray-600 dark:bg-gray-700">
                       <svg
@@ -177,9 +177,9 @@ const Signin = () => {
                     </label>
                   </div>
 
-                  <a href="#" className="hover:text-primary">
+                  <Link href="#" className="hover:text-primary">
                     Forgot Password?
-                  </a>
+                  </Link>
                 </div>
 
                 <button

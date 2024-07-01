@@ -2,6 +2,7 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import React from "react";
+import Link from "next/link";
 
 const Contact = () => {
   /**
@@ -56,7 +57,7 @@ const Contact = () => {
               viewport={{ once: true }}
               className="animate_top w-full rounded-lg bg-white p-7.5 shadow-solid-8 dark:border dark:border-strokedark dark:bg-black md:w-3/5 lg:w-3/4 xl:p-15"
             >
-              <h2 className="mb-15 text-3xl font-semibold text-black dark:text-white xl:text-sectiontitle2">
+              <h2 className="text-3xl font-semibold text-black mb-15 dark:text-white xl:text-sectiontitle2">
                 Send a message
               </h2>
 
@@ -96,16 +97,16 @@ const Contact = () => {
                   <textarea
                     placeholder="Message"
                     rows={4}
-                    className="w-full border-b border-stroke bg-transparent focus:border-waterloo focus:placeholder:text-black focus-visible:outline-none dark:border-strokedark dark:focus:border-manatee dark:focus:placeholder:text-white"
+                    className="w-full bg-transparent border-b border-stroke focus:border-waterloo focus:placeholder:text-black focus-visible:outline-none dark:border-strokedark dark:focus:border-manatee dark:focus:placeholder:text-white"
                   ></textarea>
                 </div>
 
                 <div className="flex flex-wrap gap-4 xl:justify-between ">
-                  <div className="mb-4 flex md:mb-0">
+                  <div className="flex mb-4 md:mb-0">
                     <input
                       id="default-checkbox"
                       type="checkbox"
-                      className="peer sr-only"
+                      className="sr-only peer"
                     />
                     <span className="group mt-2 flex h-5 min-w-[20px] items-center justify-center rounded border-gray-300 bg-gray-100 text-blue-600 peer-checked:bg-primary dark:border-gray-600 dark:bg-gray-700">
                       <svg
@@ -179,25 +180,25 @@ const Contact = () => {
               </h2>
 
               <div className="5 mb-7">
-                <h3 className="mb-4 text-metatitle3 font-medium text-black dark:text-white">
+                <h3 className="mb-4 font-medium text-black text-metatitle3 dark:text-white">
                   Our Loaction
                 </h3>
                 <p>290 Maryam Springs 260, Courbevoie, Paris, France</p>
               </div>
               <div className="5 mb-7">
-                <h3 className="mb-4 text-metatitle3 font-medium text-black dark:text-white">
+                <h3 className="mb-4 font-medium text-black text-metatitle3 dark:text-white">
                   Email Address
                 </h3>
                 <p>
-                  <a href="#">yourmail@domainname.com</a>
+                  <Link href="#">yourmail@domainname.com</Link>
                 </p>
               </div>
               <div>
-                <h4 className="mb-4 text-metatitle3 font-medium text-black dark:text-white">
+                <h4 className="mb-4 font-medium text-black text-metatitle3 dark:text-white">
                   Phone Number
                 </h4>
                 <p>
-                  <a href="#">+009 42334 6343 843</a>
+                  <Link href="#">+009 42334 6343 843</Link>
                 </p>
               </div>
             </motion.div>

@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 
 const SingleGazette = ({ gazette }) => {
   const { icon, title, description, pdfUrl } = gazette;
@@ -24,14 +25,14 @@ const SingleGazette = ({ gazette }) => {
         {title}
       </h3>
       <p className="mb-4 text-gray-600 dark:text-gray-400">{description}</p>
-      <a
+      <Link
         href={pdfUrl}
         target="_blank"
         rel="noopener noreferrer"
-        className="mt-auto inline-block rounded-lg bg-primary px-4 py-2 text-sm font-medium text-white transition-all duration-300 hover:bg-primary-dark"
+        className="inline-block px-4 py-2 mt-auto text-sm font-medium text-white transition-all duration-300 rounded-lg bg-primary hover:bg-primary-dark"
       >
         Download PDF
-      </a>
+      </Link>
     </motion.div>
   );
 };

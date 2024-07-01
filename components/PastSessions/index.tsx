@@ -2,6 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import SectionHeader from "../Common/SectionHeader";
+import Link from "next/link";
 
 interface Resource {
   type: string;
@@ -29,15 +30,15 @@ interface PastSessionsProps {
 
 const PastSessions: React.FC<PastSessionsProps> = ({ PastSessionsHeader, sessions }) => {
   return (
-    <section className="overflow-hidden pb-20 pt-15 lg:pb-25 xl:pb-30">
-      <div className="mx-auto max-w-c-1315 px-4 md:px-8 xl:px-0">
-        <div className="animate-fadeInUp mx-auto text-center">
+    <section className="pb-20 overflow-hidden pt-15 lg:pb-25 xl:pb-30">
+      <div className="px-4 mx-auto max-w-c-1315 md:px-8 xl:px-0">
+        <div className="mx-auto text-center animate-fadeInUp">
           <SectionHeader headerInfo = {PastSessionsHeader} />
         </div>
       </div>
 
       <div className="relative mx-auto mt-15 max-w-[1207px] px-4 md:px-8 xl:mt-20 xl:px-0 animate-fadeInUp">
-        <div className="absolute -bottom-15 -z-1 h-full w-full">
+        <div className="absolute w-full h-full -bottom-15 -z-1">
           <Image
             fill
             src="/images/shape/shape-dotted-light.svg"
@@ -73,9 +74,9 @@ const PastSessions: React.FC<PastSessionsProps> = ({ PastSessionsHeader, session
                       key={resIndex}
                       className="mb-4 text-primary last:mb-0 dark:text-primary"
                     >
-                      <a href={resource.link} target="_blank" rel="noopener noreferrer">
+                      <Link href={resource.link} target="_blank" rel="noopener noreferrer">
                         {resource.label}
-                      </a>
+                      </Link>
                     </li>
                   ))}
                 </ul>

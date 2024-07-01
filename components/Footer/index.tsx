@@ -1,12 +1,13 @@
 "use client";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 
 const Footer = () => {
   return (
     <>
-      <footer className="border-t border-stroke bg-white dark:border-strokedark dark:bg-blacksection">
-        <div className="mx-auto max-w-c-1390 px-4 md:px-8 2xl:px-0">
+      <footer className="bg-white border-t border-stroke dark:border-strokedark dark:bg-blacksection">
+        <div className="px-4 mx-auto max-w-c-1390 md:px-8 2xl:px-0">
           {/* <!-- Footer Top --> */}
           <div className="py-20 lg:py-25">
             <div className="flex flex-wrap gap-8 lg:justify-between lg:gap-0">
@@ -26,9 +27,9 @@ const Footer = () => {
                 whileInView="visible"
                 transition={{ duration: 1, delay: 0.5 }}
                 viewport={{ once: true }}
-                className="animate_top w-1/2 lg:w-1/4"
+                className="w-1/2 animate_top lg:w-1/4"
               >
-                <a href="index.html" className="relative">
+                <Link href="index.html" className="relative">
                   <Image
                     width={110}
                     height={80}
@@ -43,24 +44,24 @@ const Footer = () => {
                     alt="Logo"
                     className="hidden dark:block"
                   />
-                </a>
+                </Link>
 
-                <p className="mb-10 mt-5">
+                <p className="mt-5 mb-10">
                 The AnC Council of the IIT Kanpur is a council directly placed under the Student's Gymkhana, that aims to foster all needs related to academics and research for the campus dwellers.
                 </p>
 
                 <p className="mb-1.5 text-sectiontitle uppercase tracking-[5px]">
                   contact
                 </p>
-                <a
+                <Link
                   href="#"
-                  className="text-itemtitle font-medium text-black dark:text-white"
+                  className="font-medium text-black text-itemtitle dark:text-white"
                 >
                   anc@iitk.ac.in
-                </a>
+                </Link>
               </motion.div>
 
-              <div className="flex w-full flex-col gap-8 md:flex-row md:justify-between md:gap-0 lg:w-2/3 xl:w-7/12">
+              <div className="flex flex-col w-full gap-8 md:flex-row md:justify-between md:gap-0 lg:w-2/3 xl:w-7/12">
                 <motion.div
                   variants={{
                     hidden: {
@@ -79,58 +80,58 @@ const Footer = () => {
                   viewport={{ once: true }}
                   className="animate_top"
                 >
-                  <h4 className="mb-9 text-itemtitle2 font-medium text-black dark:text-white">
+                  <h4 className="font-medium text-black mb-9 text-itemtitle2 dark:text-white">
                     Quick Links
                   </h4>
 
                   <ul>
                     <li>
-                      <a
+                      <Link
                         href="#"
-                        className="mb-3 inline-block hover:text-primary"
+                        className="inline-block mb-3 hover:text-primary"
                       >
                         Home
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
+                      <Link
                         href="#"
-                        className="mb-3 inline-block hover:text-primary"
+                        className="inline-block mb-3 hover:text-primary"
                       >
                         Academics
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
+                      <Link
                         href="#"
-                        className="mb-3 inline-block hover:text-primary"
+                        className="inline-block mb-3 hover:text-primary"
                       >
                         Research
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
+                      <Link
                         href="#"
-                        className="mb-3 inline-block hover:text-primary"
+                        className="inline-block mb-3 hover:text-primary"
                       >
                         Int. Relations
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
+                      <Link
                         href="#"
-                        className="mb-3 inline-block hover:text-primary"
+                        className="inline-block mb-3 hover:text-primary"
                       >
                         Career Dev.
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
+                      <Link
                         href="/wings/productclub"
-                        className="mb-3 inline-block hover:text-primary"
+                        className="inline-block mb-3 hover:text-primary"
                       >
                         Product Club
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </motion.div>
@@ -153,42 +154,42 @@ const Footer = () => {
                   viewport={{ once: true }}
                   className="animate_top"
                 >
-                  <h4 className="mb-9 text-itemtitle2 font-medium text-black dark:text-white">
+                  <h4 className="font-medium text-black mb-9 text-itemtitle2 dark:text-white">
                     Info
                   </h4>
 
                   <ul>
                     <li>
-                      <a
+                      <Link
                         href="#"
-                        className="mb-3 inline-block hover:text-primary"
+                        className="inline-block mb-3 hover:text-primary"
                       >
                         About Us
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
+                      <Link
                         href="#"
-                        className="mb-3 inline-block hover:text-primary"
+                        className="inline-block mb-3 hover:text-primary"
                       >
                         Team
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
+                      <Link
                         href="#"
-                        className="mb-3 inline-block hover:text-primary"
+                        className="inline-block mb-3 hover:text-primary"
                       >
                         Our Works
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
+                      <Link
                         href="#"
-                        className="mb-3 inline-block hover:text-primary"
+                        className="inline-block mb-3 hover:text-primary"
                       >
                         Gallery
-                      </a>
+                      </Link>
                     </li>
                   </ul> 
                 </motion.div>
@@ -211,7 +212,7 @@ const Footer = () => {
                   viewport={{ once: true }}
                   className="animate_top"
                 >
-                  {/* <h4 className="mb-9 text-itemtitle2 font-medium text-black dark:text-white">
+                  {/* <h4 className="font-medium text-black mb-9 text-itemtitle2 dark:text-white">
                     Newsletter
                   </h4>
                   <p className="mb-4 w-[90%]">
@@ -223,7 +224,7 @@ const Footer = () => {
                       <input
                         type="text"
                         placeholder="Email address"
-                        className="w-full rounded-full border border-stroke px-6 py-3 shadow-solid-11 focus:border-primary focus:outline-none dark:border-strokedark dark:bg-black dark:shadow-none dark:focus:border-primary"
+                        className="w-full px-6 py-3 border rounded-full border-stroke shadow-solid-11 focus:border-primary focus:outline-none dark:border-strokedark dark:bg-black dark:shadow-none dark:focus:border-primary"
                       />
 
                       <button
@@ -281,19 +282,19 @@ const Footer = () => {
             >
               <ul className="flex items-center gap-8">
                 <li>
-                  <a href="#" className="hover:text-primary">
+                  <Link href="#" className="hover:text-primary">
                     English
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-primary">
+                  <Link href="#" className="hover:text-primary">
                     Privacy Policy
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-primary">
+                  <Link href="#" className="hover:text-primary">
                     Support
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </motion.div>
@@ -341,7 +342,7 @@ const Footer = () => {
             >
               <ul className="flex items-center gap-5">
                 <li>
-                  <a href="https://www.facebook.com/ANCIITK?mibextid=ZbWKwL" aria-label="social icon">
+                  <Link href="https://www.facebook.com/ANCIITK?mibextid=ZbWKwL" aria-label="social icon">
                     <svg
                       className="fill-[#D1D8E0] transition-all duration-300 hover:fill-primary"
                       width="24"
@@ -362,10 +363,10 @@ const Footer = () => {
                         </clipPath>
                       </defs>
                     </svg>
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="https://www.instagram.com/anciitk?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" aria-label="social icon">
+                  <Link href="https://www.instagram.com/anciitk?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" aria-label="social icon">
                     <svg
                       className="fill-[#D1D8E0] transition-all duration-300 hover:fill-primary"
                       width="24"
@@ -386,10 +387,10 @@ const Footer = () => {
                         </clipPath>
                       </defs>
                     </svg>
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="https://www.linkedin.com/company/anciitk/" aria-label="social icon">
+                  <Link href="https://www.linkedin.com/company/anciitk/" aria-label="social icon">
                     <svg
                       className="fill-[#D1D8E0] transition-all duration-300 hover:fill-primary"
                       width="24"
@@ -410,10 +411,10 @@ const Footer = () => {
                         </clipPath>
                       </defs>
                     </svg>
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#" aria-label="social icon">
+                  <Link href="#" aria-label="social icon">
                     <svg
                       className="fill-[#D1D8E0] transition-all duration-300 hover:fill-primary"
                       width="24"
@@ -430,7 +431,7 @@ const Footer = () => {
                         </clipPath>
                       </defs>
                     </svg>
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </motion.div>

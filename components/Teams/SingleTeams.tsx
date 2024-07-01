@@ -3,6 +3,7 @@ import { Team } from "@/types/team";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Link from "next/link";
 
 const SingleTeam = ({ team }: { team: Team }) => {
   const { icon, title, designation, role, description, phone, linkedin, email } = team;
@@ -34,8 +35,8 @@ const SingleTeam = ({ team }: { team: Team }) => {
           {title}
         </h2>
         <p className="text-center">{designation}, {role}</p>
-        <p className="text-center text-sm mt-2 flex items-center justify-center">{phone}
-          <a href={linkedin} aria-label="social icon" className="inline-block ml-3">
+        <p className="flex items-center justify-center mt-2 text-sm text-center">{phone}
+          <Link href={linkedin} aria-label="social icon" className="inline-block ml-3">
             <svg
               className="fill-[#D1D8E0] transition-all duration-300 hover:fill-primary"
               width="18"
@@ -56,7 +57,7 @@ const SingleTeam = ({ team }: { team: Team }) => {
                 </clipPath>
               </defs>
             </svg>
-          </a>
+          </Link>
         </p>
       </motion.div>
     </>

@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import SectionHeader from "../Common/SectionHeader";
 import Image from "next/image";
+import Link from "next/link";
 
 const DepartmentGuideCard = ({ gazette }) => {
   const { icon, title, description, pdfUrl } = gazette;
@@ -27,14 +28,14 @@ const DepartmentGuideCard = ({ gazette }) => {
         {title}
       </h3>
       <p className="mb-4 text-gray-600 dark:text-gray-400">{description}</p>
-      <a
+      <Link
         href={pdfUrl}
         target="_blank"
         rel="noopener noreferrer"
-        className="mt-auto inline-block rounded-lg bg-primary px-4 py-2 text-sm font-medium text-white transition-all duration-300 hover:bg-primary-dark"
+        className="inline-block px-4 py-2 mt-auto text-sm font-medium text-white transition-all duration-300 rounded-lg bg-primary hover:bg-primary-dark"
       >
         View
-      </a>
+      </Link>
     </motion.div>
   );
 };
@@ -47,7 +48,7 @@ const DeptartmentGuide = ({ data, headerInfo }) => {
 
   return (
     <section id="research-gazettes" className="py-20 lg:py-25 xl:py-30">
-      <div className="mx-auto max-w-c-1315 px-4 md:px-8 xl:px-0">
+      <div className="px-4 mx-auto max-w-c-1315 md:px-8 xl:px-0">
         <SectionHeader headerInfo={headerInfo} />
 
         <motion.div
