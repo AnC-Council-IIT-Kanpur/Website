@@ -25,8 +25,8 @@ const InstagramPosts = ({ title, postList }) => {
   }, []);
 
   return (
-    <section className="relative overflow-hidden pb-20 pt-35 md:pt-40 xl:pb-25 xl:pt-46">
-      <div className="mx-auto max-w-c-1390 px-4 md:px-8 2xl:px-0">
+    <section className="relative pb-20 overflow-hidden pt-35 md:pt-40 xl:pb-25 xl:pt-46">
+      <div className="px-4 mx-auto max-w-c-1390 md:px-8 2xl:px-0">
         <motion.div
           variants={{
             hidden: { opacity: 0, y: 20 },
@@ -50,7 +50,7 @@ const InstagramPosts = ({ title, postList }) => {
             autoplay={{ delay: 5000, disableOnInteraction: false }}
             loop={true}
             speed={2000}
-            className="h-full dark:block object-cover w-full transition-opacity duration-500 ease-in-out"
+            className="object-cover w-full h-full transition-opacity duration-500 ease-in-out dark:block"
           >
             {postList.map((post) => (
               <SwiperSlide key={post.id}>
