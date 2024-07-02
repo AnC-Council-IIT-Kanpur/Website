@@ -1,13 +1,15 @@
+import Link from "next/link";
+
 const SharePost = () => {
   return (
     <>
-      <div className="mt-11 flex flex-wrap gap-4 md:items-center md:justify-between md:gap-0">
+      <div className="flex flex-wrap gap-4 mt-11 md:items-center md:justify-between md:gap-0">
         <ul className="flex items-center gap-6">
           <li>
             <p className="text-black dark:text-white">Share On:</p>
           </li>
           <li>
-            <a href="#" aria-label="social link">
+            <Link href="#" aria-label="social link">
               <svg
                 className="fill-[#D1D8E0] transition-all duration-300 hover:fill-primary"
                 width="24"
@@ -28,10 +30,10 @@ const SharePost = () => {
                   </clipPath>
                 </defs>
               </svg>
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#" aria-label="social link">
+            <Link href="#" aria-label="social link">
               <svg
                 className="fill-[#D1D8E0] transition-all duration-300 hover:fill-primary"
                 width="24"
@@ -52,10 +54,10 @@ const SharePost = () => {
                   </clipPath>
                 </defs>
               </svg>
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#" aria-label="social link">
+            <Link href="#" aria-label="social link">
               <svg
                 className="fill-[#D1D8E0] transition-all duration-300 hover:fill-primary"
                 width="24"
@@ -76,10 +78,10 @@ const SharePost = () => {
                   </clipPath>
                 </defs>
               </svg>
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#" aria-label="social link">
+            <Link href="#" aria-label="social link">
               <svg
                 className="fill-[#D1D8E0] transition-all duration-300 hover:fill-primary"
                 width="24"
@@ -96,7 +98,7 @@ const SharePost = () => {
                   </clipPath>
                 </defs>
               </svg>
-            </a>
+            </Link>
           </li>
         </ul>
 
@@ -105,16 +107,16 @@ const SharePost = () => {
             <p className="text-black dark:text-white">Tags:</p>
           </li>
           <li>
-            <a
+            <Link
               href="#"
               className="pr-2 duration-300 ease-in-out hover:text-primary"
             >
               #business
-            </a>
+            </Link>
 
-            <a href="#" className="duration-300 ease-in-out hover:text-primary">
+            <Link href="#" className="duration-300 ease-in-out hover:text-primary">
               #saas
-            </a>
+            </Link>
           </li>
         </ul>
       </div>
