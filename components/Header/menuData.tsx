@@ -14,10 +14,17 @@ const menuData: Menu[] = [
     path: "/#features",
   },
   // {
+// <<<<<<< HEAD
   //   id: 2.1,
   //   title: "Blogs",
   //   newTab: false,
   //   path: "/blog",
+// =======
+  //  id: 2.1,
+  //  title: "Blogs",
+  //  newTab: false,
+  // path: "/blog",
+// >>>>>>> 08da51a8d0f861991d586837a15cf19c8a5456a9
   // },
   // {
   //   id: 2.3,
@@ -50,9 +57,9 @@ const menuData: Menu[] = [
       },
       {
         id: 35,
-        title: "International Relationship",
+        title: "International Relations",
         newTab: false,
-        path: "/docs", //change
+        path: "/wings/internationalRelations", //change
       },
       {
         id: 35.1,
@@ -70,7 +77,7 @@ const menuData: Menu[] = [
         id: 37,
         title: "Outreach and Finance",
         newTab: false,
-        path: "/wings/outreac_finance", //change
+        path: "/wings/outreach_finance", //change
       },
       {
         id: 38,

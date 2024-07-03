@@ -28,10 +28,9 @@ export default function Home() {
       <Hero />
       <Brands />
       <Feature />
-      
       <About />
       <FeaturesTab />
-      <TeamsTab />
+      {/* <TeamsTab /> */}
       {/* <FunFact /> */}
       {/* <Integration /> */}
       {/* <CTA /> */}
@@ -39,7 +38,7 @@ export default function Home() {
       <Testimonial />
       {/* <Pricing /> */}
       {/* <Contact /> */}
-      <Blog />
+      {/* <Blog /> */}
       <FAQ />
     </main>
   );
