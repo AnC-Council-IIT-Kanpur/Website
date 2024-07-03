@@ -13,18 +13,25 @@ const menuData: Menu[] = [
     newTab: false,
     path: "/#features",
   },
-  {
-    id: 2.1,
-    title: "Blogs",
-    newTab: false,
-    path: "/blog",
-  },
-  {
-    id: 2.3,
-    title: "Resources",
-    newTab: false,
-    path: "/docs",
-  },
+  // {
+// <<<<<<< HEAD
+  //   id: 2.1,
+  //   title: "Blogs",
+  //   newTab: false,
+  //   path: "/blog",
+// =======
+  //  id: 2.1,
+  //  title: "Blogs",
+  //  newTab: false,
+  // path: "/blog",
+// >>>>>>> 08da51a8d0f861991d586837a15cf19c8a5456a9
+  // },
+  // {
+  //   id: 2.3,
+  //   title: "Resources",
+  //   newTab: false,
+  //   path: "/docs",
+  // },
   {
     id: 3,
     title: "Links",
@@ -44,33 +51,21 @@ const menuData: Menu[] = [
       },
       {
         id: 35,
-        title: "Web Wing",
+        title: "International Relations",
         newTab: false,
-        path: "/auth/signup", //change
-      },
-      {
-        id: 35,
-        title: "International Relationship",
-        newTab: false,
-        path: "/docs", //change
+        path: "/wings/internationalRelations", //change
       },
       {
         id: 35.1,
-        title: "UG Academics",
+        title: "Academics Wing",
         newTab: false,
         path: "/wings/UGacads", //change
-      },
-      {
-        id: 36,
-        title: "PG Academics",
-        newTab: false,
-        path: "/error", //change
       },
       {
         id: 37,
         title: "Outreach and Finance",
         newTab: false,
-        path: "/wings/outreac_finance", //change
+        path: "/wings/outreach_finance", //change
       },
       {
         id: 38,

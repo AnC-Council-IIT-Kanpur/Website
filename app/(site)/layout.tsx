@@ -26,6 +26,7 @@ export default function RootLayout({
         >
           <Lines />
           <Header />
+          <Lines />
           <ToasterContext />
           {children}
           <Footer />

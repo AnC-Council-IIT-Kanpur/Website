@@ -99,23 +99,23 @@ const ProductHeader = {
 const objectives = [
   {
     icon: faComments,
-    title: "Product Development Culture",
-    text: "Promote an environment where students can explore and enhance their skills in product development through hands-on projects and collaboration.",
+    title: "Collaborative Problem-Solving Culture",
+    text: "Develop an environment where members can enhance their skills in product management through hands-on projects, collaboration, and continuous learning.",
   },
   {
     icon: faBullhorn,
     title: "Showcase Innovations and Provide Guidance",
-    text: "Highlight innovative projects and provide mentorship to students aiming to create impactful products. Offer resources and support for budding product developers.",
+    text: "Highlight innovative projects and offer mentorship to students aiming to create impactful products. Provide resources and support for budding product managers.",
   },
   {
     icon: faObjectGroup,
     title: "Organize Workshops and Competitions",
-    text: "Conduct workshops, hackathons, and competitions to ignite interest in product development. Provide platforms for students to present and refine their ideas.",
+    text: "Conduct workshops, hackathons, and competitions to ignite interest in product management. Provide platforms for students to present and refine their ideas.",
   },
   {
     icon: faMagic,
     title: "Enhance Online Presence and Alumni Network",
-    text: "Manage the club's online presence on social media and the official website. Engage with alumni to provide current students with networking and mentorship opportunities.",
+    text: "Manage the club's online presence on social media and the official website. Engage with alumni to offer networking and mentorship opportunities.",
   },
 ];
 

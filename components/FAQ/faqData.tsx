@@ -21,6 +21,17 @@ const faqData: FAQ[] = [
     quest: "How can I get help with my higher studies applications?",
     ans: "AnC provides one-on-one counseling sessions to help you with your application essays, letters of recommendation, and overall application strategy. You can book a session through the AnC portal.",
   },
+
+//   {
+//     id: 5,
+//     quest: "Are there any workshops specifically for higher studies preparation?",
+//     ans: "Yes, AnC conducts workshops on topics such as preparing for entrance exams, writing a statement of purpose, and choosing the right graduate programs. These workshops are designed to equip you with the necessary skills and knowledge for successful applications."
+//   }, {
+//     id: 6,
+//     quest: "How can I stay updated about higher studies opportunities and deadlines?",
+//     ans: "AnC regularly updates its website and sends out mails and newsletters with information about higher studies opportunities, scholarship deadlines, and important dates. Make sure to subscribe to our mailing list and check the AnC portal frequently."
+//   }
+// =======
   // {
   //   id: 5,
   //   quest: "Are there any workshops specifically for higher studies preparation?",
@@ -30,6 +41,7 @@ const faqData: FAQ[] = [
   //   quest: "How can I stay updated about higher studies opportunities and deadlines?",
   //   and: "AnC regularly updates its website and sends out mails and newsletters with information about higher studies opportunities, scholarship deadlines, and important dates. Make sure to subscribe to our mailing list and check the AnC portal frequently."
   // }
+// >>>>>>> main
 ];
 
 export default faqData;

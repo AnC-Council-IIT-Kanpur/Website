@@ -24,7 +24,7 @@ const featuresData: Feature[] = [
   },
   {
     id: 4,
-    icon: "/images/logo/anc_logo2.png",
+    icon: "/images/logo/internationalRelations.png",
     title: "International Relations Wing",
     description:
       "The IR Wing is the one which undertakes the responsibility of improving collaborations of the Institute and its foreign counterparts.",
@@ -38,14 +38,14 @@ const featuresData: Feature[] = [
   },
   {
     id: 6,
-    icon: "/images/logo/anc_logo2.png",
+    icon: "/images/logo/media and pr.png",
     title: "Media & Publicity Wing",
     description:
       "The Wing primarily dedicated to boosting the visibility and engagement in the events of the AnC Council.",
   },
   {
     id: 7,
-    icon: "/images/logo/anc_logo2.png",
+    icon: "/images/logo/outreach and finance.png",
     title: "Outreach & Finance Wing",
     description:
       "The Outreach and Finance Wing is the one responsible for the keeping precise financial records, managing budgets and overseeing cash flow in the overall activities of the AnC Council.",
