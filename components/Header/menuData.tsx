@@ -44,33 +44,21 @@ const menuData: Menu[] = [
       },
       {
         id: 35,
-        title: "Web Wing",
-        newTab: false,
-        path: "/auth/signup", //change
-      },
-      {
-        id: 35,
         title: "International Relationship",
         newTab: false,
-        path: "/docs", //change
+        path: "/wings/internationalRelations", //change
       },
       {
         id: 35.1,
-        title: "UG Academics",
+        title: "Academics Wing",
         newTab: false,
         path: "/wings/UGacads", //change
-      },
-      {
-        id: 36,
-        title: "PG Academics",
-        newTab: false,
-        path: "/error", //change
       },
       {
         id: 37,
         title: "Outreach and Finance",
         newTab: false,
-        path: "/wings/outreac_finance", //change
+        path: "/wings/outreach_finance", //change
       },
       {
         id: 38,
