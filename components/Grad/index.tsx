@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const Grad = () => {
     return (
-        <section className="relative pb-20 overflow-hidden pt-35 md:pt-40 xl:pb-25 xl:pt-46">
+        <section className="relative pb-10 overflow-hidden pt-0 md:pt-10 xl:pb-15 xl:pt-20">
             <div className="px-4 mx-auto max-w-c-1390 md:px-8 2xl:px-0">
                 <motion.div
                     variants={{
