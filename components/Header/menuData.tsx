@@ -50,9 +50,9 @@ const menuData: Menu[] = [
       },
       {
         id: 35,
-        title: "International Relationship",
+        title: "International Relations",
         newTab: false,
-        path: "/docs", //change
+        path: "/wings/internationalRelations", //change
       },
       {
         id: 35.1,
@@ -70,7 +70,7 @@ const menuData: Menu[] = [
         id: 37,
         title: "Outreach and Finance",
         newTab: false,
-        path: "/wings/outreac_finance", //change
+        path: "/wings/outreach_finance", //change
       },
       {
         id: 38,
