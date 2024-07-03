@@ -8,8 +8,8 @@ const CalendarView = ({ calendarInfo }) => {
   const { title, description, buttonText, buttonUrl } = calendarInfo;
 
   return (
-    <section className="relative pb-20 overflow-hidden pt-35 md:pt-40 xl:pb-25 xl:pt-46">
-      <div className="px-4 mx-auto max-w-c-1390 md:px-8 2xl:px-0">
+    <section className="relative pb-10 overflow-hidden pt-15 md:pt-20 xl:pb-15 xl:pt-20">
+      <div className="px-4 mx-auto max-w-c-1390 md:px-8 2xl:px-0 pt-0 xl:pt-0 md:pt-0">
         <motion.div
           variants={{
             hidden: { opacity: 0, y: 20 },
