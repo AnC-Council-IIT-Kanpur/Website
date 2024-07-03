@@ -12,7 +12,7 @@ const MainEvents = () => {
           <div className="animate_top mx-auto text-center">
             <SectionHeader
               headerInfo={{
-                title: `EVENT SHOWCASE`,
+                title: `PAST EVENTS`,
                 subtitle: `Celebrating Excellence`,
                 description: `Highlighted events hosted by the Academic and Career Council at IIT Kanpur`,
               }}
