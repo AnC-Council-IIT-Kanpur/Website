@@ -13,6 +13,6 @@ export const instagramLinkData = [
   },
   {
     id: 4,
-    url: "https://www.instagram.com/p/C76wnftvhSJ/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+    url: "https://www.instagram.com/p/C8wPGasxisF/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
   },
 ];

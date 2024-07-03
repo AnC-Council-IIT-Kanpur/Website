@@ -338,7 +338,7 @@ const pclubTeamData: TeamSection = {
 const outreachTeamMebers: Team[] = [
   {
     id: 1,
-    icon: "/images/wings/Outreach/IMG_20240419_012858854~2 - Sameer Kashyap.jpg",
+    icon: "/images/wings/Outreach/sameer_kashyap.jpeg",
     title: "Sameer Kashyap",
     designation: "Coordinator",
     role: "Outreach and Finance",
