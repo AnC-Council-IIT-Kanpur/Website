@@ -7,7 +7,7 @@ import SectionHeader from "../Common/SectionHeader";
 const Activities = ({ headerInfo, activities }) => {
   return (
     <section id="activities" className="py-20 lg:py-25 xl:py-30">
-      <div className="mx-auto max-w-c-1390 px-4 md:px-8 xl:px-0">
+      <div className="mx-auto max-w-c-1390 px-4 md:px-8 xl:px-0 xl:pb-0 md:pb-0 pb-0">
         <SectionHeader headerInfo={headerInfo} />
 
         <motion.div

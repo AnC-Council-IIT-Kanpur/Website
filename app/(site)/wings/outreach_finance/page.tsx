@@ -3,11 +3,7 @@ import Banner from "@/components/Banner";
 import ObjectivesSection from "@/components/Objectives";
 import { Metadata } from "next";
 import Activities from "@/components/Activities/Activities";
-import CalendarView from "@/components/CalenderView";
-import ResearchGazette from "@/components/ResearchGazette";
-import PastSessions from "@/components/PastSessions";
-import DirectorNote from "@/components/Quote/DirectorNote";
-import NoteSection from "@/components/Note/NoteSection";
+
 import { Note } from "@/types/note";
 
 import { faHandshake, faBullhorn, faCoins, faMagnifyingGlass, faCalendarAlt, faStar, faDatabase, faGraduationCap, faGlobe, faHandsHelping } from '@fortawesome/free-solid-svg-icons';
@@ -57,9 +53,9 @@ const socialLinks = [
 ];
 
 const description = {
-  title: "Empowering Connections:",
+  title: "Empowering Careers:",
   highlight: "Bridging Academia, Industry and Financial Support",
-  text: "At IIT Kanpur, our Academic and Career Council fosters strong connections between the institute, industry, and the community. Through workshops, seminars, and interactive sessions, we bridge the gap between academia and industry, providing students with valuable insights and opportunities. We also recognize the importance of financial stability and offer comprehensive support, including scholarships, grants, and financial planning services. By combining outreach programs with financial assistance, we help students focus on their academic and professional growth without financial stress."
+  text: "The Outreach and Finance Vertical of AnC Council at IIT Kanpur is dedicated to driving success through strategic sponsorships, efficient financial management, and impactful outreach. We secure valuable collaborations, manage the council’s finances, and handle all outreach activities, ensuring the seamless execution and growth of our initiatives, empowering student achievements and fostering innovation."
 };
 
 
@@ -92,11 +88,6 @@ const objectives = [
 
 const activitiesData = [
   {
-    icon: faCalendarAlt,
-    name: "Financial Literacy Programs",
-    text: "Organize financial literacy programs, such as workshops and seminars, to educate students on personal finance, budgeting, and managing student loans.",
-  },
-  {
     icon: faStar,
     name: "Budget Planning and Monitoring",
     text: "Develop detailed budget plans for council activities and regularly monitor expenditures to ensure financial health and efficiency.",
@@ -105,11 +96,6 @@ const activitiesData = [
     icon: faDatabase,
     name: "Fundraising Initiatives",
     text: "Launch fundraising initiatives, including grant writing, alumni donations, and sponsorships from businesses, to secure financial support for council activities.",
-  },
-  {
-    icon: faGraduationCap,
-    name: "Funding and Grant Support",
-    text: "Research potential grants, write and submit grant proposals, and manage grant funds according to the requirements and timelines of the granting organization.",
   },
   {
     icon: faGlobe,
