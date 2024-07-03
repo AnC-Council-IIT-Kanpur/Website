@@ -24,7 +24,7 @@ const featuresData: Feature[] = [
   },
   {
     id: 4,
-    icon: "/images/logo/anc_logo2.png",
+    icon: "/images/logo/internationalRelations.png",
     title: "International Relations Wing",
     description:
       "The IR Wing is the one which undertakes the responsibility of improving collaborations of the Institute and its foreign counterparts.",
