@@ -13,52 +13,27 @@ const PastCollaborators = () => {
     {
       key: "1",
       title: "MERLIN AI",
-      description: "Learn the process of generating and refining product ideas.",
       image: "/images/productClubCollaborators/MerlinAI.jpeg",
-      resources: [
-        { type: "Presentation", link: "#", label: "View Presentation" },
-        { type: "Recording", link: "#", label: "Watch Recording" },
-      ],
     },
     {
         key: "2",
       title: "NEXT LEAP",
-      description: "Master the fundamentals of prototyping for product development.",
       image: "/images/productClubCollaborators/nextleap_logo.jpeg",
-      resources: [
-        { type: "Presentation", link: "#", label: "View Presentation" },
-        { type: "Recording", link: "#", label: "Watch Recording" },
-      ],
     },
     {
         key: "3",
       title: "Doremon Den",
-      description: "Master the fundamentals of prototyping for product development.",
       image: "/images/productClubCollaborators/DoremonDen.jpeg",
-      resources: [
-        { type: "Presentation", link: "#", label: "View Presentation" },
-        { type: "Recording", link: "#", label: "Watch Recording" },
-      ],
     },
     {
         key: "4",
       title: "Joget",
-      description: "Master the fundamentals of prototyping for product development.",
       image: "/images/productClubCollaborators/Joget.jpeg",
-      resources: [
-        { type: "Presentation", link: "#", label: "View Presentation" },
-        { type: "Recording", link: "#", label: "Watch Recording" },
-      ],
     },
     {
         key: "5",
       title: "PM School",
-      description: "Master the fundamentals of prototyping for product development.",
       image: "/images/productClubCollaborators/PMSchool.png",
-      resources: [
-        { type: "Presentation", link: "#", label: "View Presentation" },
-        { type: "Recording", link: "#", label: "Watch Recording" },
-      ],
     },
     // Add more sessions as needed
   ];
@@ -120,9 +95,6 @@ const PastCollaborators = () => {
                 <h3 className="mb-2.5 text-xl font-bold text-black dark:text-white xl:text-sectiontitle3">
                   {collaborators.title}
                 </h3>
-                <p className="mb-7.5 text-black dark:text-white">
-                  {collaborators.description}
-                </p>
                 </div>
                 </div>
               </SwiperSlide>

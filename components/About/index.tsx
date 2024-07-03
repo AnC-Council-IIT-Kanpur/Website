@@ -72,7 +72,7 @@ const About = () => {
               The mission of the Academic and Career Council (AnC) at IIT Kanpur is to empower students with the knowledge, skills, and resources necessary to achieve academic excellence and professional success. We are dedicated to providing comprehensive academic support, career guidance, and opportunities for personal and professional development. 
               </p>
               <div>
-                <Link href="#"
+                {/* <Link href="#"
                   className="group mt-7.5 inline-flex items-center gap-2.5 text-black hover:text-primary dark:text-white dark:hover:text-primary"
                 >
                   <span className="duration-300 group-hover:pr-2">
@@ -86,7 +86,7 @@ const About = () => {
                   >
                     <path d="M10.4767 6.16701L6.00668 1.69701L7.18501 0.518677L13.6667 7.00034L7.18501 13.482L6.00668 12.3037L10.4767 7.83368H0.333344V6.16701H10.4767Z" />
                   </svg>
-                </Link>
+                </Link> */}
               </div>
             
             </motion.div>
@@ -129,7 +129,7 @@ const About = () => {
 
               </p>
               <div>
-                <Link
+                {/* <Link
                   href="#"
                   className="group mt-7.5 inline-flex items-center gap-2.5 text-black hover:text-primary dark:text-white dark:hover:text-primary"
                 >
@@ -144,7 +144,7 @@ const About = () => {
                   >
                     <path d="M10.4767 6.16701L6.00668 1.69701L7.18501 0.518677L13.6667 7.00034L7.18501 13.482L6.00668 12.3037L10.4767 7.83368H0.333344V6.16701H10.4767Z" />
                   </svg>
-                </Link>
+                </Link> */}
               </div>
             </motion.div>
             <motion.div
