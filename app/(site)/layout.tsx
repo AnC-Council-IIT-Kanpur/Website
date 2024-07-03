@@ -24,6 +24,7 @@ export default function RootLayout({
           attribute="class"
           defaultTheme="light"
         >
+          <Lines />
           <Header />
           <ToasterContext />
           {children}

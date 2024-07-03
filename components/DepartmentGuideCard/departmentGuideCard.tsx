@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React from "react";
 import { motion } from "framer-motion";
 import SectionHeader from "../Common/SectionHeader";
 import Image from "next/image";
@@ -19,12 +19,12 @@ const DepartmentGuideCard = ({ gazette }) => {
       whileInView="visible"
       transition={{ duration: 0.5 }}
       viewport={{ once: true }}
-      className="animate_top z-40 rounded-lg border border-white bg-white p-7.5 shadow-solid-3 transition-all hover:shadow-solid-4 dark:border-strokedark dark:bg-blacksection dark:hover:bg-hoverdark xl:p-12.5"
+      className="animate_top z-40 w-full rounded-lg border border-white bg-white p-5 shadow-solid-3 transition-all hover:shadow-solid-4 dark:border-strokedark dark:bg-blacksection dark:hover:bg-hoverdark sm:p-7.5 md:w-1/2 lg:w-1/3 xl:w-1/4"
     >
       <div className="relative flex h-16 w-16 items-center justify-center rounded-[4px] bg-primary">
         <Image src={icon} width={36} height={36} alt={title} />
       </div>
-      <h3 className="mb-5 mt-7.5 text-xl font-semibold text-black dark:text-white xl:text-itemtitle">
+      <h3 className="mb-5 mt-7.5 text-lg font-semibold text-black dark:text-white sm:text-xl xl:text-itemtitle">
         {title}
       </h3>
       <p className="mb-4 text-gray-600 dark:text-gray-400">{description}</p>
@@ -32,7 +32,7 @@ const DepartmentGuideCard = ({ gazette }) => {
         href={pdfUrl}
         target="_blank"
         rel="noopener noreferrer"
-        className="inline-block px-4 py-2 mt-auto text-sm font-medium text-white transition-all duration-300 rounded-lg bg-primary hover:bg-primary-dark"
+        className="hover:bg-primary-dark mt-auto inline-block rounded-lg bg-primary px-4 py-2 text-sm font-medium text-white transition-all duration-300"
       >
         View
       </Link>
@@ -40,19 +40,17 @@ const DepartmentGuideCard = ({ gazette }) => {
   );
 };
 
-
-
-
 const DeptartmentGuide = ({ data, headerInfo }) => {
-  
-
   return (
-    <section id="research-gazettes" className="py-20 lg:py-25 xl:py-30">
-      <div className="px-4 mx-auto max-w-c-1315 md:px-8 xl:px-0">
+    <section
+      id="research-gazettes"
+      className="py-10 sm:py-20 lg:py-25 xl:py-30"
+    >
+      <div className="mx-auto max-w-c-1390 px-4 md:px-8 2xl:px-0">
         <SectionHeader headerInfo={headerInfo} />
 
         <motion.div
-          className="mt-12.5 grid grid-cols-1 gap-7.5 md:grid-cols-2 lg:mt-15 lg:grid-cols-3 xl:mt-20 xl:gap-12.5"
+          className="flex flex-wrap justify-center gap-5 sm:gap-10"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5 }}
@@ -67,3 +65,4 @@ const DeptartmentGuide = ({ data, headerInfo }) => {
 };
 
 export default DeptartmentGuide;
+ 
