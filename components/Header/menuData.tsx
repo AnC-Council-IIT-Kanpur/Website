@@ -44,7 +44,7 @@ const menuData: Menu[] = [
       },
       {
         id: 35,
-        title: "International Relationship",
+        title: "International Relations",
         newTab: false,
         path: "/wings/internationalRelations", //change
       },
