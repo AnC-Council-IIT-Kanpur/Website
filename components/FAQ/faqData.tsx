@@ -28,7 +28,7 @@ const faqData: FAQ[] = [
   }, {
     id: 6,
     quest: "How can I stay updated about higher studies opportunities and deadlines?",
-    and: "AnC regularly updates its website and sends out mails and newsletters with information about higher studies opportunities, scholarship deadlines, and important dates. Make sure to subscribe to our mailing list and check the AnC portal frequently."
+    ans: "AnC regularly updates its website and sends out mails and newsletters with information about higher studies opportunities, scholarship deadlines, and important dates. Make sure to subscribe to our mailing list and check the AnC portal frequently."
   }
 ];
 
