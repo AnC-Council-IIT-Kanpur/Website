@@ -6,7 +6,7 @@ import Activities from "@/components/Activities/Activities";
 
 import { Note } from "@/types/note";
 
-import { faHandshake, faBullhorn, faCoins, faMagnifyingGlass, faCalendarAlt, faStar, faDatabase, faGraduationCap, faGlobe, faHandsHelping } from '@fortawesome/free-solid-svg-icons';
+import { faHandshake, faBullhorn, faCoins, faMagnifyingGlass, faCalendarAlt, faStar, faDatabase, faGraduationCap, faGlobe, faHandsHelping, faO, faPeopleGroup } from '@fortawesome/free-solid-svg-icons';
 
 
 
@@ -53,9 +53,9 @@ const socialLinks = [
 ];
 
 const description = {
-  title: "Empowering Careers:",
-  highlight: "Bridging Academia, Industry and Financial Support",
-  text: "The Outreach and Finance Vertical of AnC Council at IIT Kanpur is dedicated to driving success through strategic sponsorships, efficient financial management, and impactful outreach. We secure valuable collaborations, manage the council’s finances, and handle all outreach activities, ensuring the seamless execution and growth of our initiatives, empowering student achievements and fostering innovation."
+  title: "Empowering Careers",
+  highlight: "",
+  text: "The Outreach and Finance Vertical of AnC Council at IIT Kanpur is dedicated to driving success through strategic sponsorships, efficient financial management, impactful outreach and bring global opportunities for our students. We secure valuable collaborations, manage the council’s finances, and handle all outreach activities, ensuring the seamless execution and growth of our initiatives, empowering student achievements and fostering innovation."
 };
 
 
@@ -83,6 +83,11 @@ const objectives = [
     title: "Evaluate Programs and Enhance Financial Literacy",
     text: "Continuously assess and improve the effectiveness of outreach programs and enhance students' understanding of financial management through targeted workshops and seminars.",
   },
+  {
+    icon: faGlobe  ,
+    title: "Impactful Outreach",
+    text: "Organize impactful outreach activities to engage students, faculty, and the community, promoting the council's mission and vision and fostering a culture of innovation and collaboration.",
+  }
 ];
 
 
@@ -98,7 +103,7 @@ const activitiesData = [
     text: "Launch fundraising initiatives, including grant writing, alumni donations, and sponsorships from businesses, to secure financial support for council activities.",
   },
   {
-    icon: faGlobe,
+    icon: faPeopleGroup,
     name: "Social Media Campaigns",
     text: "Run social media campaigns to promote the council's activities, resources, and events, ensuring maximum reach and engagement among students."
   },
@@ -106,6 +111,11 @@ const activitiesData = [
     icon: faHandsHelping,
     name: "Financial Audits and Compliance",
     text: "Conduct regular financial audits and ensure compliance with college policies and external regulations to maintain financial integrity and accountability.",
+  },
+  {
+    icon: faGlobe  ,
+    name: "Provide Global opportunities",
+    text: "Bring global opportunities for students to enhance their skills and knowledge through various programs and collaborations.",
   },
 ];
 

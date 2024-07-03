@@ -35,7 +35,7 @@ const DirectorNote: React.FC<DirectorNoteProps> = ({ headerInfo, quotes }) => {
         viewport={{ once: true }}
         className="container mx-auto px-4 md:px-8 xl:px-0"
       >
-        <Swiper
+        {/* <Swiper
           spaceBetween={30}
           slidesPerView={1}
           autoplay={{ delay: 3000, disableOnInteraction: false }}
@@ -48,7 +48,7 @@ const DirectorNote: React.FC<DirectorNoteProps> = ({ headerInfo, quotes }) => {
               <SingleQuote quote={quote} />
             </SwiperSlide>
           ))}
-        </Swiper>
+        </Swiper> */}
       </motion.div>
     </section>
   );
