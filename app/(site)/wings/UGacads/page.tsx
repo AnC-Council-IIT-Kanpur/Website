@@ -40,20 +40,20 @@ const banners = [
     delay: 3000,
     className: "dark:hidden",
     slides: [
-      { src: "/images/banner/banner1.png", alt: "Event Image 1" },
+      { src: "/images/banner/Banner1.png", alt: "Event Image 1" },
       {
         src: "/images/banner/Acdemic orientation 2.0.jpg",
         alt: "Event Image 2",
       },
-      { src: "/images/banner/banner3.jpg", alt: "Event Image 3" },
+      { src: "/images/banner/Banner3.jpg", alt: "Event Image 3" },
     ],
   },
   {
     delay: 3000,
     className: "dark:block",
     slides: [
-      { src: "/images/banner/banner2png.png", alt: "Event Image 1" },
-      { src: "/images/banner/banner3.jpg", alt: "Event Image 2" },
+      { src: "/images/banner/Banner2png.png", alt: "Event Image 1" },
+      { src: "/images/banner/Banner3.jpg", alt: "Event Image 2" },
       { src: "/images/banner/file1.jpg", alt: "Event Image 3" },
     ],
   },
