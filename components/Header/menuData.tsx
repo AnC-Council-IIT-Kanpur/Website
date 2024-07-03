@@ -13,18 +13,18 @@ const menuData: Menu[] = [
     newTab: false,
     path: "/#features",
   },
-  {
-    id: 2.1,
-    title: "Blogs",
-    newTab: false,
-    path: "/blog",
-  },
-  {
-    id: 2.3,
-    title: "Resources",
-    newTab: false,
-    path: "/docs",
-  },
+  // {
+  //   id: 2.1,
+  //   title: "Blogs",
+  //   newTab: false,
+  //   path: "/blog",
+  // },
+  // {
+  //   id: 2.3,
+  //   title: "Resources",
+  //   newTab: false,
+  //   path: "/docs",
+  // },
   {
     id: 3,
     title: "Links",

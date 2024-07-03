@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Link from "next/link";
 import dynamic from "next/dynamic";
 import {
   faHandsHelping,
@@ -11,6 +12,9 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 // Dynamic import of components
+const QuickLink = dynamic(() => import("@/components/Quicklinks"), {
+  ssr: false,
+});
 const Banner = dynamic(() => import("@/components/Banner"), { ssr: false });
 const ObjectivesSection = dynamic(() => import("@/components/Objectives"), {
   ssr: false,
@@ -185,6 +189,7 @@ const UGAcademicsPage = () => {
         headerInfo={DepartmentGuideHeader}
         data={DepartmentGuideData}
       />
+      <QuickLink />
       <FAQ />
     </div>
   );
