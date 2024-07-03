@@ -3,11 +3,7 @@ import Banner from "@/components/Banner";
 import ObjectivesSection from "@/components/Objectives";
 import { Metadata } from "next";
 import Activities from "@/components/Activities/Activities";
-import CalendarView from "@/components/CalenderView";
-import ResearchGazette from "@/components/ResearchGazette";
-import PastSessions from "@/components/PastSessions";
-import DirectorNote from "@/components/Quote/DirectorNote";
-import NoteSection from "@/components/Note/NoteSection";
+
 import { Note } from "@/types/note";
 
 import { faHandshake, faBullhorn, faCoins, faMagnifyingGlass, faCalendarAlt, faStar, faDatabase, faGraduationCap, faGlobe, faHandsHelping } from '@fortawesome/free-solid-svg-icons';
