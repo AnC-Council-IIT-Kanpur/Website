@@ -20,8 +20,7 @@ const Team = ({teamSectionData}: {teamSectionData: TeamSection}) => {
             }}
           />
           {/* <!-- Section Title End --> */}
-
-          <div className="flex flex-wrap justify-center gap-10">
+          <div className="mt-2 flex flex-wrap justify-center gap-10">
             {/* <!-- Features item Start --> */}
 
             {teamSectionData.teams.map((team, key) => (
