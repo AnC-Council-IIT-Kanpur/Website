@@ -21,7 +21,7 @@ const Feature = () => {
           />
           {/* <!-- Section Title End --> */}
 
-          <div className="flex flex-wrap justify-center gap-5">
+          <div className="flex flex-wrap justify-center gap-5 mt-6">
             {/* <!-- Features item Start --> */}
             
             {featuresData.map((feature, key) => (
