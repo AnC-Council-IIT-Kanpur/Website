@@ -87,8 +87,8 @@ const objectives = [
     icon: faComments,
     // title: "To Organise Tests, Workshops and guiding sessions for Skills ",
     // title: "Providing Assistance to Students for upskilling them",
-    title: "Career Preparation",
-    text: "We organize workshops and training programs to develop essential professional skills, including communication, leadership, and technical expertise. ",
+    title: "Increase Career Awareness",
+    text: "Raise awareness among the student community about the diverse career opportunities available across various industries",
   },
   // {
   //   icon: faBullhorn,
@@ -98,46 +98,66 @@ const objectives = [
   {
     icon: faObjectGroup,
     // title: "To Contact Alumni & Professionals in Diverse Career Fields",
-    title: "Career Awareness",
-    text: "We contact our alums as well as other professionals to help our students connect with them so that they get knowledge and get enlightened in developing careers in diverse areas.",
+    title: "Promote Career Readiness",
+    text: "Foster a culture of career readiness by motivating students to actively engage in skill-building and career planning activities",
   },
   {
     icon: faMagic,
-    title: "Career Counselling",
-    text: "Our mission is to assist the students in navigating their career paths and equipping them with the essential skills, knowledge, and resources necessary for success in their chosen fields.",
+    title: "Provide Support and Guidance",
+    text: "Offer comprehensive support and guidance to students seeking internships, placements, and career advancement",
+  },
+  {
+    icon: faMagic,
+    title: "Streamline Career Information",
+    text: "Collate, organize, and host career-related information online for easy student access and effective career planning",
+  },
+  {
+    icon: faMagic,
+    title: "Organize Career Events",
+    text: "Conduct events, workshops, and sessions on various career-related topics, including industry insights, resume building, and interview preparation",
+  },
+  {
+    icon: faMagic,
+    title: "Mentorship and Networking",
+    text: "Facilitate mentorship and networking by connecting successful alumni and senior students with current students primarily focused on providing guidance for internships and placements",
   },
 ];
 
 const activitiesData = [
   {
     icon: faCalendarAlt,
-    name: "Event Organisation",
-    text: "Plan and organise a variety of events such as talks, sessions, and workshops covering career options, guidance, and departmental orientations. Organise sessions including highly-qualified speakers from various fields to motivate students.",
+    name: "Internship Mentorship Program",
+    text: "Our Internship Mentorship Program pairs second-year students with third-year mentors, guiding them through the internship preparation period and the recruitment drive. This supportive system ensures students are well-prepared and confident",
   },
   {
     icon: faStar,
-    name: "Career Guidance",
-    text: "Plan and execute numerous events to spread awareness about various career opportunities and prepare students for the same. High-professionals come as speakers to provide guidance about their respective fields.",
+    name: "Skill Upliftment",
+    text: "We’ve partnered with ‘Geeks For Geeks’ to offer specialized courses at highly subsidized rates. These courses, designed for students from various batches, provide a focused trajectory for skill enhancement and future career opportunities",
+  },
+  {
+    icon: faHandsHelping,
+    name: "Internship Preparation Sessions",
+    text: "Our series of internship preparation sessions focuses on equipping students with the necessary skills for successful internships. Covering areas such as Quant, Consulting, Software, Analytics, Finance, Core, and Techno-Managerial, these sessions serve as a comprehensive guide for aspiring interns",
+  },
+  {
+    icon: faGraduationCap,
+    name: "Placement Fundae",
+    text: "Our Placement Fundae blog series documents the placement preparation journeys of final-year students. With key tactics, interview tips, and inspirational experiences, these blogs offer invaluable insights for students gearing up for placements",
+  },
+  {
+    icon: faBullseye,
+    name: "Higher Studies guidance",
+    text: "Alumni from IIT Kanpur who have pursued MBA, MTech, CFA, and PhD programs share their motivations, preparation strategies, and personal journeys. This section provides valuable guidance for those considering further education",
+  },
+  {
+    icon: faHandsHelping,
+    name: "Internship and Placement Training Program",
+    text: "Our comprehensive Internship and Placement Training Program is designed to prepare students for the professional world. Through targeted training and practical guidance, we ensure students are ready to excel in their careers",
   },
   {
     icon: faHandsHelping,
     name: "Career Connect",
-    text: "Annual Flagship event conducted every year in the first week of March.  This event aims to inspire and empower both undergraduate and postgraduate students by providing them with the necessary tools and information to make well-informed decisions in their professional, social, and personal lives.",
-  },
-  {
-    icon: faGraduationCap,
-    name: "Internship and Placement Preparation",
-    text: "Host workshops on resume-making, Group Discussions and Interview preparations. Conducting mock interviews so that they get a maximum chance of being shortlisted and are able to create a good impression.",
-  },
-  {
-    icon: faBullseye,
-    name: "Upskilling",
-    text: "Conduct numerous sessions to upgrade skills of students to current industry requirements. Provide best resources to students so that they can make best use of their free time to learn new skills.",
-  },
-  {
-    icon: faHandsHelping,
-    name: "Alumni Sessions",
-    text: "Alumni will connect with the students to foster a sense of community, promote learning beyond the classroom, and provide valuable connections and resources as the students navigate their academic and professional journeys.",
+    text: "Our Career Connect initiative bridges the gap between students and industry professionals. Through various events and networking opportunities, students can gain insights, build connections, and explore diverse career paths",
   },
 ];
 
