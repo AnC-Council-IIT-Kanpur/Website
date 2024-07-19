@@ -3,8 +3,6 @@ import Banner from "@/components/Banner";
 import ObjectivesSection from "@/components/Objectives";
 import { Metadata } from "next";
 import Activities from "@/components/Activities/Activities";
-import CalendarView from "@/components/CalenderView";
-import ResearchGazette from "@/components/ResearchGazette";
 import PastSessions from "@/components/PastSessions";
 
 import {
@@ -167,13 +165,7 @@ const activitiesHeader = {
   description: `Explore various activities organized by our team, including events, workshops, and more. Get involved and enhance your experience.`,
 };
 
-const calendarInfo = {
-  title: "Upcoming Talks & Seminars",
-  description: `The Research wing routinely conducts a number of events, talks, and sessions, covering various aspects of research and work (including career options, research opportunities (on & off campus), guidance sessions, departmental orientation sessions, and technical workshops). Managers of the wing bear the responsibility of organizing these sessions with the assistance of the council secretaries.
-  Join us for insightful talks and seminars hosted by leading experts in various fields. Stay updated with our calendar to never miss an event.`,
-  buttonText: "View Calendar",
-  buttonUrl: "#",
-};
+
 
 const PastSessionsHeader = {
   title: "OUR PREVIOUS SESSIONS",
@@ -354,7 +346,6 @@ const ResearchPage = () => {
       />
       <ObjectivesSection title="Our Objectives" objectives={objectives} />
       <Activities headerInfo={activitiesHeader} activities={activitiesData} />
-      <CalendarView calendarInfo={calendarInfo} />
       {/* <ResearchGazette headerInfo={CareerCHeader} data={CareerCData} /> */}
       <PastSessions
         PastSessionsHeader={PastSessionsHeader}
