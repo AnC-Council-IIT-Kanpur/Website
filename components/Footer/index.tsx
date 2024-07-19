@@ -27,7 +27,7 @@ const Footer = () => {
                 whileInView="visible"
                 transition={{ duration: 1, delay: 0.5 }}
                 viewport={{ once: true }}
-                className="w-1/2 animate_top lg:w-1/4"
+                className="w-full animate_top lg:w-1/4"
               >
                 <Link href="index.html" className="relative">
                   <Image
@@ -54,14 +54,14 @@ const Footer = () => {
                   contact
                 </p>
                 <Link
-                  href="#"
+                  href="mailto:anc@iitk.ac.in"
                   className="font-medium text-black text-itemtitle dark:text-white"
                 >
                   anc@iitk.ac.in
                 </Link>
               </motion.div>
 
-              <div className="flex flex-col w-full gap-8 md:flex-row md:justify-between md:gap-0 lg:w-2/3 xl:w-7/12">
+              <div className="flex w-full gap-8 flex-row justify-between lg:w-2/3 xl:w-7/12">
                 <motion.div
                   variants={{
                     hidden: {
