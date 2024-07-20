@@ -39,7 +39,7 @@ const featuresData: Feature[] = [
     title: "Product Club",
     description:
       "The IR Wing is the one which undertakes the responsibility of improving collaborations of the Institute and its foreign counterparts.",
-    link: "/wings/internationalRelations",
+    link: "/wings/productclub",
   },
   {
     id: 5,
@@ -47,7 +47,7 @@ const featuresData: Feature[] = [
     title: "Web Wing",
     description:
       "The Web Wing is the one which is behind the digitization of the AnC council and the expansion of its reach through the creation of this very website.",
-    link: "#",
+    link: "javascript:void(0)",
   },
   {
     id: 6,
@@ -55,7 +55,7 @@ const featuresData: Feature[] = [
     title: "Media & Publicity Wing",
     description:
       "The Wing primarily dedicated to boosting the visibility and engagement in the events of the AnC Council.",
-    link: "#",
+    link: "javascript:void(0)",
   },
   {
     id: 7,
