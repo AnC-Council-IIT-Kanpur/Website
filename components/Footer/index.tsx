@@ -54,10 +54,10 @@ const Footer = () => {
                   contact
                 </p>
                 <Link
-                  href="mailto:anc@iitk.ac.in"
+                  href="mailto:ug_anc@iitk.ac.in"
                   className="font-medium text-black text-itemtitle dark:text-white"
                 >
-                  anc@iitk.ac.in
+                  ug_anc@iitk.ac.in
                 </Link>
               </motion.div>
 
@@ -159,17 +159,17 @@ const Footer = () => {
                   </h4>
 
                   <ul>
-                    <li>
+                    {/* <li>
                       <Link
                         href="#"
                         className="inline-block mb-3 hover:text-primary"
                       >
                         About Us
                       </Link>
-                    </li>
+                    </li> */}
                     <li>
                       <Link
-                        href="#"
+                        href="/team"
                         className="inline-block mb-3 hover:text-primary"
                       >
                         Team
@@ -177,20 +177,20 @@ const Footer = () => {
                     </li>
                     <li>
                       <Link
-                        href="#"
+                        href="#mainevents"
                         className="inline-block mb-3 hover:text-primary"
                       >
                         Our Works
                       </Link>
                     </li>
-                    <li>
+                    {/* <li>
                       <Link
                         href="#"
                         className="inline-block mb-3 hover:text-primary"
                       >
                         Gallery
                       </Link>
-                    </li>
+                    </li> */}
                   </ul> 
                 </motion.div>
 
@@ -413,7 +413,7 @@ const Footer = () => {
                     </svg>
                   </Link>
                 </li>
-                <li>
+                {/* <li>
                   <Link href="#" aria-label="social icon">
                     <svg
                       className="fill-[#D1D8E0] transition-all duration-300 hover:fill-primary"
@@ -432,7 +432,7 @@ const Footer = () => {
                       </defs>
                     </svg>
                   </Link>
-                </li>
+                </li> */}
               </ul>
             </motion.div>
           </div>

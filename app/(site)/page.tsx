@@ -17,7 +17,7 @@ import Testimonial from "@/components/Testimonial";
 
 
 export const metadata: Metadata = {
-  title: "Next.js Starter Template for SaaS Startups - Solid SaaS Boilerplate",
+  title: "AnC Council IIT Kanpur",
   description: "This is Home for Solid Pro",
   // other metadata
 };

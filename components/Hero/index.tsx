@@ -46,7 +46,7 @@ const Hero = () => {
                 Under the Student's Gymkhana, we are dedicated to empowering students with all their academic, research, and career needs. Whether you are an undergraduate or postgraduate student, we are here to assist you with your academic and career-related queries and help you achieve your goals.
               </p>
 
-              <a href="/#features">
+              <a href="#features">
                 <button
 
                   aria-label="get started button"
