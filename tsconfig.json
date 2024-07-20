@@ -25,6 +25,6 @@
     },
     "strictNullChecks": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "components/ProductClub/CalenderView/instagramLinkData.js", "components/InstagramPosts/instagramLinkData.js"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "components/ProductClub/CalenderView/instagramLinkData.js", "components/InstagramPosts/instagramLinkData.js", "global.d.ts"],
   "exclude": ["node_modules"]
 }
