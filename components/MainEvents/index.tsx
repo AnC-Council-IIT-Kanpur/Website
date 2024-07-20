@@ -6,13 +6,13 @@ const MainEvents = () => {
   return (
     <>
       {/* <!-- ===== Pricing Table Start ===== --> */}
-      <section className="overflow-hidden pb-20 pt-15 lg:pb-25 xl:pb-30">
+      <section id="mainevents" className="overflow-hidden pb-20 pt-15 lg:pb-25 xl:pb-30">
         <div className="mx-auto max-w-c-1315 px-4 md:px-8 xl:px-0">
           {/* <!-- Section Title Start --> */}
           <div className="animate_top mx-auto text-center">
             <SectionHeader
               headerInfo={{
-                title: `EVENT SHOWCASE`,
+                title: `PAST EVENTS`,
                 subtitle: `Celebrating Excellence`,
                 description: `Highlighted events hosted by the Academic and Career Council at IIT Kanpur`,
               }}
@@ -33,7 +33,7 @@ const MainEvents = () => {
           <div className="flex flex-wrap justify-center gap-7.5 lg:flex-nowrap xl:gap-12.5">
             <div className="animate_top group relative rounded-lg border border-stroke bg-white p-7.5 shadow-solid-10 dark:border-strokedark dark:bg-blacksection dark:shadow-none md:w-[45%] lg:w-1/3 xl:p-12.5">
             <Image
-              src="/images/anc-logo.png"
+              src="/images/logo/carrer_connect.png"
               width={250}
               height={250}
               alt="Dotted"
@@ -88,7 +88,7 @@ const MainEvents = () => {
             </div>
             <div className="animate_top group relative rounded-lg border border-stroke bg-white p-7.5 shadow-solid-10 dark:border-strokedark dark:bg-blacksection dark:shadow-none md:w-[45%] lg:w-1/3 xl:p-12.5">
             <Image
-              src="/images/anc-logo.png"
+              src="/images/logo/nsrc.png"
               width={250}
               height={250}
               alt="Dotted"
@@ -142,7 +142,7 @@ const MainEvents = () => {
             </div>
             <div className="animate_top group relative rounded-lg border border-stroke bg-white p-7.5 shadow-solid-10 dark:border-strokedark dark:bg-blacksection dark:shadow-none md:w-[45%] lg:w-1/3 xl:p-12.5">
             <Image
-              src="/images/anc-logo.png"
+              src="/images/logo/irs.png"
               width={250}
               height={250}
               alt="Dotted"

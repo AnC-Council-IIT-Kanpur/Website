@@ -27,16 +27,20 @@ const Header = () => {
     window.addEventListener("scroll", handleStickyMenu);
   });
 
+  const handleLinkClick = () => {
+    setNavigationOpen(false);
+  };
+
   return (
     <header
       className={`fixed left-0 top-0 z-99999 w-full py-7 ${
         stickyMenu
           ? "bg-white !py-4 shadow transition duration-100 dark:bg-black"
-          : ""
+          : "bg-white !py-4 opacity-75 shadow transition duration-100 dark:bg-black"
       }`}
     >
-      <div className="relative items-center justify-between px-4 mx-auto max-w-c-1390 md:px-8 xl:flex 2xl:px-0">
-        <div className="flex items-center justify-between w-full xl:w-1/4">
+      <div className="relative mx-auto max-w-c-1390 items-center justify-between px-4 md:px-8 xl:flex 2xl:px-0">
+        <div className="flex w-full items-center justify-between xl:w-1/4">
           <Link href="/">
             <Image
               src="/images/logo/logo-dark.svg"
@@ -61,7 +65,7 @@ const Header = () => {
             onClick={() => setNavigationOpen(!navigationOpen)}
           >
             <span className="relative block h-5.5 w-5.5 cursor-pointer">
-              <span className="absolute right-0 block w-full h-full">
+              <span className="absolute right-0 block h-full w-full">
                 <span
                   className={`relative left-0 top-0 my-1 block h-0.5 rounded-sm bg-black delay-[0] duration-200 ease-in-out dark:bg-white ${
                     !navigationOpen ? "!w-full delay-300" : "w-0"
@@ -78,7 +82,7 @@ const Header = () => {
                   }`}
                 ></span>
               </span>
-              <span className="absolute right-0 w-full h-full rotate-45 du-block">
+              <span className="du-block absolute right-0 h-full w-full rotate-45">
                 <span
                   className={`absolute left-2.5 top-0 block h-full w-0.5 rounded-sm bg-black delay-300 duration-200 ease-in-out dark:bg-white ${
                     !navigationOpen ? "!h-0 delay-[0]" : "h-full"
@@ -105,17 +109,17 @@ const Header = () => {
           <nav>
             <ul className="flex flex-col gap-5 xl:flex-row xl:items-center xl:gap-10">
               {menuData.map((menuItem, key) => (
-                <li key={key} className={menuItem.submenu && "group relative"}>
+                <li key={key} className={menuItem.submenu && "group relative "}>
                   {menuItem.submenu ? (
                     <>
                       <button
                         onClick={() => setDropdownToggler(!dropdownToggler)}
-                        className="flex items-center justify-between gap-3 cursor-pointer hover:text-primary"
+                        className="flex cursor-pointer items-center justify-between gap-3 hover:text-primary"
                       >
                         {menuItem.title}
                         <span>
                           <svg
-                            className="w-3 h-3 cursor-pointer fill-waterloo group-hover:fill-primary"
+                            className="h-3 w-3 cursor-pointer fill-waterloo group-hover:fill-primary"
                             xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 512 512"
                           >
@@ -129,7 +133,12 @@ const Header = () => {
                       >
                         {menuItem.submenu.map((item, key) => (
                           <li key={key} className="hover:text-primary">
-                            <Link href={item.path || "#"}>{item.title}</Link>
+                            <Link
+                              href={item.path || "#"}
+                              onClick={handleLinkClick}
+                            >
+                              {item.title}
+                            </Link>
                           </li>
                         ))}
                       </ul>
@@ -142,6 +151,7 @@ const Header = () => {
                           ? "text-primary hover:text-primary"
                           : "hover:text-primary"
                       }
+                      onClick={handleLinkClick}
                     >
                       {menuItem.title}
                     </Link>
@@ -151,23 +161,21 @@ const Header = () => {
             </ul>
           </nav>
 
-          <div className="flex items-center gap-6 mt-7 xl:mt-0">
+          <div className="mt-7 flex items-center gap-6 xl:mt-0">
             <ThemeToggler />
 
             <Link
-              href="https://nextjstemplates.com/templates/solid"
+              href="#"
               className="flex items-center justify-center rounded-full bg-primary px-7.5 py-2.5 text-regular text-white duration-300 ease-in-out hover:bg-primaryho"
+              onClick={handleLinkClick}
             >
               Portals
             </Link>
-
           </div>
         </div>
       </div>
     </header>
   );
 };
-
-// w-full delay-300
 
 export default Header;

@@ -31,7 +31,7 @@ const SingleGazette = ({ gazette }) => {
         rel="noopener noreferrer"
         className="inline-block px-4 py-2 mt-auto text-sm font-medium text-white transition-all duration-300 rounded-lg bg-primary hover:bg-primary-dark"
       >
-        Download PDF
+        Know more
       </Link>
     </motion.div>
   );

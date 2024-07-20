@@ -38,7 +38,7 @@ const Hero = () => {
               <h1 className="mb-5 pr-16 text-3xl font-bold text-black dark:text-white xl:text-hero ">
                 Academics and Career Council,
                 <span className="relative ml-1 inline-block before:absolute before:bottom-2.5 before:left-0 before:-z-1 before:h-3 before:w-full">
-                {/* before:bg-titlebg dark:before:bg-titlebgdark  */}
+                  {/* before:bg-titlebg dark:before:bg-titlebgdark  */}
                   IIT Kanpur
                 </span>
               </h1>
@@ -46,12 +46,15 @@ const Hero = () => {
                 Under the Student's Gymkhana, we are dedicated to empowering students with all their academic, research, and career needs. Whether you are an undergraduate or postgraduate student, we are here to assist you with your academic and career-related queries and help you achieve your goals.
               </p>
 
-              <button
-                aria-label="get started button"
-                className="mt-10 flex rounded-full bg-black px-7.5 py-2.5 text-white duration-300 ease-in-out hover:bg-blackho dark:bg-btndark dark:hover:bg-blackho"
-              >
-                Explore {" ->"}
-              </button>
+              <a href="#features">
+                <button
+
+                  aria-label="get started button"
+                  className="mt-10 flex rounded-full bg-black px-7.5 py-2.5 text-white duration-300 ease-in-out hover:bg-blackho dark:bg-btndark dark:hover:bg-blackho"
+                >
+                  Explore {" ->"}
+                </button>
+              </a>
             </div>
 
             {/* <div className="animate_right hidden md:w-1/2 lg:block overflow-hidden">
