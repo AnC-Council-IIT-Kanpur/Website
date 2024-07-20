@@ -8,7 +8,20 @@ import ResearchGazette from "@/components/ResearchGazette";
 import PastSessions from "@/components/PastSessions";
 import DirectorNote from "@/components/Quote/DirectorNote";
 import { Note } from "@/types/note";
-import { faComments, faBullhorn, faObjectGroup, faMagic, faCalendarAlt, faStar, faDatabase, faGraduationCap, faGlobe, faHandsHelping, faPeopleArrows, faPeopleGroup } from '@fortawesome/free-solid-svg-icons';
+import {
+  faComments,
+  faBullhorn,
+  faObjectGroup,
+  faMagic,
+  faCalendarAlt,
+  faStar,
+  faDatabase,
+  faGraduationCap,
+  faGlobe,
+  faHandsHelping,
+  faPeopleArrows,
+  faPeopleGroup,
+} from "@fortawesome/free-solid-svg-icons";
 import RTestimonial from "@/components/ResearchTestimonial";
 
 export const metadata: Metadata = {
@@ -20,52 +33,59 @@ export const metadata: Metadata = {
 const banners = [
   {
     delay: 3000,
-    className: 'dark:hidden',
+    className: "dark:hidden",
     slides: [
-      { src: '/images/banner/anciitk_cover.jpeg', alt: 'Slide 1' },
-      { src: '/images/banner/rw1.jpeg', alt: 'Slide 2' },
-      { src: '/images/banner/rw3.jpeg', alt: 'Slide 2' },
-      { src: '/images/banner/rw4.jpg', alt: 'Slide 3' },
-      { src: '/images/banner/rw5.png', alt: 'Slide 3' }
-    ]
+      { src: "/images/banner/anciitk_cover.jpeg", alt: "Slide 1" },
+      { src: "/images/banner/rw1.jpeg", alt: "Slide 2" },
+      { src: "/images/banner/rw3.jpeg", alt: "Slide 2" },
+      { src: "/images/banner/rw4.jpg", alt: "Slide 3" },
+      { src: "/images/banner/rw5.png", alt: "Slide 3" },
+    ],
   },
   {
     delay: 3000,
-    className: 'dark:block',
+    className: "dark:block",
     slides: [
-      { src: '/images/banner/anciitk_cover.jpeg', alt: 'Slide 1' },
-      { src: '/images/banner/rw1.jpeg', alt: 'Slide 2' },
-      { src: '/images/banner/rw3.jpeg', alt: 'Slide 2' },
-      { src: '/images/banner/rw4.jpg', alt: 'Slide 3' }
-    ]
-  }
+      { src: "/images/banner/anciitk_cover.jpeg", alt: "Slide 1" },
+      { src: "/images/banner/rw1.jpeg", alt: "Slide 2" },
+      { src: "/images/banner/rw3.jpeg", alt: "Slide 2" },
+      { src: "/images/banner/rw4.jpg", alt: "Slide 3" },
+    ],
+  },
 ];
 
 const socialLinks = [
   {
-    href: 'https://www.linkedin.com/company/research-wing-anc-iitk/',
-    label: 'linkedin icon',
-    iconPath: 'M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11.666 20h-2.668v-11h2.668v11zm-1.334-12.284c-.86 0-1.558-.702-1.558-1.558s.698-1.558 1.558-1.558 1.558.702 1.558 1.558-.698 1.558-1.558 1.558zm13.334 12.284h-2.666v-5.568c0-1.331-.026-3.042-1.855-3.042-1.857 0-2.141 1.448-2.141 2.947v5.663h-2.666v-11h2.56v1.503h.037c.356-.674 1.227-1.383 2.528-1.383 2.704 0 3.202 1.779 3.202 4.093v6.787z'
-
+    href: "https://www.linkedin.com/company/research-wing-anc-iitk/",
+    label: "linkedin icon",
+    iconPath:
+      "M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11.666 20h-2.668v-11h2.668v11zm-1.334-12.284c-.86 0-1.558-.702-1.558-1.558s.698-1.558 1.558-1.558 1.558.702 1.558 1.558-.698 1.558-1.558 1.558zm13.334 12.284h-2.666v-5.568c0-1.331-.026-3.042-1.855-3.042-1.857 0-2.141 1.448-2.141 2.947v5.663h-2.666v-11h2.56v1.503h.037c.356-.674 1.227-1.383 2.528-1.383 2.704 0 3.202 1.779 3.202 4.093v6.787z",
   },
   {
-    href: 'mailto:researchwing.iitk@gmail.com',
-    label: 'mailbox icon',
-    iconPath: 'M4.5 4h15c.83 0 1.5.67 1.5 1.5v13c0 .83-.67 1.5-1.5 1.5h-15c-.83 0-1.5-.67-1.5-1.5v-13c0-.83.67-1.5 1.5-1.5zm0 2v.511l7.5 4.744 7.5-4.744v-.511h-15zm15 11v-8.745l-7.5 4.744-7.5-4.744v8.745h15z'
+    href: "mailto:researchwing.iitk@gmail.com",
+    label: "mailbox icon",
+    iconPath:
+      "M4.5 4h15c.83 0 1.5.67 1.5 1.5v13c0 .83-.67 1.5-1.5 1.5h-15c-.83 0-1.5-.67-1.5-1.5v-13c0-.83.67-1.5 1.5-1.5zm0 2v.511l7.5 4.744 7.5-4.744v-.511h-15zm15 11v-8.745l-7.5 4.744-7.5-4.744v8.745h15z",
   },
   {
-    href: 'https://www.instagram.com/iitk_research_wing?igsh=MWpxdHByMWtzbHl0Yg==',
-    label: 'instagram icon',
-    iconPath: 'M12 2.163c3.204 0 3.584.012 4.85.07 1.17.054 1.796.24 2.214.403.55.213.944.469 1.357.883.414.414.67.807.883 1.357.163.418.349 1.043.403 2.214.058 1.267.07 1.647.07 4.85s-.012 3.584-.07 4.85c-.054 1.17-.24 1.796-.403 2.214-.213.55-.469.944-.883 1.357-.414.414-.807.67-1.357.883-.418.163-1.043.349-2.214.403-1.267.058-1.647.07-4.85.07s-3.584-.012-4.85-.07c-1.17-.054-1.796-.24-2.214-.403-.55-.213-.944-.469-1.357-.883-.414-.414-.67-.807-.883-1.357-.163-.418-.349-1.043-.403-2.214-.058-1.267-.07-1.647-.07-4.85s.012-3.584.07-4.85c.054-1.17.24-1.796.403-2.214.213-.55.469-.944.883-1.357.414-.414.807-.67 1.357-.883.418-.163 1.043-.349 2.214-.403 1.267-.058 1.647-.07 4.85-.07zm0-2.163c-3.259 0-3.667.012-4.947.072-1.272.058-2.147.24-2.904.513a5.919 5.919 0 0 0-2.14 1.384 5.919 5.919 0 0 0-1.384 2.14c-.273.757-.455 1.632-.513 2.904-.06 1.28-.072 1.688-.072 4.947s.012 3.667.072 4.947c.058 1.272.24 2.147.513 2.904a5.919 5.919 0 0 0 1.384 2.14 5.919 5.919 0 0 0 2.14 1.384c.757.273 1.632.455 2.904.513 1.28.06 1.688.072 4.947.072s3.667-.012 4.947-.072c1.272-.058 2.147-.24 2.904-.513a5.919 5.919 0 0 0 2.14-1.384 5.919 5.919 0 0 0 1.384-2.14c.273-.757.455-1.632.513-2.904.06-1.28.072-1.688.072-4.947s-.012-3.667-.072-4.947c-.058-1.272-.24-2.147-.513-2.904a5.919 5.919 0 0 0-1.384-2.14 5.919 5.919 0 0 0-2.14-1.384c-.757-.273-1.632-.455-2.904-.513-1.28-.06-1.688-.072-4.947-.072zM12 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zm0 10.162a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0-2.88 1.44 1.44 0 0 0 0 2.88z'
-  }
-  // Add more social links here
+    href: "https://www.instagram.com/iitk_research_wing/",
+    label: "instagram icon",
+    iconPath:
+      "M 8 3 C 5.239 3 3 5.239 3 8 L 3 16 C 3 18.761 5.239 21 8 21 L 16 21 C 18.761 21 21 18.761 21 16 L 21 8 C 21 5.239 18.761 3 16 3 L 8 3 z M 18 5 C 18.552 5 19 5.448 19 6 C 19 6.552 18.552 7 18 7 C 17.448 7 17 6.552 17 6 C 17 5.448 17.448 5 18 5 z M 12 7 C 14.761 7 17 9.239 17 12 C 17 14.761 14.761 17 12 17 C 9.239 17 7 14.761 7 12 C 7 9.239 9.239 7 12 7 z M 12 9 A 3 3 0 0 0 9 12 A 3 3 0 0 0 12 15 A 3 3 0 0 0 15 12 A 3 3 0 0 0 12 9 z",
+  },
+  {
+    href: "https://www.linkedin.com/company/research-wing-anc-iitk/",
+    label: "linkedIn icon",
+    iconPath:
+      " M6.94 5.00002C6.93974 5.53046 6.72877 6.03906 6.35351 6.41394C5.97825 6.78883 5.46944 6.99929 4.939 6.99902C4.40857 6.99876 3.89997 6.78779 3.52508 6.41253C3.1502 6.03727 2.93974 5.52846 2.94 4.99802C2.94027 4.46759 3.15124 3.95899 3.5265 3.5841C3.90176 3.20922 4.41057 2.99876 4.941 2.99902C5.47144 2.99929 5.98004 3.21026 6.35492 3.58552C6.72981 3.96078 6.94027 4.46959 6.94 5.00002ZM7 8.48002H3V21H7V8.48002ZM13.32 8.48002H9.34V21H13.28V14.43C13.28 10.77 18.05 10.43 18.05 14.43V21H22V13.07C22 6.90002 14.94 7.13002 13.28 10.16L13.32 8.48002Z",
+  },
 ];
 
 const description = {
   title: "Pioneering Research for",
   highlight: "a Better Future",
   text: "The aim of the Research Wing is to increase awareness about the variety of research going on the campus and instill a sense of motivation towards the same, among the student community, by promoting a thriving research culture. The wing envisions to provide a platform to budding researchers, support and guidance to the research enthusiasts and voice to those who are excelling in the field.",
-}
+};
 
 const objectives = [
   {
@@ -94,7 +114,6 @@ const objectives = [
     text: "Engage with alumni who are active in research to mentor current students and provide networking opportunities.",
   },
 ];
-
 
 const activitiesData = [
   {
@@ -135,36 +154,46 @@ const activitiesHeader = {
   description: `Explore various activities organized by our team, including events, workshops, and more. Get involved and enhance your experience.`,
 };
 
-
 const calendarInfo = {
   title: "Upcoming Talks & Seminars",
   description: `The Research wing routinely conducts a number of events, talks, and sessions, covering various aspects of research and work (including career options, research opportunities (on & off campus), guidance sessions, departmental orientation sessions, and technical workshops). Managers of the wing bear the responsibility of organizing these sessions with the assistance of the council secretaries.
   Join us for insightful talks and seminars hosted by leading experts in various fields. Stay updated with our calendar to never miss an event.`,
   buttonText: "View Calendar",
-  buttonUrl: "https://calendar.google.com/calendar/u/0?cid=cmVzZWFyY2h3aW5nLmlpdGtAZ21haWwuY29t"
+  buttonUrl:
+    "https://calendar.google.com/calendar/u/0?cid=cmVzZWFyY2h3aW5nLmlpdGtAZ21haWwuY29t",
 };
 
 const reserachAlumInfo = {
   title: "Research Wing X IITK Alumni",
   description: `The Research Wing is committed to engaging with alumni who are active in research. We aim to provide mentorship opportunities for current students and create networking opportunities for alumni and students. Stay connected with our alumni community to learn from their experiences and insights.`,
   buttonText: "Join here",
-  buttonUrl: "https://forms.gle/2EdyGQu4dk8PKW749"
+  buttonUrl: "https://forms.gle/2EdyGQu4dk8PKW749",
 };
 
 const PastSessionsHeader = {
   title: "OUR PREVIOUS SESSIONS",
   subtitle: "Details of Our Past Sessions",
-  description: "Find resources like presentations and recordings of our past sessions.",
+  description:
+    "Find resources like presentations and recordings of our past sessions.",
 };
 
 const sessions = [
   {
     title: "Surge Info Session",
-    description: "Have you heard about SURGE (Students-Undergraduate Research Graduate Excellence), a research program meant to develop and promote a research and interdisciplinary education culture amongst undergraduates. Under this program, students from IIT-K and other participating institutions all across India and SAARC nations undertake short-duration but focused research projects under professors. The duration of the program is approximately eight weeks.",
+    description:
+      "Have you heard about SURGE (Students-Undergraduate Research Graduate Excellence), a research program meant to develop and promote a research and interdisciplinary education culture amongst undergraduates. Under this program, students from IIT-K and other participating institutions all across India and SAARC nations undertake short-duration but focused research projects under professors. The duration of the program is approximately eight weeks.",
     image: "/images/wings/research/surge.jpeg", // Add the path to the image
     resources: [
-      { type: "Post", link: "https://www.instagram.com/p/CnucUXYrbiU/", label: "View Post" },
-      { type: "External link", link: "https://surge.iitk.ac.in/", label: "Surge website" },
+      {
+        type: "Post",
+        link: "https://www.instagram.com/p/CnucUXYrbiU/",
+        label: "View Post",
+      },
+      {
+        type: "External link",
+        link: "https://surge.iitk.ac.in/",
+        label: "Surge website",
+      },
     ],
   },
   {
@@ -172,13 +201,20 @@ const sessions = [
     description: `Ready to explore research opportunities abroad? Join us for an exclusive online session on "Foreign Research Internships" and gain insights from IIT Kanpur peers who have secured prestigious internships at top international universities`,
     image: "/images/wings/research/research_s.jpeg", // Add the path to the image
     resources: [
-      { type: "Presentation", link: "https://drive.google.com/drive/folders/1DjgvskrWcIECtfd5bFpt8pX1nggVOfWf?usp=sharing", label: "View Presentation" },
-      { type: "Recording", link: "https://drive.google.com/file/d/1oIjNyf5JTXagT8nhuFw0g04WCZCm1q5C/view", label: "Watch Recording" },
+      {
+        type: "Presentation",
+        link: "https://drive.google.com/drive/folders/1DjgvskrWcIECtfd5bFpt8pX1nggVOfWf?usp=sharing",
+        label: "View Presentation",
+      },
+      {
+        type: "Recording",
+        link: "https://drive.google.com/file/d/1oIjNyf5JTXagT8nhuFw0g04WCZCm1q5C/view",
+        label: "Watch Recording",
+      },
     ],
-  }
+  },
   // Add more sessions as needed
 ];
-
 
 const headerInfo = {
   title: "DIRECTOR’S NOTE",
@@ -192,31 +228,34 @@ const quotes = [
     name: "Dr. Alice Johnson",
     designation: "Professor of Physics",
     image: "/images/researcher/researcher-03.jpg",
-    content: "Research at IIT-Kanpur is paving the way for groundbreaking advancements in science and technology. Our efforts are aimed at making a global impact.",
+    content:
+      "Research at IIT-Kanpur is paving the way for groundbreaking advancements in science and technology. Our efforts are aimed at making a global impact.",
   },
   {
     id: 2,
     name: "Dr. Bob Smith",
     designation: "Head of Chemistry Department",
     image: "/images/researcher/researcher-03.jpg",
-    content: "Innovation and curiosity drive our research. At IIT-Kanpur, we are committed to pushing the boundaries of knowledge and solving real-world problems.",
+    content:
+      "Innovation and curiosity drive our research. At IIT-Kanpur, we are committed to pushing the boundaries of knowledge and solving real-world problems.",
   },
   {
     id: 3,
     name: "Dr. Carol White",
     designation: "Director of Research",
     image: "/images/researcher/researcher-03.jpg",
-    content: "Our research initiatives are focused on creating sustainable solutions for the future. We believe in the power of collaboration and interdisciplinary research.",
+    content:
+      "Our research initiatives are focused on creating sustainable solutions for the future. We believe in the power of collaboration and interdisciplinary research.",
   },
   {
     id: 4,
     name: "Dr. David Brown",
     designation: "Associate Professor of Engineering",
     image: "/images/researcher/researcher-03.jpg",
-    content: "The research community at IIT-Kanpur is dedicated to excellence and innovation. We are constantly exploring new frontiers and making significant contributions to society.",
+    content:
+      "The research community at IIT-Kanpur is dedicated to excellence and innovation. We are constantly exploring new frontiers and making significant contributions to society.",
   },
 ];
-
 
 const noteData: Note[] = [
   {
@@ -258,34 +297,38 @@ const researchGazetteData = [
     icon: "/images/icon/icon-qc.svg",
     title: "Research Gazette 2022",
     description: "Summary of research activities and achievements in 2022.",
-    pdfUrl: "https://drive.google.com/file/d/1dO9t-k_LA44kS6ng5QeolEHDUbZ8HXSU/view",
+    pdfUrl:
+      "https://drive.google.com/file/d/1dO9t-k_LA44kS6ng5QeolEHDUbZ8HXSU/view",
     year: 2022,
     area: "Science",
   },
   // Add more gazette data as needed
- 
 ];
 
 const ResearchPage = () => {
   return (
     <div>
-        <Banner banners={banners} 
-      title="Welcome to Research Wing" 
-      description={description} 
-      socialLinks={socialLinks} />
-        <ObjectivesSection title="Our Objectives" 
-      objectives={objectives} />
-        <Activities headerInfo={activitiesHeader} 
-      activities={activitiesData} />
-        <CalendarView calendarInfo={calendarInfo}/>
-        <CalendarView calendarInfo={reserachAlumInfo}/>
-        <ResearchGazette headerInfo={ResearchGazetteHeader} data={researchGazetteData}/>
-        <PastSessions PastSessionsHeader={PastSessionsHeader} sessions={sessions} />
-        <DirectorNote headerInfo={headerInfo} quotes={quotes}/>
-        {/* <NoteSection notes={noteData}/> */}
-        <RTestimonial />
-        
-      
+      <Banner
+        banners={banners}
+        title="Welcome to Research Wing"
+        description={description}
+        socialLinks={socialLinks}
+      />
+      <ObjectivesSection title="Our Objectives" objectives={objectives} />
+      <Activities headerInfo={activitiesHeader} activities={activitiesData} />
+      <CalendarView calendarInfo={calendarInfo} />
+      <CalendarView calendarInfo={reserachAlumInfo} />
+      <ResearchGazette
+        headerInfo={ResearchGazetteHeader}
+        data={researchGazetteData}
+      />
+      <PastSessions
+        PastSessionsHeader={PastSessionsHeader}
+        sessions={sessions}
+      />
+      <DirectorNote headerInfo={headerInfo} quotes={quotes} />
+      {/* <NoteSection notes={noteData}/> */}
+      <RTestimonial />
     </div>
   );
 };
