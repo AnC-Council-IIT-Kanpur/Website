@@ -3,7 +3,6 @@ import Banner from "@/components/Banner";
 import ObjectivesSection from "@/components/Objectives";
 import { Metadata } from "next";
 import Activities from "@/components/Activities/Activities";
-import CalendarView from "@/components/CalenderView";
 import ResearchGazette from "@/components/ResearchGazette";
 import PastSessions from "@/components/PastSessions";
 import DirectorNote from "@/components/Quote/DirectorNote";
@@ -133,13 +132,7 @@ const activitiesHeader = {
 };
 
 
-const calendarInfo = {
-  title: "Upcoming Sessions & Workshops",
-  description: `The Career Development wing routinely conducts a number of events, workshops, and sessions which are aimed towards the comprehensive enhancement of the skills of the students. Through these events, the students get enlightened about the various career opportunities available. They get the chance to expand their knowledge about career options and on & off campus research opportunities. The wing also organises guidance sessions, departmental orientation sessions, and technical workshops for the students. Managers of the wing bear the responsibility of organizing these sessions with the assistance of the council secretaries.
-  Join us for insightful talks and seminars hosted by leading experts in various fields. Stay updated with our calendar to never miss an event.`,
-  buttonText: "View Calendar",
-  buttonUrl: "#"
-};
+
 
 
 
@@ -286,7 +279,6 @@ const ResearchPage = () => {
       objectives={objectives} />
         <Activities headerInfo={activitiesHeader} 
       activities={activitiesData} />
-        <CalendarView calendarInfo={calendarInfo}/>
         <ResearchGazette headerInfo={ResearchGazetteHeader} data={researchGazetteData}/>
         <PastSessions PastSessionsHeader={PastSessionsHeader} sessions={sessions} />
         <DirectorNote headerInfo={headerInfo} quotes={quotes}/>

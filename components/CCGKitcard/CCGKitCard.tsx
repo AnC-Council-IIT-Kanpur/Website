@@ -1,4 +1,5 @@
 "use client";
+
 import React from "react";
 import { motion } from "framer-motion";
 import {
@@ -64,28 +65,9 @@ const ccgKits = [
 ];
 
 const CCGKits = () => {
-  // Calculate the number of kits and determine if the last row has fewer than 3 items
-  const numberOfKits = ccgKits.length;
-  const isLastRowIncomplete = numberOfKits % 3 !== 0;
-  const lastRowItems = numberOfKits % 3;
-
   return (
     <section id="ccg-kits" className="overflow-hidden py-20 lg:py-25 xl:py-30">
       <div className="mx-auto max-w-c-1315 px-4 md:px-8 xl:px-0">
-        <div className="absolute -bottom-16 -z-1 h-full w-full">
-          <Image
-            fill
-            src="/images/shape/shape-dotted-light.svg"
-            alt="Dotted"
-            className="dark:hidden"
-          />
-          <Image
-            fill
-            src="/images/shape/shape-dotted-dark.svg"
-            alt="Dotted"
-            className="hidden dark:block"
-          />
-        </div>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -102,8 +84,8 @@ const CCGKits = () => {
             links to access the kits.
           </p>
         </motion.div>
-        <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
-          {ccgKits.slice(0, numberOfKits - lastRowItems).map((kit, index) => (
+        <div className="flex flex-wrap justify-center gap-10">
+          {ccgKits.map((kit, index) => (
             <motion.a
               key={index}
               href={kit.link}
@@ -113,7 +95,7 @@ const CCGKits = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: index * 0.2 }}
               viewport={{ once: true }}
-              className="flex w-full transform flex-col items-center rounded-lg bg-white p-6 shadow-lg transition-all duration-300 hover:-translate-y-2 dark:bg-gray-800"
+              className="flex w-full max-w-xs transform flex-col items-center rounded-lg bg-white p-6 shadow-lg transition-all duration-300 hover:-translate-y-2 dark:bg-gray-800"
               title={`CCG Kit for ${kit.name}`}
             >
               <div className="mb-4 transform rounded-full bg-gradient-to-br from-blue-500 to-blue-700 p-4 text-4xl text-white shadow-md transition-all duration-500 hover:rotate-12">
@@ -125,31 +107,6 @@ const CCGKits = () => {
             </motion.a>
           ))}
         </div>
-        {isLastRowIncomplete && (
-          <div className="mt-10 flex justify-center gap-10">
-            {ccgKits.slice(numberOfKits - lastRowItems).map((kit, index) => (
-              <motion.a
-                key={index}
-                href={kit.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: index * 0.2 }}
-                viewport={{ once: true }}
-                className="flex w-full transform flex-col items-center rounded-lg bg-white p-6 shadow-lg transition-all duration-300 hover:-translate-y-2 dark:bg-gray-800 lg:w-1/3"
-                title={`CCG Kit for ${kit.name}`}
-              >
-                <div className="mb-4 transform rounded-full bg-gradient-to-br from-blue-500 to-blue-700 p-4 text-4xl text-white shadow-md transition-all duration-500 hover:rotate-12">
-                  {React.cloneElement(kit.icon, { alt: kit.alt })}
-                </div>
-                <h3 className="mb-2 text-xl font-semibold text-black dark:text-white">
-                  {kit.name}
-                </h3>
-              </motion.a>
-            ))}
-          </div>
-        )}
       </div>
     </section>
   );

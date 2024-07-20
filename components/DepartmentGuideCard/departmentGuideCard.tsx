@@ -19,7 +19,7 @@ const DepartmentGuideCard = ({ gazette }) => {
       whileInView="visible"
       transition={{ duration: 0.5 }}
       viewport={{ once: true }}
-      className="animate_top z-40 w-full rounded-lg border border-white bg-white p-5 shadow-solid-3 transition-all hover:shadow-solid-4 dark:border-strokedark dark:bg-blacksection dark:hover:bg-hoverdark sm:p-7.5 md:w-1/2 lg:w-1/3 xl:w-1/4"
+      className="animate_top z-40 w-full rounded-lg border border-white bg-white p-5 shadow-solid-3 transition-all hover:shadow-solid-4 dark:border-strokedark dark:bg-blacksection dark:hover:bg-hoverdark sm:w-[calc(50%-1rem)] md:w-[calc(33.333%-1rem)] lg:w-[calc(25%-1rem)]"
     >
       <div className="relative flex h-16 w-16 items-center justify-center rounded-[4px] bg-primary">
         <Image src={icon} width={36} height={36} alt={title} />
@@ -65,4 +65,3 @@ const DeptartmentGuide = ({ data, headerInfo }) => {
 };
 
 export default DeptartmentGuide;
- 
