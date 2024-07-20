@@ -14,8 +14,8 @@ import {
 } from "@/components/Teams/teamsData";
 
 export const metadata: Metadata = {
-  title: "Next.js Starter Template for SaaS Startups - Solid SaaS Boilerplate",
-  description: "This is Home for Solid Pro",
+  title: "Contact Us",
+  description: "Teams",
 };
 
 const headerInfo = {
