@@ -3,7 +3,7 @@ import { Team, TeamSection } from "@/types/team";
 const GenSecMembers: Team[] = [
   {
     id: 1,
-    icon: "/images/wings/gensecy/Utkarsh.png",
+    icon: "/images/wings/GenSecy/utkarsh.png",
     title: "Utkarsh Gupta",
     designation: "General Secretary",
     role: "Academics and Career Council",
@@ -391,6 +391,28 @@ const mediaTeamData: TeamSection = {
   teams: mediaTeamMebers,
 };
 
+const webTeamMebers: Team[] = [
+  {
+    id: 1,
+    icon: "/images/wings/web/gp.jpg",
+    title: "Sachidanand",
+    designation: "Manager",
+    role: "Web Wing",
+    description: "",
+    phone: "+91 6307009843",
+    email: "",
+    linkedin:
+      "https://www.linkedin.com/in/roshan-patil-928481255?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+  },
+];
+
+const webTeamData: TeamSection = {
+  title: "Meet Our",
+  subtitle: "Web Wing Team",
+  description: "Brain behind AnC's digital landscape",
+  teams: webTeamMebers,
+};
+
 export {
   GensecData,
   IsecData,
@@ -401,4 +423,5 @@ export {
   pclubTeamData,
   outreachTeamData,
   mediaTeamData,
+  webTeamData
 };

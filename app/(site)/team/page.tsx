@@ -11,6 +11,7 @@ import {
   pclubTeamData,
   outreachTeamData,
   mediaTeamData,
+  webTeamData,
 } from "@/components/Teams/teamsData";
 
 export const metadata: Metadata = {
@@ -39,6 +40,7 @@ export default function Home() {
       <Team teamSectionData={pclubTeamData} />
       <Team teamSectionData={outreachTeamData} />
       <Team teamSectionData={mediaTeamData} />
+      <Team teamSectionData={webTeamData} />
     </main>
   );
 }
