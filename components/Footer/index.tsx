@@ -27,7 +27,7 @@ const Footer = () => {
                 whileInView="visible"
                 transition={{ duration: 1, delay: 0.5 }}
                 viewport={{ once: true }}
-                className="w-1/2 animate_top lg:w-1/4"
+                className="w-full animate_top lg:w-1/4"
               >
                 <Link href="index.html" className="relative">
                   <Image
@@ -54,14 +54,14 @@ const Footer = () => {
                   contact
                 </p>
                 <Link
-                  href="#"
+                  href="mailto:ug_anc@iitk.ac.in"
                   className="font-medium text-black text-itemtitle dark:text-white"
                 >
-                  anc@iitk.ac.in
+                  ug_anc@iitk.ac.in
                 </Link>
               </motion.div>
 
-              <div className="flex flex-col w-full gap-8 md:flex-row md:justify-between md:gap-0 lg:w-2/3 xl:w-7/12">
+              <div className="flex w-full gap-8 flex-row justify-between lg:w-2/3 xl:w-7/12">
                 <motion.div
                   variants={{
                     hidden: {
@@ -87,7 +87,7 @@ const Footer = () => {
                   <ul>
                     <li>
                       <Link
-                        href="#"
+                        href="/"
                         className="inline-block mb-3 hover:text-primary"
                       >
                         Home
@@ -95,7 +95,7 @@ const Footer = () => {
                     </li>
                     <li>
                       <Link
-                        href="#"
+                        href="/wings/UGacads"
                         className="inline-block mb-3 hover:text-primary"
                       >
                         Academics
@@ -103,7 +103,7 @@ const Footer = () => {
                     </li>
                     <li>
                       <Link
-                        href="#"
+                        href="/wings/research"
                         className="inline-block mb-3 hover:text-primary"
                       >
                         Research
@@ -111,7 +111,7 @@ const Footer = () => {
                     </li>
                     <li>
                       <Link
-                        href="#"
+                        href="/wings/internationalRelations"
                         className="inline-block mb-3 hover:text-primary"
                       >
                         Int. Relations
@@ -119,7 +119,7 @@ const Footer = () => {
                     </li>
                     <li>
                       <Link
-                        href="#"
+                        href="/wings/cdev"
                         className="inline-block mb-3 hover:text-primary"
                       >
                         Career Dev.
@@ -159,17 +159,17 @@ const Footer = () => {
                   </h4>
 
                   <ul>
-                    <li>
+                    {/* <li>
                       <Link
                         href="#"
                         className="inline-block mb-3 hover:text-primary"
                       >
                         About Us
                       </Link>
-                    </li>
+                    </li> */}
                     <li>
                       <Link
-                        href="#"
+                        href="/team"
                         className="inline-block mb-3 hover:text-primary"
                       >
                         Team
@@ -177,20 +177,20 @@ const Footer = () => {
                     </li>
                     <li>
                       <Link
-                        href="#"
+                        href="../#mainevents"
                         className="inline-block mb-3 hover:text-primary"
                       >
-                        Our Works
+                        Events
                       </Link>
                     </li>
-                    <li>
+                    {/* <li>
                       <Link
                         href="#"
                         className="inline-block mb-3 hover:text-primary"
                       >
                         Gallery
                       </Link>
-                    </li>
+                    </li> */}
                   </ul> 
                 </motion.div>
 
@@ -413,7 +413,7 @@ const Footer = () => {
                     </svg>
                   </Link>
                 </li>
-                <li>
+                {/* <li>
                   <Link href="#" aria-label="social icon">
                     <svg
                       className="fill-[#D1D8E0] transition-all duration-300 hover:fill-primary"
@@ -432,7 +432,7 @@ const Footer = () => {
                       </defs>
                     </svg>
                   </Link>
-                </li>
+                </li> */}
               </ul>
             </motion.div>
           </div>

@@ -6,12 +6,10 @@ import SectionHeader from "../Common/SectionHeader";
 import SingleGazette from "./SingleGazette";
 
 const ResearchGazette = ({ data, headerInfo }) => {
-  const [filterYear, setFilterYear] = useState("");
   const [filterArea, setFilterArea] = useState("");
 
   const filteredGazettes = data.filter((gazette) => {
     return (
-      (filterYear ? gazette.year === parseInt(filterYear) : true) &&
       (filterArea ? gazette.area.toLowerCase().includes(filterArea.toLowerCase()) : true)
     );
   });
@@ -27,13 +25,6 @@ const ResearchGazette = ({ data, headerInfo }) => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <input
-            type="number"
-            placeholder="Filter by Year"
-            className="rounded-full border border-gray-300 px-4 py-2 focus:border-primary focus:outline-none dark:border-gray-700 dark:bg-black dark:text-white no-arrows"
-            value={filterYear}
-            onChange={(e) => setFilterYear(e.target.value)}
-          />
           <input
             type="text"
             placeholder="Filter by Research Area"
