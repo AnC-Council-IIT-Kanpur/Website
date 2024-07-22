@@ -121,6 +121,43 @@ const cdevTeamData: TeamSection = {
 };
 
 const researchTeamMebers: Team[] = [
+
+
+  {
+    id: 5,
+    icon: "/images/wings/research/1687778485406 (1) - Prakhar Tripathi.jpeg",
+    title: "Prakhar Tripathi",
+    designation: "Manager",
+    role: "Reserach Wing (U.G.)",
+    description: "",
+    phone: "+91 7505040940",
+    email: "",
+    linkedin: "https://www.linkedin.com/in/prakhar-tripathi-b0468b254/",
+  },
+
+  {
+    id: 4,
+    icon: "/images/wings/research/Nikhil_jain.jpeg",
+    title: "Nikhil Jain",
+    designation: "Manager",
+    role: "Reserach Wing (U.G.)",
+    description: "",
+    phone: "+91 8619744807",
+    email: "",
+    linkedin: "http://linkedin.com/in/nikhil-jain-907100253",
+  },
+
+  {
+    id: 6,
+    icon: "/images/wings/research/Untitled design - Devdhar.png",
+    title: "Devdhar Patil",
+    designation: "Manager",
+    role: "Reserach Wing (U.G.)",
+    description: "",
+    phone: "+91 8431981410",
+    email: "",
+    linkedin: "https://www.linkedin.com/in/devdhar-patil-79064828a/",
+  },
   {
     id: 1,
     icon: "/images/wings/research/IMG-20230711-WA0039 - Aditi Saxena.jpg",
@@ -155,43 +192,7 @@ const researchTeamMebers: Team[] = [
     email: "",
     linkedin:
       "https://www.linkedin.com/in/ayush-shukla-a92990249?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-  },
-
-  {
-    id: 4,
-    icon: "/images/wings/research/Nikhil_jain.jpeg",
-    title: "Nikhil Jain",
-    designation: "Manager",
-    role: "Reserach Wing",
-    description: "",
-    phone: "+91 8619744807",
-    email: "",
-    linkedin: "http://linkedin.com/in/nikhil-jain-907100253",
-  },
-
-  {
-    id: 5,
-    icon: "/images/wings/research/1687778485406 (1) - Prakhar Tripathi.jpeg",
-    title: "Prakhar Tripathi",
-    designation: "Manager",
-    role: "Reserach Wing",
-    description: "",
-    phone: "+91 7505040940",
-    email: "",
-    linkedin: "https://www.linkedin.com/in/prakhar-tripathi-b0468b254/",
-  },
-
-  {
-    id: 6,
-    icon: "/images/wings/research/Untitled design - Devdhar.png",
-    title: "Devdhar Patil",
-    designation: "Manager",
-    role: "Reserach Wing",
-    description: "",
-    phone: "+91 8431981410",
-    email: "",
-    linkedin: "https://www.linkedin.com/in/devdhar-patil-79064828a/",
-  },
+  }
 ];
 
 const researchTeamData: TeamSection = {

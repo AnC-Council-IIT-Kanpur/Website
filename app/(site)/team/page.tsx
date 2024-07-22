@@ -28,7 +28,7 @@ const headerInfo = {
 export default function Home() {
   return (
     <main>
-      <div className="mb-50 mt-50">
+      <div className="mt-50">
         <SectionHeaderTop headerInfo={headerInfo} />
       </div>
       <Team teamSectionData={GensecData} />
