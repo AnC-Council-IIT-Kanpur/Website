@@ -12,7 +12,7 @@ const Activities = ({ headerInfo, activities }) => {
         <SectionHeader headerInfo={headerInfo} />
 
         <motion.div
-          className="grid gap-10 md:grid-cols-2 lg:grid-cols-3 justify-items-center"
+          className="grid mt-12 gap-10 md:grid-cols-2 lg:grid-cols-3 justify-items-center"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5 }}
