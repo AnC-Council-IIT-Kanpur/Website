@@ -17,7 +17,7 @@ const GensecData: TeamSection = {
   title: "Meet Our",
   subtitle: "General Secretary",
   description:
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, eum!",
+    "",
   teams: GenSecMembers,
 };
 
