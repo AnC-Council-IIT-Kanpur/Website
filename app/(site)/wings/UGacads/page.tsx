@@ -125,7 +125,7 @@ const DepartmentGuideHeader = {
   title: "Department Guide",
   subtitle: "Archive of Department Guide",
   description:
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, ratione.",
+    " ",
 };
 
 const DepartmentGuideData = [

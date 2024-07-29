@@ -3,7 +3,7 @@ import { Team, TeamSection } from "@/types/team";
 const GenSecMembers: Team[] = [
   {
     id: 1,
-    icon: "/images/wings/gensecy/Utkarsh.png",
+    icon: "/images/wings/GenSecy/utkarsh.png",
     title: "Utkarsh Gupta",
     designation: "General Secretary",
     role: "Academics and Career Council",
@@ -17,7 +17,7 @@ const GensecData: TeamSection = {
   title: "Meet Our",
   subtitle: "General Secretary",
   description:
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, eum!",
+    "",
   teams: GenSecMembers,
 };
 
@@ -44,34 +44,44 @@ const IsecData: TeamSection = {
 
 const cdevTeamMebers: Team[] = [
   {
-    id: 1,
-    icon: "/images/wings/CareerWing/IMG_1988 - Pooja Singh.jpeg",
-    title: "Pooja Singh",
+    id: 6,
+    icon: "/images/wings/CareerWing/Aman.jpeg.jpg",
+    title: "Aman Nigam",
     designation: "Manager",
-    role: "Carrer devlopment Wing",
+    role: "Carrer Development Wing",
     description: "",
-    phone: "+91 9637463004",
+    phone: "+91 6387057855",
     email: "",
-    linkedin:
-      "https://www.linkedin.com/in/pooja-singh-b72275198?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+    linkedin: "https://www.linkedin.com/in/aman-nigam-33a083225/",
   },
   {
     id: 2,
     icon: "/images/wings/CareerWing/IMG_20240413_181933__01 - Krishiv Geriani.jpg",
     title: "Krishiv Geriani",
     designation: "Manager",
-    role: "Carrer devlopment Wing",
+    role: "Carrer Development Wing",
     description: "",
     phone: "+91 7230025422",
     email: "",
     linkedin: "https://www.linkedin.com/in/krishiv-geriani-257429277/",
   },
   {
+    id: 5,
+    icon: "/images/wings/CareerWing/picccc - Hritvija Singh.jpg",
+    title: "Hritvija Singh",
+    designation: "Manager",
+    role: "Carrer Development Wing",
+    description: "",
+    phone: "+91 9911389397",
+    email: "",
+    linkedin: "https://www.linkedin.com/in/hritvija-singh-b7215b258/",
+  },
+  {
     id: 3,
     icon: "/images/wings/CareerWing/mantavya - Mantavya Upadhyay.jpg",
     title: "Mantavya Upadhyay",
     designation: "Manager",
-    role: "Carrer devlopment Wing",
+    role: "Carrer Development Wing",
     description: "",
     phone: "+91 9425735530",
     email: "",
@@ -82,7 +92,7 @@ const cdevTeamMebers: Team[] = [
     icon: "/images/wings/CareerWing/Photo - Manya Gupta (1) (1).jpg",
     title: "Manya Gupta",
     designation: "Manager",
-    role: "Carrer devlopment Wing",
+    role: "Carrer Development Wing",
     description: "",
     phone: "+91 8968614934",
     email: "",
@@ -90,37 +100,64 @@ const cdevTeamMebers: Team[] = [
       "https://www.linkedin.com/in/manya-gupta-427631250?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
   },
   {
-    id: 5,
-    icon: "/images/wings/CareerWing/picccc - Hritvija Singh.jpg",
-    title: "Hritvija Singh",
+    id: 1,
+    icon: "/images/wings/CareerWing/IMG_1988 - Pooja Singh.jpeg",
+    title: "Pooja Singh",
     designation: "Manager",
-    role: "Carrer devlopment Wing",
+    role: "Carrer Development Wing",
     description: "",
-    phone: "+91 9911389397",
+    phone: "+91 9637463004",
     email: "",
-    linkedin: "https://www.linkedin.com/in/hritvija-singh-b7215b258/",
-  },
-  {
-    id: 5,
-    icon: "/images/wings/CareerWing/Aman.jpeg.jpg",
-    title: "Aman Nigam",
-    designation: "Manager",
-    role: "Carrer devlopment Wing",
-    description: "",
-    phone: "+91 6387057855",
-    email: "",
-    linkedin: "https://www.linkedin.com/in/aman-nigam-33a083225/",
+    linkedin:
+      "https://www.linkedin.com/in/pooja-singh-b72275198?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
   },
 ];
 
 const cdevTeamData: TeamSection = {
   title: "Meet Our",
-  subtitle: "Career Devlopment Wing team",
+  subtitle: "Career Devlopment Wing",
   description: "Brain behind the innovation, contact them for any query",
   teams: cdevTeamMebers,
 };
 
 const researchTeamMebers: Team[] = [
+
+
+  {
+    id: 5,
+    icon: "/images/wings/research/1687778485406 (1) - Prakhar Tripathi.jpeg",
+    title: "Prakhar Tripathi",
+    designation: "Manager",
+    role: "Reserach Wing (U.G.)",
+    description: "",
+    phone: "+91 7505040940",
+    email: "",
+    linkedin: "https://www.linkedin.com/in/prakhar-tripathi-b0468b254/",
+  },
+
+  {
+    id: 4,
+    icon: "/images/wings/research/Nikhil_jain.jpeg",
+    title: "Nikhil Jain",
+    designation: "Manager",
+    role: "Reserach Wing (U.G.)",
+    description: "",
+    phone: "+91 8619744807",
+    email: "",
+    linkedin: "http://linkedin.com/in/nikhil-jain-907100253",
+  },
+
+  {
+    id: 6,
+    icon: "/images/wings/research/Untitled design - Devdhar.png",
+    title: "Devdhar Patil",
+    designation: "Manager",
+    role: "Reserach Wing (U.G.)",
+    description: "",
+    phone: "+91 8431981410",
+    email: "",
+    linkedin: "https://www.linkedin.com/in/devdhar-patil-79064828a/",
+  },
   {
     id: 1,
     icon: "/images/wings/research/IMG-20230711-WA0039 - Aditi Saxena.jpg",
@@ -155,48 +192,12 @@ const researchTeamMebers: Team[] = [
     email: "",
     linkedin:
       "https://www.linkedin.com/in/ayush-shukla-a92990249?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-  },
-
-  {
-    id: 4,
-    icon: "/images/wings/research/Nikhil_jain.jpeg",
-    title: "Nikhil Jain",
-    designation: "Manager",
-    role: "Reserach Wing",
-    description: "",
-    phone: "+91 8619744807",
-    email: "",
-    linkedin: "http://linkedin.com/in/nikhil-jain-907100253",
-  },
-
-  {
-    id: 5,
-    icon: "/images/wings/research/1687778485406 (1) - Prakhar Tripathi.jpeg",
-    title: "Prakhar Tripathi",
-    designation: "Manager",
-    role: "Reserach Wing",
-    description: "",
-    phone: "+91 7505040940",
-    email: "",
-    linkedin: "https://www.linkedin.com/in/prakhar-tripathi-b0468b254/",
-  },
-
-  {
-    id: 6,
-    icon: "/images/wings/research/Untitled design - Devdhar.png",
-    title: "Devdhar Patil",
-    designation: "Manager",
-    role: "Reserach Wing",
-    description: "",
-    phone: "+91 8431981410",
-    email: "",
-    linkedin: "https://www.linkedin.com/in/devdhar-patil-79064828a/",
-  },
+  }
 ];
 
 const researchTeamData: TeamSection = {
   title: "Meet Our",
-  subtitle: "Research Wing Team",
+  subtitle: "Research Wing",
   description: "Innovators driving progress, contact us for any questions",
   teams: researchTeamMebers,
 };
@@ -228,7 +229,7 @@ const acadesTeamMebers: Team[] = [
 
 const acadesTeamData: TeamSection = {
   title: "Meet Our",
-  subtitle: "Academics Wing Team",
+  subtitle: "Academics Wing",
   description: "Minds shaping the future, contact us for any inquiries",
   teams: acadesTeamMebers,
 };
@@ -273,7 +274,7 @@ const interNationalTeamMebers: Team[] = [
 
 const interNationalTeamData: TeamSection = {
   title: "Meet Our",
-  subtitle: "International Relation Wing Team",
+  subtitle: "International Relation Wing",
   description: "Trailblazers in the industry, reach out for any information",
   teams: interNationalTeamMebers,
 };
@@ -364,7 +365,7 @@ const outreachTeamMebers: Team[] = [
 
 const outreachTeamData: TeamSection = {
   title: "Meet Our",
-  subtitle: "Outreach and Finance Wing Team",
+  subtitle: "Outreach and Finance Wing",
   description: "Boost your outreach efforts, contact our experts today",
   teams: outreachTeamMebers,
 };
@@ -386,9 +387,31 @@ const mediaTeamMebers: Team[] = [
 
 const mediaTeamData: TeamSection = {
   title: "Meet Our",
-  subtitle: "Media and Public Wing Team",
+  subtitle: "Media and Public Wing",
   description: "Leading the way in media solutions, we're here to assist you",
   teams: mediaTeamMebers,
+};
+
+const webTeamMebers: Team[] = [
+  {
+    id: 1,
+    icon: "/images/wings/web/gp.jpg",
+    title: "Sachidanand",
+    designation: "Manager",
+    role: "Web Wing",
+    description: "",
+    phone: "+91 6307009843",
+    email: "",
+    linkedin:
+      "https://www.linkedin.com/in/roshan-patil-928481255?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+  },
+];
+
+const webTeamData: TeamSection = {
+  title: "Meet Our",
+  subtitle: "Web Wing",
+  description: "Brain behind AnC's digital landscape",
+  teams: webTeamMebers,
 };
 
 export {
@@ -401,4 +424,5 @@ export {
   pclubTeamData,
   outreachTeamData,
   mediaTeamData,
+  webTeamData
 };

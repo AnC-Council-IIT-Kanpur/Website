@@ -50,7 +50,7 @@ const DeptartmentGuide = ({ data, headerInfo }) => {
         <SectionHeader headerInfo={headerInfo} />
 
         <motion.div
-          className="flex flex-wrap justify-center gap-5 sm:gap-10"
+          className="flex flex-wrap justify-center gap-5 mt-10 sm:gap-10"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5 }}

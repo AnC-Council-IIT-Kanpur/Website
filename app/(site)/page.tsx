@@ -18,7 +18,7 @@ import Testimonial from "@/components/Testimonial";
 
 export const metadata: Metadata = {
   title: "AnC Council IIT Kanpur",
-  description: "This is Home for Solid Pro",
+  description: "Academic and Cultural Council, IIT Kanpur",
   // other metadata
 };
 

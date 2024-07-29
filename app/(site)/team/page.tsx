@@ -11,6 +11,7 @@ import {
   pclubTeamData,
   outreachTeamData,
   mediaTeamData,
+  webTeamData,
 } from "@/components/Teams/teamsData";
 
 export const metadata: Metadata = {
@@ -27,11 +28,11 @@ const headerInfo = {
 export default function Home() {
   return (
     <main>
-      <div className="mb-50 mt-50">
+      <div className="mt-50">
         <SectionHeaderTop headerInfo={headerInfo} />
       </div>
       <Team teamSectionData={GensecData} />
-      <Team teamSectionData={IsecData} />
+      {/* <Team teamSectionData={IsecData} /> */}
       <Team teamSectionData={cdevTeamData} />
       <Team teamSectionData={researchTeamData} />
       <Team teamSectionData={acadesTeamData} />
@@ -39,6 +40,7 @@ export default function Home() {
       <Team teamSectionData={pclubTeamData} />
       <Team teamSectionData={outreachTeamData} />
       <Team teamSectionData={mediaTeamData} />
+      <Team teamSectionData={webTeamData} />
     </main>
   );
 }
