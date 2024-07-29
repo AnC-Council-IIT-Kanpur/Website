@@ -281,7 +281,8 @@ const researchGazetteData = [
 const ResearchPage = () => {
   return (
     <div>
-        <Banner banners={banners} 
+        <Banner banners={banners}
+        logo={bannerlogos} 
       title="Welcome to IIT-Kanpur's Career Development Wing" 
       description={description} 
       socialLinks={socialLinks} />
