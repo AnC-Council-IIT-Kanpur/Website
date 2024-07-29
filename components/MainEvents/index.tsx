@@ -41,24 +41,24 @@ const MainEvents = () => {
               <h6 className="mb-2.5 mt-6 text-2xl font-bold text-black dark:text-white">
                 Career Connect
               </h6>
-              <p className='mt-6'>The Academics and Career Council organized CAREER CONNECT, a three-day event for all undergraduate and postgraduate students, from 10th to 12th February 2023.</p>
+              <p className='mt-6'>The Academics and Career Council organized CAREER CONNECT, a three-day event for all undergraduate and postgraduate students, from 5th to 7th April 2024.</p>
 
               <div className="mt-9 border-t border-stroke pb-12.5 pt-9 dark:border-strokedark">
                 <ul>
                   <li className="mb-4 text-black text-lg font-bold last:mb-0 dark:text-manatee">
-                    Planned events
+               Events
                   </li>
                   <li className="mb-4 text-black last:mb-0 dark:text-manatee">
-                    Programming Pathshala
+                 Debugging the software role 
                   </li>
                   <li className="mb-4 text-black last:mb-0 dark:text-manatee">
-                    Product Management
+                   Stock Trading Competition
                   </li>
                   <li className="mb-4 text-black last:mb-0 dark:text-manatee">
-                    Crypto Trading Hackathon
+                    Ideation-Insomnia
                   </li>
                   <li className="mb-4 text-black last:mb-0 dark:text-manatee">
-                    Unorthodox Career Choices
+                 Product Paradigm
                   </li>
 
                 </ul>
@@ -94,8 +94,7 @@ const MainEvents = () => {
               alt="Dotted"
             />
               <h6 className="mb-2.5 text-2xl font-bold mt-6 text-black dark:text-white">
-                NSRC
-              </h6>
+              National Students Research Convention </h6>
               <p className='mt-6'>The 5th National Students’ Research Convention 2023 (NSRC ’23), took place from 3-5 March, 2023, with the theme 'MedTech and Healthcare: The Welfare of Humanity'.</p>
 
               <div className="mt-9 border-t border-stroke pb-12.5 pt-9 dark:border-strokedark">
@@ -148,7 +147,7 @@ const MainEvents = () => {
               alt="Dotted"
             />
               <h6 className="mb-2.5 text-2xl font-bold mt-6 text-black dark:text-white">
-                IRS
+              Institute Research Symposium 
               </h6>
               <p className='mt-6'>Academics and Career Council organised IRS where the PG and UG students of IIT Kanpur from various engineering and sciences disciplines showcased their research to the larger community.</p>
 
