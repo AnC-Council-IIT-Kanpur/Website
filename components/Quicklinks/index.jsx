@@ -2,6 +2,7 @@
 import SectionHeader from "../Common/SectionHeader";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import { FaExternalLinkAlt } from "react-icons/fa";
 
 const QuickLinks = () => {
   const links = [
@@ -73,63 +74,61 @@ const QuickLinks = () => {
   ];
 
   return (
-    <>
-      <section className="pb-30">
-        <div className="mx-auto mb-32 max-w-c-1315 px-4 md:px-8 xl:px-0">
-          {/* <!-- Section Title Start --> */}
-          <div className="animate_top mx-auto text-center">
-            <SectionHeader
-              headerInfo={{
-                title: ``,
-                subtitle: `Quick Links `,
-                description: ``,
-              }}
-            />
-          </div>
-          {/* <!-- Section Title End --> */}
+    <section className="pb-30">
+      <div className="mx-auto mb-32 max-w-c-1315 px-4 md:px-8 xl:px-0">
+        {/* <!-- Section Title Start --> */}
+        <div className="animate_top mx-auto text-center">
+          <SectionHeader
+            headerInfo={{
+              title: ``,
+              subtitle: `Quick Links`,
+              description: ``,
+            }}
+          />
         </div>
+        {/* <!-- Section Title End --> */}
+      </div>
 
-        <motion.div
-          variants={{
-            hidden: {
-              opacity: 0,
-              y: -20,
-            },
-            visible: {
-              opacity: 1,
-              y: 0,
-            },
-          }}
-          initial="hidden"
-          whileInView="visible"
-          transition={{ duration: 1, delay: 1  }}
-          viewport={{ once: true }}
-          className="animate_top mx-auto mt-15 max-w-c-1235 px-1 md:px-8 xl:mt-20 xl:px-0"
-        >
-          {/* <!-- Flexbox container --> */}
-          <div className="flex flex-wrap justify-center gap-7">
-            {links.map((link, index) => (
-              <motion.div
-                key={index}
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="transition-transform"
-              >
-                <Link href={link.href} passHref legacyBehavior>
-                  <a
-                    aria-label="get started button"
-                    className={`flex items-center justify-center rounded-full px-4 py-2.5 text-center text-sm font-medium text-white transition duration-900 ease-in-out hover:bg-opacity-80 ${link.bgColor} dark:bg-blue-500`}
-                    
-                  >
-                    {link.text}
-                  </a>
-                </Link>
-              </motion.div>
-            ))}
-          </div>
-        </motion.div>
-      </section>
-    </>
+      <motion.div
+        variants={{
+          hidden: {
+            opacity: 0,
+            y: -20,
+          },
+          visible: {
+            opacity: 1,
+            y: 0,
+          },
+        }}
+        initial="hidden"
+        whileInView="visible"
+        transition={{ duration: 1, delay: 1 }}
+        viewport={{ once: true }}
+        className="animate_top mx-auto mt-15 max-w-c-1235 px-1 md:px-8 xl:mt-20 xl:px-0"
+      >
+        {/* <!-- Grid container --> */}
+        <div className="grid grid-cols-1 gap-7 md:grid-cols-2 lg:grid-cols-3">
+          {links.map((link, index) => (
+            <motion.div
+              key={index}
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="transition-transform"
+            >
+              <Link href={link.href} passHref legacyBehavior>
+                <a
+                  aria-label={link.text}
+                  className={`flex items-center justify-center gap-2 rounded-full px-6 py-3 text-center text-sm font-medium text-white shadow-lg transition duration-900 ease-in-out hover:bg-opacity-80 ${link.bgColor} dark:bg-blue-500`}
+                >
+                  <span>{link.text}</span>
+                  <FaExternalLinkAlt />
+                </a>
+              </Link>
+            </motion.div>
+          ))}
+        </div>
+      </motion.div>
+    </section>
   );
 };
 

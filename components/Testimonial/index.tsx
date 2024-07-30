@@ -10,7 +10,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { motion } from "framer-motion";
 import SingleTestimonial from "./SingleTestimonial";
 import { testimonialData } from "./testimonialData";
-
+import Link from "next/link";
 const Testimonial = () => {
   return (
     <>
@@ -79,6 +79,15 @@ const Testimonial = () => {
                 </SwiperSlide>
               ))}
             </Swiper>
+            <div className="flex justify-center items-center h-full">
+  <Link
+    href="https://medium.com/@ug_anc"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="inline-block rounded-full bg-primary px-7.5 py-2.5 text-white duration-300 ease-in-out hover:bg-primary-dark"
+  >Read more insightful stories here
+  </Link>
+</div>
           </div>
         </motion.div>
       </section>

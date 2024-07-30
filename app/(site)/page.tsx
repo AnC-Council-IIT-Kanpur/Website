@@ -14,7 +14,8 @@ import MainEvents from "@/components/MainEvents";
 import Contact from "@/components/Contact";
 import Blog from "@/components/Blog";
 import Testimonial from "@/components/Testimonial";
-
+import Link from "next/link";
+import { link } from "fs";
 
 export const metadata: Metadata = {
   title: "AnC Council IIT Kanpur",
@@ -35,7 +36,9 @@ export default function Home() {
       {/* <Integration /> */}
       {/* <CTA /> */}
       <MainEvents />
+    
       <Testimonial />
+      
       {/* <Pricing /> */}
       {/* <Contact /> */}
       {/* <Blog /> */}
