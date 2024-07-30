@@ -135,7 +135,7 @@ const activitiesHeader = {
 
 const bannerlogos = {
   src: "/images/logo/outreach and finance.png",
-  alt: "UG acads logo",
+  alt: "Outreach and finance wing logo",
 };
 
 

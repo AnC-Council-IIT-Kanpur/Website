@@ -301,7 +301,7 @@ const researchGazetteData = [
 ];
 const bannerlogos = {
   src: "/images/logo/research.png",
-  alt: "UG acads logo",
+  alt: "Research wing logo",
 };
 
 const ResearchPage = () => {

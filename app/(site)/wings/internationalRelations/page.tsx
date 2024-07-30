@@ -155,7 +155,7 @@ const calendarInfo = {
 };
 const bannerlogos = {
   src: "/images/logo/internationalRelations.png",
-  alt: "UG acads logo",
+  alt: "IR wing logo",
 };
 
 const ResearchPage = () => {
