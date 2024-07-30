@@ -192,7 +192,7 @@ const UGAcademicsPage = () => {
         description={description}
         socialLinks={socialLinks}
       />
-      <JumpLinks sections={sections} />
+      {/* <JumpLinks sections={sections} /> */}
       <ObjectivesSection
         title="Our Objectives"
         objectives={ugAcademicsObjectives}
