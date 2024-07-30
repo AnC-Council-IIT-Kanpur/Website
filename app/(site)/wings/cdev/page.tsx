@@ -336,7 +336,7 @@ const CareerCData = [
 ];
 const bannerlogos = {
   src: "/images/logo/cdev.png",
-  alt: "UG acads logo",
+  alt: "CDev wing logo",
 };
 
 const ResearchPage = () => {
