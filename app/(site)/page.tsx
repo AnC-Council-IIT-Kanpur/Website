@@ -14,6 +14,8 @@ import MainEvents from "@/components/MainEvents";
 import Contact from "@/components/Contact";
 import Blog from "@/components/Blog";
 import Testimonial from "@/components/Testimonial";
+import { testimonialData } from "@/components/Testimonial/testimonialData";
+import { headerInfo } from "@/components/Testimonial/headerInfo";
 import Link from "next/link";
 import { link } from "fs";
 import PastSessions from "@/components/PastSessions";
@@ -46,7 +48,7 @@ export default function Home() {
       {/* <CTA /> */}
       <MainEvents />
     
-      <Testimonial />
+      <Testimonial data={testimonialData} headerInfo={headerInfo} />
       
       
       {/* <Pricing /> */}

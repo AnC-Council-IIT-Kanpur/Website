@@ -41,7 +41,7 @@ const Header = () => {
     >
       <div className="relative mx-auto max-w-c-1390 items-center justify-between px-4 md:px-8 xl:flex 2xl:px-0">
         <div className="flex items-center justify-between w-full xl:w-3/5">
-          <Link href="/">
+          <Link className="relative mr-3" href="/">
             <Image
               src="/images/logo/anc_logo2.png"
               alt="logo"
@@ -57,7 +57,7 @@ const Header = () => {
               className="w-full dark:hidden"
             />
           </Link>
-          <p className="relative right-25 text-black dark:text-white font-bold text-2xl ">Academics and Career council</p>
+          <p className="relative text-black dark:text-white font-bold text-xl sm:text-2xl ">Academics and Career Council</p>
           {/* Hamburger Toggle BTN */}
           <button
             aria-label="hamburger Toggler"

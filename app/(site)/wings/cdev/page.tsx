@@ -5,7 +5,10 @@ import { Metadata } from "next";
 import Activities from "@/components/Activities/Activities";
 import PastSessions from "@/components/PastSessions";
 import Link from "next/link";
-
+import CCGKits from "@/components/CdevCCG/CCGKitCard";
+import Testimonial from "@/components/Testimonial";
+import { testimonialData } from "@/components/Testimonial/moreYouKnowData";
+import { moreYouKnowHeaderInfo } from "@/components/Testimonial/moreyouKnowHeaderInfo";
 import {
   faComments,
   faBullhorn,
@@ -380,6 +383,12 @@ const ResearchPage = () => {
       </section>
 
       {/* <ResearchGazette headerInfo={CareerCHeader} data={CareerCData} /> */}
+      <CCGKits/>
+      <PastSessions
+        PastSessionsHeader={PastSessionsHeader}
+        sessions={sessions}
+      />
+      <Testimonial data={testimonialData} headerInfo={moreYouKnowHeaderInfo} />
     </div>
   );
 };
