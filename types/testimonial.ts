@@ -6,5 +6,5 @@ export type Testimonial = {
   content: string;
   designation: string;
   intern: string;
-  link: string;
+  link?: string;
 };
