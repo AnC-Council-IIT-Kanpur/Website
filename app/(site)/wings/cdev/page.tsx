@@ -4,6 +4,7 @@ import ObjectivesSection from "@/components/Objectives";
 import { Metadata } from "next";
 import Activities from "@/components/Activities/Activities";
 import PastSessions from "@/components/PastSessions";
+import Link from "next/link";
 import CCGKits from "@/components/CdevCCG/CCGKitCard";
 import Testimonial from "@/components/Testimonial";
 import { testimonialData } from "@/components/Testimonial/moreYouKnowData";
@@ -21,6 +22,7 @@ import {
   faHandsHelping,
   faBullseye,
 } from "@fortawesome/free-solid-svg-icons";
+import JumpLinks from "@/components/JumpLinks";
 
 export const metadata: Metadata = {
   title: "Career Development Wing Page",
@@ -33,24 +35,24 @@ const banners = [
     delay: 3000,
     className: "dark:hidden",
     slides: [
-      { src: "/images/banner/Cdev1.jpg", alt: "Slide 1" },
+      { src: "/images/banner/Cdev6.jpg", alt: "Slide 1" },
       { src: "/images/banner/Cdev2.jpg", alt: "Slide 2" },
       { src: "/images/banner/Cdev3.jpg", alt: "Slide 3" },
       { src: "/images/banner/Cdev4.jpg", alt: "Slide 4" },
       { src: "/images/banner/Cdev5.jpg", alt: "Slide 5" },
-      { src: "/images/banner/Cdev6.jpg", alt: "Slide 6" },
+      { src: "/images/banner/Cdev1.jpg", alt: "Slide 6" },
     ],
   },
   {
     delay: 3000,
     className: "dark:block",
     slides: [
-      { src: "/images/banner/Cdev1.jpg", alt: "Slide 1" },
+      { src: "/images/banner/Cdev6.jpg", alt: "Slide 1" },
       { src: "/images/banner/Cdev2.jpg", alt: "Slide 2" },
       { src: "/images/banner/Cdev3.jpg", alt: "Slide 3" },
       { src: "/images/banner/Cdev4.jpg", alt: "Slide 4" },
       { src: "/images/banner/Cdev5.jpg", alt: "Slide 5" },
-      { src: "/images/banner/Cdev6.jpg", alt: "Slide 6" },
+      { src: "/images/banner/Cdev1.jpg", alt: "Slide 6" },
     ],
   },
 ];
@@ -341,10 +343,16 @@ const bannerlogos = {
   src: "/images/logo/cdev.png",
   alt: "CDev wing logo",
 };
+const sections = [
+  { id: "objectives", label: "Objectives" },
+  { id: "activities", label: "Activities" },
+  { id: "past-sessions", label: "Past Sessions" },
+];
 
 const ResearchPage = () => {
   return (
-    <div>
+    <div className="relative">
+      <JumpLinks sections={sections} />
       <Banner
         banners={banners}
         logo={bannerlogos}
@@ -352,8 +360,28 @@ const ResearchPage = () => {
         description={description}
         socialLinks={socialLinks}
       />
-      <ObjectivesSection title="Our Objectives" objectives={objectives} />
-      <Activities headerInfo={activitiesHeader} activities={activitiesData} />
+      <section id="objectives">
+        <ObjectivesSection title="Our Objectives" objectives={objectives} />
+      </section>
+      <section id="activities">
+        <Activities headerInfo={activitiesHeader} activities={activitiesData} />
+      </section>
+
+      <section id="past-sessions">
+        <PastSessions
+          PastSessionsHeader={PastSessionsHeader}
+          sessions={sessions}
+        />
+        <Link
+          href="https://medium.com/@ug_anc/list/career-development-b2ebf3ffd81e"
+          target="_blank"
+          rel="noopener noreferrer"
+          className=" hover:bg-primary-dark  mb-5 flex justify-center rounded-full bg-primary px-7.5 py-2.5 text-white duration-300 ease-in-out "
+        >
+          Read more insightful stories here
+        </Link>
+      </section>
+
       {/* <ResearchGazette headerInfo={CareerCHeader} data={CareerCData} /> */}
       <CCGKits/>
       <PastSessions

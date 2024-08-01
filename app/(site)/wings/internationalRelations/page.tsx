@@ -5,6 +5,7 @@ import { Metadata } from "next";
 import Activities from "@/components/Activities/Activities";
 import CalendarView from "@/components/CalenderView";
 import Grad from "@/components/Grad";
+import dynamic from "next/dynamic";
 import {
   faComments,
   faBullhorn,
@@ -29,6 +30,12 @@ export const metadata: Metadata = {
   description: "This is the International Relations Wing page for ANC council",
   // other metadata
 };
+
+const JumpLinks = dynamic(() => import("@/components/JumpLinks"), {
+  ssr: false,
+});
+
+
 
 const banners = [
   {
@@ -158,9 +165,17 @@ const bannerlogos = {
   alt: "IR wing logo",
 };
 
+const sections = [
+  { id: "objectives", label: "Objectives" },
+  { id: "activities", label: "Activities" },
+  {id:"calender", label: "Calender"},
+  { id: "grad", label: "Graduate Research Application Directory" },
+];
+
+
 const ResearchPage = () => {
   return (
-    <div>
+    <div className="relative">
       <Banner
         banners={banners}
         logo={bannerlogos}
@@ -168,10 +183,19 @@ const ResearchPage = () => {
         description={description}
         socialLinks={socialLinks}
       />
-      <ObjectivesSection title="Our Objectives" objectives={objectives} />
-      <Activities headerInfo={activitiesHeader} activities={activitiesData} />
-      <CalendarView calendarInfo={calendarInfo} />
-      <Grad />
+      <JumpLinks sections={sections} />
+      <section id="objectives">
+        <ObjectivesSection title="Our Objectives" objectives={objectives} />
+      </section>
+      <section id="activities">
+        <Activities headerInfo={activitiesHeader} activities={activitiesData} />
+      </section>
+      <section id="calender">
+        <CalendarView calendarInfo={calendarInfo} />
+      </section>
+      <section id="grad">
+        <Grad />
+      </section>
     </div>
   );
 };

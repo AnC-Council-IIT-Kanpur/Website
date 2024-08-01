@@ -51,7 +51,7 @@ const featuresData: Feature[] = [
   },
   {
     id: 6,
-    icon: "/images/logo/media.png",
+    icon: "/images/logo/mnp_new.png",
     title: "Media & Publicity Wing",
     description:
       "The Wing primarily dedicated to boosting the visibility and engagement in the events of the AnC Council.",
@@ -59,7 +59,7 @@ const featuresData: Feature[] = [
   },
   {
     id: 7,
-    icon: "/images/logo/outreach.png",
+    icon: "/images/logo/outreach_new.png",
     title: "Outreach & Finance Wing",
     description:
       "The Outreach and Finance Wing is the one responsible for the keeping precise financial records, managing budgets and overseeing cash flow in the overall activities of the AnC Council.",

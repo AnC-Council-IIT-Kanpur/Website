@@ -1,5 +1,6 @@
 import React from "react";
 import Banner from "@/components/Banner";
+import dynamic from "next/dynamic";
 import ObjectivesSection from "@/components/Objectives";
 import { Metadata } from "next";
 import Activities from "@/components/Activities/Activities";
@@ -30,6 +31,9 @@ export const metadata: Metadata = {
   description: "This is the Research Wing page for ANC council",
   // other metadata
 };
+const JumpLinks = dynamic(() => import("@/components/JumpLinks"), {
+  ssr: false,
+});
 
 const banners = [
   {
@@ -350,10 +354,19 @@ const bannerlogos = {
   src: "/images/logo/research.png",
   alt: "Research wing logo",
 };
+const sections = [
+  { id: "objectives", label: "Objectives" },
+  { id: "activities", label: "Activities" },
+  { id: "calender", label: "Calender" },
+  { id: "research", label: "Research Gazette" },
+  { id: "past", label: "Past Sessions" },
+  { id: "director", label: "Director's Note" },
+  { id: "testimonial", label: "Testimonial" },
+];
 
 const ResearchPage = () => {
   return (
-    <div>
+    <div className="relative">
       <Banner
         banners={banners}
         logo={bannerlogos}
@@ -361,6 +374,41 @@ const ResearchPage = () => {
         description={description}
         socialLinks={socialLinks}
       />
+<!-- <<<<<<< main
+      <JumpLinks sections={sections} />
+
+      <section id="objectives">
+        <ObjectivesSection title="Our Objectives" objectives={objectives} />
+      </section>
+      <section id="activities">
+        <Activities headerInfo={activitiesHeader} activities={activitiesData} />
+      </section>
+      <section id="calender">
+        {" "}
+        <CalendarView calendarInfo={calendarInfo} />
+        <CalendarView calendarInfo={reserachAlumInfo} />
+      </section>
+      <section id="research">
+        {" "}
+        <ResearchGazette
+          headerInfo={ResearchGazetteHeader}
+          data={researchGazetteData}
+        />
+      </section>
+      <section id="past">
+        <PastSessions
+          PastSessionsHeader={PastSessionsHeader}
+          sessions={sessions}
+        />
+      </section>
+      <section id="director">
+        <DirectorNote headerInfo={headerInfo} quotes={quotes} />
+      </section>
+      <section id="testimonial">
+        <RTestimonial />
+      </section>
+
+======= -->
       <ObjectivesSection title="Our Objectives" objectives={objectives} />
       <Activities headerInfo={activitiesHeader} activities={activitiesData} />
       <CalendarView calendarInfo={calendarInfo} />
@@ -379,7 +427,6 @@ const ResearchPage = () => {
       />
       <DirectorNote headerInfo={headerInfo} quotes={quotes} />
       {/* <NoteSection notes={noteData}/> */}
-      <RTestimonial />
     </div>
   );
 };

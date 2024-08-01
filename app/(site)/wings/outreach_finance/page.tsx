@@ -134,7 +134,7 @@ const activitiesHeader = {
 };
 
 const bannerlogos = {
-  src: "/images/logo/outreach and finance.png",
+  src: "/images/logo/outreach_new.png",
   alt: "Outreach and finance wing logo",
 };
 

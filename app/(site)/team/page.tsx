@@ -32,7 +32,7 @@ export default function Home() {
         <SectionHeaderTop headerInfo={headerInfo} />
       </div>
       <Team teamSectionData={GensecData} />
-      {/* <Team teamSectionData={IsecData} /> */}
+      <Team teamSectionData={IsecData} />
       <Team teamSectionData={cdevTeamData} />
       <Team teamSectionData={researchTeamData} />
       <Team teamSectionData={acadesTeamData} />
