@@ -199,7 +199,10 @@ const sessions = [
   },
   // Add more sessions as needed
 ];
-
+const bannerlogos = {
+  src: "/images/logo/pmig.png",
+  alt: "UG acads logo",
+};
 const quoteHeaderInfo = {
   title: `PRODUCT CLUB`,
   subtitle: `Member Quotes`,
@@ -211,6 +214,7 @@ const ProductPage = () => {
     <div>
       <Banner
         banners={banners}
+        logo={bannerlogos}
         title={"Welcome to Product Club"}
         description={description}
         socialLinks={socialLinks}
