@@ -4,7 +4,10 @@ import ObjectivesSection from "@/components/Objectives";
 import { Metadata } from "next";
 import Activities from "@/components/Activities/Activities";
 import PastSessions from "@/components/PastSessions";
-
+import CCGKits from "@/components/CdevCCG/CCGKitCard";
+import Testimonial from "@/components/Testimonial";
+import { testimonialData } from "@/components/Testimonial/moreYouKnowData";
+import { moreYouKnowHeaderInfo } from "@/components/Testimonial/moreyouKnowHeaderInfo";
 import {
   faComments,
   faBullhorn,
@@ -352,10 +355,12 @@ const ResearchPage = () => {
       <ObjectivesSection title="Our Objectives" objectives={objectives} />
       <Activities headerInfo={activitiesHeader} activities={activitiesData} />
       {/* <ResearchGazette headerInfo={CareerCHeader} data={CareerCData} /> */}
+      <CCGKits/>
       <PastSessions
         PastSessionsHeader={PastSessionsHeader}
         sessions={sessions}
       />
+      <Testimonial data={testimonialData} headerInfo={moreYouKnowHeaderInfo} />
     </div>
   );
 };
