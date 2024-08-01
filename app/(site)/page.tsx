@@ -16,12 +16,21 @@ import Blog from "@/components/Blog";
 import Testimonial from "@/components/Testimonial";
 import Link from "next/link";
 import { link } from "fs";
+import PastSessions from "@/components/PastSessions";
 
 export const metadata: Metadata = {
   title: "AnC Council IIT Kanpur",
   description: "Academic and Cultural Council, IIT Kanpur",
   // other metadata
 };
+
+const PastSessionsHeader = {
+  title: "OUR PREVIOUS SESSIONS",
+  subtitle: "Details of Our Past Sessions",
+  description:
+    "Find resources like presentations and recordings of our past sessions.",
+};
+
 
 export default function Home() {
   return (
@@ -38,6 +47,7 @@ export default function Home() {
       <MainEvents />
     
       <Testimonial />
+      
       
       {/* <Pricing /> */}
       {/* <Contact /> */}

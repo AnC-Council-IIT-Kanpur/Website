@@ -11,6 +11,74 @@ import {
   faObjectGroup,
 } from "@fortawesome/free-solid-svg-icons";
 
+const sessions = [
+  {
+    title: "Group Discussions",
+    description: "A session for Y22s for GD preparation.",
+    image: "/images/banner/GD.jpg", // Add the path to the image
+    resources: [
+      {
+        type: "Presentation",
+        link: "https://drive.google.com/file/d/1sF3xDKK2J2N014dO3GqiakOjSifimYbk/view",
+        label: "Resources",
+      },
+      // { type: "Recording", link: "#", label: "Watch Recording" },
+    ],
+  },
+  {
+    title: "Resume Making Session",
+    description: "A session to mentor Y22s for resume-making.",
+    image: "/images/banner/resume.jpg", // Add the path to the image
+    resources: [
+      {
+        type: "Presentation",
+        link: "https://tr.ee/iV8zctCZl-",
+        label: "Resources",
+      },
+      {
+        type: "Presentation",
+        link: "https://tr.ee/hxfIJtzdnG ",
+        label: "Resume Repositories",
+      },
+      // { type: "Recording", link: "#", label: "Watch Recording" },
+    ],
+  },
+  {
+    title: "Internship Training Program",
+    description:
+      "A training program for Y22s to mentor them for various profile.",
+    image: "/images/banner/quant.jpg", // Add the path to the image
+    resources: [
+      {
+        type: "Presentation",
+        link: "https://docs.google.com/document/d/1CCzPS5p-1A50FfKXK7Apbu5F3NDM2VFFMA10zRNlst4/edit?usp=sharing",
+        label: "View Resources",
+      },
+      {
+        type: "Recording",
+        link: "https://drive.google.com/drive/u/0/folders/153QbwBDmppuWOAGpTTWrSEZi-QXXQ9GV ",
+        label: "Watch Recording",
+      },
+    ],
+  },
+  // Add more sessions as needed
+];
+const sections = [
+  
+  { id: "objectives", label: "Objectives" },
+  { id: "ccg-kits", label: "CCG Kits" },
+  { id: "department-guide", label: "Department Guide" },
+  { id: "quick-links", label: "Quick Links" },
+  { id: "faq", label: "FAQ" },
+];
+
+const PastSessionsHeader = {
+  title: "OUR PREVIOUS SESSIONS",
+  subtitle: "Details of Our Past Sessions",
+  description:
+    "Find resources like presentations and recordings of our past sessions.",
+};
+
 // Dynamic import of components
 const QuickLink = dynamic(() => import("@/components/Quicklinks"), {
   ssr: false,
@@ -28,6 +96,9 @@ const DeptartmentGuide = dynamic(
 );
 const FAQ = dynamic(() => import("@/components/FAQ"), { ssr: false });
 const JumpLinks = dynamic(()=> import("@/components/JumpLinks"),{ssr: false })
+const PastSessions = dynamic(() => import("@/components/PastSessions"), {
+  ssr: false,
+});
 
 // Metadata for the page
 // export const metadata = {
@@ -73,7 +144,7 @@ const description = {
 
 const socialLinks = [
   {
-    href: "#",
+    href: "https://www.linkedin.com/company/anciitk",
     label: "linkedin icon",
     iconPath:
       "M6.94 5.00002C6.93974 5.53046 6.72877 6.03906 6.35351 6.41394C5.97825 6.78883 5.46944 6.99929 4.939 6.99902C4.40857 6.99876 3.89997 6.78779 3.52508 6.41253C3.1502 6.03727 2.93974 5.52846 2.94 4.99802C2.94027 4.46759 3.15124 3.95899 3.5265 3.5841C3.90176 3.20922 4.41057 2.99876 4.941 2.99902C5.47144 2.99929 5.98004 3.21026 6.35492 3.58552C6.72981 3.96078 6.94027 4.46959 6.94 5.00002ZM7 8.48002H3V21H7V8.48002ZM13.32 8.48002H9.34V21H13.28V14.43C13.28 10.77 18.05 10.43 18.05 14.43V21H22V13.07C22 6.90002 14.94 7.13002 13.28 10.16L13.32 8.48002Z",
@@ -84,7 +155,6 @@ const socialLinks = [
     iconPath:
       "M 8 3 C 5.239 3 3 5.239 3 8 L 3 16 C 3 18.761 5.239 21 8 21 L 16 21 C 18.761 21 21 18.761 21 16 L 21 8 C 21 5.239 18.761 3 16 3 L 8 3 z M 18 5 C 18.552 5 19 5.448 19 6 C 19 6.552 18.552 7 18 7 C 17.448 7 17 6.552 17 6 C 17 5.448 17.448 5 18 5 z M 12 7 C 14.761 7 17 9.239 17 12 C 17 14.761 14.761 17 12 17 C 9.239 17 7 14.761 7 12 C 7 9.239 9.239 7 12 7 z M 12 9 A 3 3 0 0 0 9 12 A 3 3 0 0 0 12 15 A 3 3 0 0 0 15 12 A 3 3 0 0 0 12 9 z",
   },
- 
 
   {
     href: "https://www.facebook.com/ANCIITK",
@@ -124,7 +194,7 @@ const ugAcademicsObjectives = [
 
 const DepartmentGuideHeader = {
   title: "",
-  subtitle: "Department Guide",
+  subtitle: "Department Guides",
   description: " ",
 };
 
@@ -172,38 +242,56 @@ const DepartmentGuideData = [
 ];
 
 
-const sections = [
-  { id: "banner", label: "Banner" },
-  { id: "objectives", label: "Objectives" },
-  { id: "ccg-kits", label: "CCG Kits" },
-  { id: "department-guide", label: "Department Guide" },
-  { id: "quick-links", label: "Quick Links" },
-  { id: "faq", label: "FAQ" },
-];
-
 
 const UGAcademicsPage = () => {
   return (
     <div className="relative">
-      <Banner
-        banners={banners}
-        logo={bannerlogos}
-        title="Welcome to UG Academics Wing"
-        description={description}
-        socialLinks={socialLinks}
-      />
-      {/* <JumpLinks sections={sections} /> */}
-      <ObjectivesSection
-        title="Our Objectives"
-        objectives={ugAcademicsObjectives}
-      />
-      <CCGKits />
-      <DeptartmentGuide
-        headerInfo={DepartmentGuideHeader}
-        data={DepartmentGuideData}
-      />
-      <QuickLink />
-      <FAQ />
+      {/* Secondary Navbar with Jump Links */}
+      <JumpLinks sections={sections} />
+
+      {/* Main Content Sections */}
+      <section id="banner">
+        <Banner
+          banners={banners}
+          logo={bannerlogos}
+          title="Welcome to UG Academics Wing"
+          description={description}
+          socialLinks={socialLinks}
+        />
+      </section>
+
+      <section id="objectives">
+        <ObjectivesSection
+          title="Our Objectives"
+          objectives={ugAcademicsObjectives}
+        />
+      </section>
+
+      <section id="ccg-kits">
+        <CCGKits />
+      </section>
+
+      <section id="department-guide">
+        <DeptartmentGuide
+          headerInfo={DepartmentGuideHeader}
+          data={DepartmentGuideData}
+        />
+      </section>
+
+      <section id="quick-links">
+        <QuickLink />
+      </section>
+
+      <section id="faq">
+        <FAQ />
+      </section>
+
+      <section id="past-sessions">
+        <PastSessions
+          PastSessionsHeader={PastSessionsHeader}
+          sessions={sessions}
+        />
+      </section>
     </div>
   );
 };

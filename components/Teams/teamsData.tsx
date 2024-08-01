@@ -24,21 +24,32 @@ const GensecData: TeamSection = {
 const IsecMembers: Team[] = [
   {
     id: 1,
-    icon: "/images/wings/CareerWing/",
-    title: "Dummy person",
+    icon: "/images/wings/Isecy/saumya.png",
+    title: "Saumya Gupta",
     designation: "Institute Secretary",
-    role: "Academics and Career council",
+    role: " Career Development and International Relations (UG) ",
     description: "",
-    phone: "+91 987654321",
+    phone: "+91 9935010214",
     email: "",
-    linkedin: "https://www.linkedin.com/in/",
+    linkedin: "https://www.linkedin.com/in/saumya-gupta-iitk25/",
+  },
+  {
+    id: 2,
+    icon: "/images/wings/Isecy/Siddhart.png",
+    title: "Siddharth Maurya",
+    designation: "Institute Secretary",
+    role: " Academics and Research (UG)",
+    description: "",
+    phone: "+91 9328717328",
+    email: "",
+    linkedin: "https://www.linkedin.com/in/siddharth-maurya-762a63176/",
   },
 ];
 const IsecData: TeamSection = {
   title: "Meet Our",
   subtitle: "Institute Secretary",
   description:
-    "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat, natus?",
+    "",
   teams: IsecMembers,
 };
 
@@ -48,7 +59,7 @@ const cdevTeamMebers: Team[] = [
     icon: "/images/wings/CareerWing/Aman.jpeg.jpg",
     title: "Aman Nigam",
     designation: "Manager",
-    role: "Carrer Development Wing",
+    role: "Career Development Wing",
     description: "",
     phone: "+91 6387057855",
     email: "",
@@ -59,7 +70,7 @@ const cdevTeamMebers: Team[] = [
     icon: "/images/wings/CareerWing/IMG_20240413_181933__01 - Krishiv Geriani.jpg",
     title: "Krishiv Geriani",
     designation: "Manager",
-    role: "Carrer Development Wing",
+    role: "Career Development Wing",
     description: "",
     phone: "+91 7230025422",
     email: "",
@@ -70,7 +81,7 @@ const cdevTeamMebers: Team[] = [
     icon: "/images/wings/CareerWing/picccc - Hritvija Singh.jpg",
     title: "Hritvija Singh",
     designation: "Manager",
-    role: "Carrer Development Wing",
+    role: "Career Development Wing",
     description: "",
     phone: "+91 9911389397",
     email: "",
@@ -81,7 +92,7 @@ const cdevTeamMebers: Team[] = [
     icon: "/images/wings/CareerWing/mantavya - Mantavya Upadhyay.jpg",
     title: "Mantavya Upadhyay",
     designation: "Manager",
-    role: "Carrer Development Wing",
+    role: "Career Development Wing",
     description: "",
     phone: "+91 9425735530",
     email: "",
@@ -92,7 +103,7 @@ const cdevTeamMebers: Team[] = [
     icon: "/images/wings/CareerWing/Photo - Manya Gupta (1) (1).jpg",
     title: "Manya Gupta",
     designation: "Manager",
-    role: "Carrer Development Wing",
+    role: "Career Development Wing",
     description: "",
     phone: "+91 8968614934",
     email: "",
@@ -104,7 +115,7 @@ const cdevTeamMebers: Team[] = [
     icon: "/images/wings/CareerWing/IMG_1988 - Pooja Singh.jpeg",
     title: "Pooja Singh",
     designation: "Manager",
-    role: "Carrer Development Wing",
+    role: "Career Development Wing",
     description: "",
     phone: "+91 9637463004",
     email: "",
@@ -115,7 +126,7 @@ const cdevTeamMebers: Team[] = [
 
 const cdevTeamData: TeamSection = {
   title: "Meet Our",
-  subtitle: "Career Devlopment Wing",
+  subtitle: "Career Development Wing",
   description: "Brain behind the innovation, contact them for any query",
   teams: cdevTeamMebers,
 };
@@ -240,7 +251,7 @@ const interNationalTeamMebers: Team[] = [
     icon: "/images/wings/interNational/Apoorv_Tandon.jpeg",
     title: "Apoorv Tandon",
     designation: "Manager",
-    role: "International Relation Wing",
+    role: "International Relations Wing",
     description: "",
     phone: "+91 9972213168",
     email: "",
@@ -252,7 +263,7 @@ const interNationalTeamMebers: Team[] = [
     icon: "/images/wings/interNational/Mohan.jpg",
     title: "Mohan",
     designation: "Manager",
-    role: "International Relation Wing",
+    role: "International Relations Wing",
     description: "",
     phone: "+91 9557206698",
     email: "",
@@ -264,7 +275,7 @@ const interNationalTeamMebers: Team[] = [
     icon: "/images/wings/interNational/Sambuddha_Chakrabarti.jpg",
     title: "Sambuddha Chakrabarti",
     designation: "Manager",
-    role: "International Relation Wing",
+    role: "International Relations Wing",
     description: "",
     phone: "+91 8910162235",
     email: "",
@@ -274,7 +285,7 @@ const interNationalTeamMebers: Team[] = [
 
 const interNationalTeamData: TeamSection = {
   title: "Meet Our",
-  subtitle: "International Relation Wing",
+  subtitle: "International Relations Wing",
   description: "Trailblazers in the industry, reach out for any information",
   teams: interNationalTeamMebers,
 };
@@ -376,7 +387,7 @@ const mediaTeamMebers: Team[] = [
     icon: "/images/wings/media/Photo - Roshan Patil.png",
     title: "Roshan Patil",
     designation: "Coordinator",
-    role: "Media and Public Wing",
+    role: "Media and Publicity Wing",
     description: "",
     phone: "+91 9579257826",
     email: "",
@@ -387,7 +398,7 @@ const mediaTeamMebers: Team[] = [
 
 const mediaTeamData: TeamSection = {
   title: "Meet Our",
-  subtitle: "Media and Public Wing",
+  subtitle: "Media and Publicity Wing",
   description: "Leading the way in media solutions, we're here to assist you",
   teams: mediaTeamMebers,
 };
