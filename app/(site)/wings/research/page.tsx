@@ -374,7 +374,7 @@ const ResearchPage = () => {
         description={description}
         socialLinks={socialLinks}
       />
-<!-- <<<<<<< main
+{/* <!-- <<<<<<< main
       <JumpLinks sections={sections} />
 
       <section id="objectives">
@@ -408,7 +408,7 @@ const ResearchPage = () => {
         <RTestimonial />
       </section>
 
-======= -->
+======= --> */}
       <ObjectivesSection title="Our Objectives" objectives={objectives} />
       <Activities headerInfo={activitiesHeader} activities={activitiesData} />
       <CalendarView calendarInfo={calendarInfo} />
