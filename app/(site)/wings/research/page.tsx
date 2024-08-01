@@ -4,6 +4,7 @@ import ObjectivesSection from "@/components/Objectives";
 import { Metadata } from "next";
 import Activities from "@/components/Activities/Activities";
 import CalendarView from "@/components/CalenderView";
+import InternCards from "@/components/InternCards"
 import ResearchGazette from "@/components/ResearchGazette";
 import PastSessions from "@/components/PastSessions";
 import DirectorNote from "@/components/Quote/DirectorNote";
@@ -198,8 +199,18 @@ const sessions = [
     resources: [
       {
         type: "Presentation",
-        link: "https://drive.google.com/drive/folders/1DjgvskrWcIECtfd5bFpt8pX1nggVOfWf?usp=sharing",
-        label: "View Presentation",
+        link: "",
+        label: "View Presentation 1",
+      },
+      {
+        type: "Presentation",
+        link: "https://drive.google.com/file/d/1hplq2nFhEMkI90Ak5vQs3DiRfj7lbLcx/view?usp=sharing",
+        label: "View Presentation 2",
+      },
+      {
+        type: "Presentation",
+        link: "https://drive.google.com/file/d/1I14xNIfbVReWhVGP601KbzN7nGhmh-fS/view?usp=sharing",
+        label: "View Presentation 3",
       },
       {
         type: "Recording",
@@ -277,6 +288,42 @@ const ResearchGazetteHeader = {
   description: `Downloadable PDF versions of each gazette with summaries. Filter by year or research area.`,
 };
 
+const foreignSessions = [
+  {
+    id: 1,
+    icon: "/images/icon/icon-01.svg",
+    title: "Archive 1",
+    description: "Session 1",
+    pdfUrl: "https://drive.google.com/file/d/1LDCVeWcoe6RhFN_HLDumpGtxklcuID3O/view?usp=sharing",
+    year: 2023,
+    area: "Technology",
+  },
+  {
+    id: 2,
+    icon: "/images/icon/icon-qc.svg",
+    title: "Archive 1",
+    description: "Session 2.",
+    pdfUrl: "https://drive.google.com/file/d/1hplq2nFhEMkI90Ak5vQs3DiRfj7lbLcx/view?usp=sharing",
+    year: 2023,
+    area: "Technology",
+  },
+  {
+    id: 3,
+    icon: "/images/icon/icon-qc.svg",
+    title: "Archive 1",
+    description: "Session 3.",
+    pdfUrl: "https://drive.google.com/file/d/1hplq2nFhEMkI90Ak5vQs3DiRfj7lbLcx/view?usp=sharing",
+    year: 2023,
+    area: "Technology",
+  },
+]
+
+const InternCardHeader = {
+  title: "RESEARCH INTERNSHIP SESSION",
+  subtitle: "Details of Our Past Sessions on Research Internship",
+  description: `Find resources like presentations and recordings of our past sessions.`,
+};
+
 const researchGazetteData = [
   {
     id: 1,
@@ -325,6 +372,10 @@ const ResearchPage = () => {
       <PastSessions
         PastSessionsHeader={PastSessionsHeader}
         sessions={sessions}
+      />
+      <InternCards
+        headerInfo={InternCardHeader}
+        data={foreignSessions}
       />
       <DirectorNote headerInfo={headerInfo} quotes={quotes} />
       {/* <NoteSection notes={noteData}/> */}
