@@ -4,6 +4,7 @@ import ObjectivesSection from "@/components/Objectives";
 import { Metadata } from "next";
 import Activities from "@/components/Activities/Activities";
 import CalendarView from "@/components/CalenderView";
+import InternCards from "@/components/InternCards"
 import ResearchGazette from "@/components/ResearchGazette";
 import PastSessions from "@/components/PastSessions";
 import DirectorNote from "@/components/Quote/DirectorNote";
@@ -57,15 +58,9 @@ const banners = [
 const socialLinks = [
   {
     href: "https://www.linkedin.com/company/research-wing-anc-iitk/",
-    label: "linkedin icon",
+    label: "linkedIn icon",
     iconPath:
-      "M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11.666 20h-2.668v-11h2.668v11zm-1.334-12.284c-.86 0-1.558-.702-1.558-1.558s.698-1.558 1.558-1.558 1.558.702 1.558 1.558-.698 1.558-1.558 1.558zm13.334 12.284h-2.666v-5.568c0-1.331-.026-3.042-1.855-3.042-1.857 0-2.141 1.448-2.141 2.947v5.663h-2.666v-11h2.56v1.503h.037c.356-.674 1.227-1.383 2.528-1.383 2.704 0 3.202 1.779 3.202 4.093v6.787z",
-  },
-  {
-    href: "mailto:researchwing.iitk@gmail.com",
-    label: "mailbox icon",
-    iconPath:
-      "M4.5 4h15c.83 0 1.5.67 1.5 1.5v13c0 .83-.67 1.5-1.5 1.5h-15c-.83 0-1.5-.67-1.5-1.5v-13c0-.83.67-1.5 1.5-1.5zm0 2v.511l7.5 4.744 7.5-4.744v-.511h-15zm15 11v-8.745l-7.5 4.744-7.5-4.744v8.745h15z",
+      " M6.94 5.00002C6.93974 5.53046 6.72877 6.03906 6.35351 6.41394C5.97825 6.78883 5.46944 6.99929 4.939 6.99902C4.40857 6.99876 3.89997 6.78779 3.52508 6.41253C3.1502 6.03727 2.93974 5.52846 2.94 4.99802C2.94027 4.46759 3.15124 3.95899 3.5265 3.5841C3.90176 3.20922 4.41057 2.99876 4.941 2.99902C5.47144 2.99929 5.98004 3.21026 6.35492 3.58552C6.72981 3.96078 6.94027 4.46959 6.94 5.00002ZM7 8.48002H3V21H7V8.48002ZM13.32 8.48002H9.34V21H13.28V14.43C13.28 10.77 18.05 10.43 18.05 14.43V21H22V13.07C22 6.90002 14.94 7.13002 13.28 10.16L13.32 8.48002Z",
   },
   {
     href: "https://www.instagram.com/iitk_research_wing/",
@@ -74,10 +69,10 @@ const socialLinks = [
       "M 8 3 C 5.239 3 3 5.239 3 8 L 3 16 C 3 18.761 5.239 21 8 21 L 16 21 C 18.761 21 21 18.761 21 16 L 21 8 C 21 5.239 18.761 3 16 3 L 8 3 z M 18 5 C 18.552 5 19 5.448 19 6 C 19 6.552 18.552 7 18 7 C 17.448 7 17 6.552 17 6 C 17 5.448 17.448 5 18 5 z M 12 7 C 14.761 7 17 9.239 17 12 C 17 14.761 14.761 17 12 17 C 9.239 17 7 14.761 7 12 C 7 9.239 9.239 7 12 7 z M 12 9 A 3 3 0 0 0 9 12 A 3 3 0 0 0 12 15 A 3 3 0 0 0 15 12 A 3 3 0 0 0 12 9 z",
   },
   {
-    href: "https://www.linkedin.com/company/research-wing-anc-iitk/",
-    label: "linkedIn icon",
+    href: "mailto:researchwing.iitk@gmail.com",
+    label: "mailbox icon",
     iconPath:
-      " M6.94 5.00002C6.93974 5.53046 6.72877 6.03906 6.35351 6.41394C5.97825 6.78883 5.46944 6.99929 4.939 6.99902C4.40857 6.99876 3.89997 6.78779 3.52508 6.41253C3.1502 6.03727 2.93974 5.52846 2.94 4.99802C2.94027 4.46759 3.15124 3.95899 3.5265 3.5841C3.90176 3.20922 4.41057 2.99876 4.941 2.99902C5.47144 2.99929 5.98004 3.21026 6.35492 3.58552C6.72981 3.96078 6.94027 4.46959 6.94 5.00002ZM7 8.48002H3V21H7V8.48002ZM13.32 8.48002H9.34V21H13.28V14.43C13.28 10.77 18.05 10.43 18.05 14.43V21H22V13.07C22 6.90002 14.94 7.13002 13.28 10.16L13.32 8.48002Z",
+      "M4.5 4h15c.83 0 1.5.67 1.5 1.5v13c0 .83-.67 1.5-1.5 1.5h-15c-.83 0-1.5-.67-1.5-1.5v-13c0-.83.67-1.5 1.5-1.5zm0 2v.511l7.5 4.744 7.5-4.744v-.511h-15zm15 11v-8.745l-7.5 4.744-7.5-4.744v8.745h15z",
   },
 ];
 
@@ -203,8 +198,18 @@ const sessions = [
     resources: [
       {
         type: "Presentation",
-        link: "https://drive.google.com/drive/folders/1DjgvskrWcIECtfd5bFpt8pX1nggVOfWf?usp=sharing",
-        label: "View Presentation",
+        link: "",
+        label: "View Presentation 1",
+      },
+      {
+        type: "Presentation",
+        link: "https://drive.google.com/file/d/1hplq2nFhEMkI90Ak5vQs3DiRfj7lbLcx/view?usp=sharing",
+        label: "View Presentation 2",
+      },
+      {
+        type: "Presentation",
+        link: "https://drive.google.com/file/d/1I14xNIfbVReWhVGP601KbzN7nGhmh-fS/view?usp=sharing",
+        label: "View Presentation 3",
       },
       {
         type: "Recording",
@@ -282,6 +287,42 @@ const ResearchGazetteHeader = {
   description: `Downloadable PDF versions of each gazette with summaries. Filter by year or research area.`,
 };
 
+const foreignSessions = [
+  {
+    id: 1,
+    icon: "/images/icon/icon-01.svg",
+    title: "Archive 1",
+    description: "Session 1",
+    pdfUrl: "https://drive.google.com/file/d/1LDCVeWcoe6RhFN_HLDumpGtxklcuID3O/view?usp=sharing",
+    year: 2023,
+    area: "Technology",
+  },
+  {
+    id: 2,
+    icon: "/images/icon/icon-qc.svg",
+    title: "Archive 1",
+    description: "Session 2.",
+    pdfUrl: "https://drive.google.com/file/d/1hplq2nFhEMkI90Ak5vQs3DiRfj7lbLcx/view?usp=sharing",
+    year: 2023,
+    area: "Technology",
+  },
+  {
+    id: 3,
+    icon: "/images/icon/icon-qc.svg",
+    title: "Archive 1",
+    description: "Session 3.",
+    pdfUrl: "https://drive.google.com/file/d/1hplq2nFhEMkI90Ak5vQs3DiRfj7lbLcx/view?usp=sharing",
+    year: 2023,
+    area: "Technology",
+  },
+]
+
+const InternCardHeader = {
+  title: "RESEARCH INTERNSHIP SESSION",
+  subtitle: "Details of Our Past Sessions on Research Internship",
+  description: `Find resources like presentations and recordings of our past sessions.`,
+};
+
 const researchGazetteData = [
   {
     id: 1,
@@ -325,6 +366,10 @@ const ResearchPage = () => {
       <PastSessions
         PastSessionsHeader={PastSessionsHeader}
         sessions={sessions}
+      />
+      <InternCards
+        headerInfo={InternCardHeader}
+        data={foreignSessions}
       />
       <DirectorNote headerInfo={headerInfo} quotes={quotes} />
       {/* <NoteSection notes={noteData}/> */}
