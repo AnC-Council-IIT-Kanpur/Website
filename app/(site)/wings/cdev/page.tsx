@@ -170,8 +170,6 @@ const activitiesHeader = {
   description: `Explore various activities organized by our team, including events, workshops, and more. Get involved and enhance your experience.`,
 };
 
-
-
 const PastSessionsHeader = {
   title: "OUR PREVIOUS SESSIONS",
   subtitle: "Details of Our Past Sessions",
@@ -347,6 +345,8 @@ const sections = [
   { id: "objectives", label: "Objectives" },
   { id: "activities", label: "Activities" },
   { id: "past-sessions", label: "Past Sessions" },
+  { id: "prep", label: "Internship Preparation Guides" },
+  { id: "journey", label: "The More You Know" },
 ];
 
 const ResearchPage = () => {
@@ -372,23 +372,18 @@ const ResearchPage = () => {
           PastSessionsHeader={PastSessionsHeader}
           sessions={sessions}
         />
-        <Link
-          href="https://medium.com/@ug_anc/list/career-development-b2ebf3ffd81e"
-          target="_blank"
-          rel="noopener noreferrer"
-          className=" hover:bg-primary-dark  mb-5 flex justify-center rounded-full bg-primary px-7.5 py-2.5 text-white duration-300 ease-in-out "
-        >
-          Read more insightful stories here
-        </Link>
+      </section>
+      <section id="prep">
+        <CCGKits />
+      </section>
+      <section id="journey">
+        <Testimonial
+          data={testimonialData}
+          headerInfo={moreYouKnowHeaderInfo}
+        />
       </section>
 
       {/* <ResearchGazette headerInfo={CareerCHeader} data={CareerCData} /> */}
-      <CCGKits/>
-      <PastSessions
-        PastSessionsHeader={PastSessionsHeader}
-        sessions={sessions}
-      />
-      <Testimonial data={testimonialData} headerInfo={moreYouKnowHeaderInfo} />
     </div>
   );
 };

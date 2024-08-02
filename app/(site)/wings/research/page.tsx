@@ -360,7 +360,9 @@ const sections = [
   { id: "calender", label: "Calender" },
   { id: "research", label: "Research Gazette" },
   { id: "past", label: "Past Sessions" },
-  { id: "director", label: "Director's Note" },
+  { id: "intern", label: "RESEARCH INTERNSHIP SESSION" },
+  { id: "director", label: "Director’s take on NSRC" },
+
   { id: "testimonial", label: "Testimonial" },
 ];
 
@@ -374,7 +376,7 @@ const ResearchPage = () => {
         description={description}
         socialLinks={socialLinks}
       />
-<!-- <<<<<<< main
+
       <JumpLinks sections={sections} />
 
       <section id="objectives">
@@ -401,6 +403,10 @@ const ResearchPage = () => {
           sessions={sessions}
         />
       </section>
+      <section id="intern">
+        <InternCards headerInfo={InternCardHeader} data={foreignSessions} />
+      </section>
+
       <section id="director">
         <DirectorNote headerInfo={headerInfo} quotes={quotes} />
       </section>
@@ -408,24 +414,6 @@ const ResearchPage = () => {
         <RTestimonial />
       </section>
 
-======= -->
-      <ObjectivesSection title="Our Objectives" objectives={objectives} />
-      <Activities headerInfo={activitiesHeader} activities={activitiesData} />
-      <CalendarView calendarInfo={calendarInfo} />
-      <CalendarView calendarInfo={reserachAlumInfo} />
-      <ResearchGazette
-        headerInfo={ResearchGazetteHeader}
-        data={researchGazetteData}
-      />
-      <PastSessions
-        PastSessionsHeader={PastSessionsHeader}
-        sessions={sessions}
-      />
-      <InternCards
-        headerInfo={InternCardHeader}
-        data={foreignSessions}
-      />
-      <DirectorNote headerInfo={headerInfo} quotes={quotes} />
       {/* <NoteSection notes={noteData}/> */}
     </div>
   );
