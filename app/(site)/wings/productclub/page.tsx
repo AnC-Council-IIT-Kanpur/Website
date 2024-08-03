@@ -219,7 +219,7 @@ const sections = [
   { id: "feature", label: "Posts" },
   { id: "pastcollab", label: "OUR COLLABORATORS " },
   { id: "past", label: "Past Sessions" },
-  { id: "director", label: "Director's Note" },
+  
   { id: "note", label: "Member Quotes" },
 ];
 

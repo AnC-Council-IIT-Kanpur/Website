@@ -64,12 +64,12 @@ const sessions = [
   // Add more sessions as needed
 ];
 const sections = [
-  
   { id: "objectives", label: "Objectives" },
   { id: "ccg-kits", label: "CCG Kits" },
   { id: "department-guide", label: "Department Guide" },
   { id: "quick-links", label: "Quick Links" },
   { id: "faq", label: "FAQ" },
+  { id: "past-sessions", label: "OUR PREVIOUS SESSIONS" },
 ];
 
 const PastSessionsHeader = {
@@ -287,10 +287,10 @@ const UGAcademicsPage = () => {
       </section>
 
       <section id="past-sessions">
-        <PastSessions
+        {/* <PastSessions
           PastSessionsHeader={PastSessionsHeader}
           sessions={sessions}
-        />
+        /> */}
       </section>
     </div>
   );
