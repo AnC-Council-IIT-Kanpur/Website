@@ -33,14 +33,14 @@ const Footer = () => {
                   <Image
                     width={110}
                     height={80}
-                    src="/images/logo/logo-light.svg"
+                    src="/images/logo/anc_logo2.png"
                     alt="Logo"
                     className="dark:hidden"
                   />
                   <Image
                     width={110}
                     height={80}
-                    src="/images/logo/logo-dark.svg"
+              src="/images/logo/anc_logo2.png"
                     alt="Logo"
                     className="hidden dark:block"
                   />
@@ -87,7 +87,7 @@ const Footer = () => {
                   <ul>
                     <li>
                       <Link
-                        href="#"
+                        href="/"
                         className="inline-block mb-3 hover:text-primary"
                       >
                         Home
@@ -95,7 +95,7 @@ const Footer = () => {
                     </li>
                     <li>
                       <Link
-                        href="#"
+                        href="/wings/UGacads"
                         className="inline-block mb-3 hover:text-primary"
                       >
                         Academics
@@ -103,7 +103,7 @@ const Footer = () => {
                     </li>
                     <li>
                       <Link
-                        href="#"
+                        href="/wings/research"
                         className="inline-block mb-3 hover:text-primary"
                       >
                         Research
@@ -111,7 +111,7 @@ const Footer = () => {
                     </li>
                     <li>
                       <Link
-                        href="#"
+                        href="/wings/internationalRelations"
                         className="inline-block mb-3 hover:text-primary"
                       >
                         Int. Relations
@@ -119,7 +119,7 @@ const Footer = () => {
                     </li>
                     <li>
                       <Link
-                        href="#"
+                        href="/wings/cdev"
                         className="inline-block mb-3 hover:text-primary"
                       >
                         Career Dev.
@@ -177,10 +177,10 @@ const Footer = () => {
                     </li>
                     <li>
                       <Link
-                        href="#mainevents"
+                        href="../#mainevents"
                         className="inline-block mb-3 hover:text-primary"
                       >
-                        Our Works
+                        Events
                       </Link>
                     </li>
                     {/* <li>

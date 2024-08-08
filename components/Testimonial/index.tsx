@@ -10,8 +10,30 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { motion } from "framer-motion";
 import SingleTestimonial from "./SingleTestimonial";
 import { testimonialData } from "./testimonialData";
+import Link from "next/link";
 
-const Testimonial = () => {
+interface HeaderInfo {
+  title: string;
+  subtitle: string;
+  description: string;
+  readMore: string;
+  link: string;
+}
+interface Review {
+  id: number;
+  name: string;
+  destination?: string;
+  image: any;
+  content: string;
+  designation: string;
+  intern: string;
+  link: string;
+};
+interface TestimonialProps {
+  data: Review[];
+  headerInfo: HeaderInfo;
+}
+const Testimonial : React.FC<TestimonialProps> = ({ data, headerInfo }) => {
   return (
     <>
       <section>
@@ -20,9 +42,9 @@ const Testimonial = () => {
           <div className="animate_top mx-auto text-center">
             <SectionHeader
               headerInfo={{
-                title: `SUCCESS STORIES`,
-                subtitle: `Campus Chronicles `,
-                description: `Compelling narratives detailing significant achievements and profound transformations across various domains.`,
+                title: headerInfo.title,
+                subtitle: headerInfo.subtitle,
+                description: headerInfo.description
               }}
             />
           </div>
@@ -73,12 +95,21 @@ const Testimonial = () => {
                 },
               }}
             >
-              {testimonialData.map((review) => (
+              {data.map((review) => (
                 <SwiperSlide key={review?.id}>
                   <SingleTestimonial review={review} />
                 </SwiperSlide>
               ))}
             </Swiper>
+            <div className="flex justify-center items-center h-full">
+  <Link
+    href={headerInfo.link}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="inline-block rounded-full bg-primary px-7.5 py-2.5 text-white duration-300 ease-in-out hover:bg-primary-dark"
+  >{headerInfo.readMore}
+  </Link>
+</div>
           </div>
         </motion.div>
       </section>

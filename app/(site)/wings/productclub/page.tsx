@@ -12,6 +12,7 @@ import NoteSection from "@/components/Note/NoteSection";
 import Banner from "@/components/Banner";
 import activitiesData from "./activitiesData";
 import noteData from "./noteData";
+import dynamic from "next/dynamic";
 import {
   faTrophy,
   faComments,
@@ -29,7 +30,9 @@ export const metadata: Metadata = {
   description: "This is the Product Club page for ANC council",
   // other metadata
 };
-
+const JumpLinks = dynamic(() => import("@/components/JumpLinks"), {
+  ssr: false,
+});
 const banners = [
   {
     delay: 3000,
@@ -199,38 +202,73 @@ const sessions = [
   },
   // Add more sessions as needed
 ];
-
+const bannerlogos = {
+  src: "/images/logo/pmig.png",
+  alt: "UG acads logo",
+};
 const quoteHeaderInfo = {
   title: `PRODUCT CLUB`,
   subtitle: `Member Quotes`,
   description: `A collection of inspiring quotes from members of the Product Club about their experiences and contributions.`,
 };
+const sections = [
+  { id: "objectives", label: "Objectives" },
+  { id: "activities", label: "Activities" },
+  { id: "achivements", label: "Our Achivements" },
+  { id: "calender", label: "Calender" },
+  { id: "feature", label: "Posts" },
+  { id: "pastcollab", label: "OUR COLLABORATORS " },
+  { id: "past", label: "Past Sessions" },
+  
+  { id: "note", label: "Member Quotes" },
+];
 
 const ProductPage = () => {
   return (
-    <div>
+    <div className="relative">
       <Banner
         banners={banners}
+        logo={bannerlogos}
         title={"Welcome to Product Club"}
         description={description}
         socialLinks={socialLinks}
       />
-      <ObjectivesSection title={"Our Mission"} objectives={objectives} />
-      <Activities headerInfo={ProductHeader} activities={activitiesData} />
-      <ObjectivesSection title={"Our Achivements"} objectives={achivements} />
-      <CalendarView calendarInfo={calendarInfo} />
-      <ProductClubFeaturesTab
-        title={"Latest Posts"}
-        postList={instagramLinkData}
-      />
-      <PastCollaborators />
+      <JumpLinks sections={sections} />
+      <section id="objectives">
+        <ObjectivesSection title={"Our Mission"} objectives={objectives} />
+      </section>
+      <section id="activities">
+        <Activities headerInfo={ProductHeader} activities={activitiesData} />
+      </section>
+      <section id="achivements">
+        <ObjectivesSection title={"Our Achivements"} objectives={achivements} />
+      </section>
+      <section id="calender">
+        <CalendarView calendarInfo={calendarInfo} />
+      </section>
+      <section id="feature">
+        <ProductClubFeaturesTab
+          title={"Latest Posts"}
+          postList={instagramLinkData}
+        />
+      </section>
+      <section id="pastcollab">
+        <PastCollaborators />
+      </section>
+      <section id="past">
+        <PastSessions PastSessionsHeader={pastHeaderInfo} sessions={sessions} />
+      </section>
+      <section id="director">
+        <DirectorNote
+          headerInfo={quoteHeaderInfo}
+          quotes={productClubQuoteData}
+        />
+      </section>
+      <section id="note">
+        <NoteSection notes={noteData} />
+      </section>
+
       {/* <ResearchGazette headerInfo={caseBookHeaderInfo} data={caseBookData} /> */}
-      <PastSessions PastSessionsHeader={pastHeaderInfo} sessions={sessions} />
-      <DirectorNote
-        headerInfo={quoteHeaderInfo}
-        quotes={productClubQuoteData}
-      />
-      <NoteSection notes={noteData} />
     </div>
   );
 };

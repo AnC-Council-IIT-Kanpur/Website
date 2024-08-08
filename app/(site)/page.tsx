@@ -14,13 +14,25 @@ import MainEvents from "@/components/MainEvents";
 import Contact from "@/components/Contact";
 import Blog from "@/components/Blog";
 import Testimonial from "@/components/Testimonial";
-
+import { testimonialData } from "@/components/Testimonial/testimonialData";
+import { headerInfo } from "@/components/Testimonial/headerInfo";
+import Link from "next/link";
+import { link } from "fs";
+import PastSessions from "@/components/PastSessions";
 
 export const metadata: Metadata = {
   title: "AnC Council IIT Kanpur",
-  description: "This is Home for Solid Pro",
+  description: "Academic and Cultural Council, IIT Kanpur",
   // other metadata
 };
+
+const PastSessionsHeader = {
+  title: "OUR PREVIOUS SESSIONS",
+  subtitle: "Details of Our Past Sessions",
+  description:
+    "Find resources like presentations and recordings of our past sessions.",
+};
+
 
 export default function Home() {
   return (
@@ -35,7 +47,10 @@ export default function Home() {
       {/* <Integration /> */}
       {/* <CTA /> */}
       <MainEvents />
-      <Testimonial />
+    
+      <Testimonial data={testimonialData} headerInfo={headerInfo} />
+      
+      
       {/* <Pricing /> */}
       {/* <Contact /> */}
       {/* <Blog /> */}

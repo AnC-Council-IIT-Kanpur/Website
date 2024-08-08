@@ -20,7 +20,7 @@ const ObjectivesSection = ({ title, objectives }) => {
           <h2 className="text-3xl font-bold text-gray-800 dark:text-white">
             {title}
           </h2>
-          <div className="mx-auto mt-2 h-1 w-20 bg-gradient-to-r from-blue-500 to-blue-700"></div>
+          <div className="mx-auto mt-4 h-1 w-20 bg-gradient-to-r from-blue-500 to-blue-700"></div>
         </motion.div>
         <div className="flex flex-wrap justify-center gap-10">
           {objectives.map((objective, index) => (

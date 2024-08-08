@@ -39,7 +39,7 @@ const featuresData: Feature[] = [
     title: "Product Club",
     description:
       "The IR Wing is the one which undertakes the responsibility of improving collaborations of the Institute and its foreign counterparts.",
-    link: "/wings/internationalRelations",
+    link: "/wings/productclub",
   },
   {
     id: 5,
@@ -47,19 +47,19 @@ const featuresData: Feature[] = [
     title: "Web Wing",
     description:
       "The Web Wing is the one which is behind the digitization of the AnC council and the expansion of its reach through the creation of this very website.",
-    link: "#",
+    link: "javascript:void(0)",
   },
   {
     id: 6,
-    icon: "/images/logo/media.png",
+    icon: "/images/logo/mnp_new.png",
     title: "Media & Publicity Wing",
     description:
       "The Wing primarily dedicated to boosting the visibility and engagement in the events of the AnC Council.",
-    link: "#",
+    link: "javascript:void(0)",
   },
   {
     id: 7,
-    icon: "/images/logo/outreach&finance.jpg",
+    icon: "/images/logo/outreach_new.png",
     title: "Outreach & Finance Wing",
     description:
       "The Outreach and Finance Wing is the one responsible for the keeping precise financial records, managing budgets and overseeing cash flow in the overall activities of the AnC Council.",

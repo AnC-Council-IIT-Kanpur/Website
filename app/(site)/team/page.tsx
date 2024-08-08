@@ -11,11 +11,12 @@ import {
   pclubTeamData,
   outreachTeamData,
   mediaTeamData,
+  webTeamData,
 } from "@/components/Teams/teamsData";
 
 export const metadata: Metadata = {
-  title: "Next.js Starter Template for SaaS Startups - Solid SaaS Boilerplate",
-  description: "This is Home for Solid Pro",
+  title: "Contact Us",
+  description: "Teams",
 };
 
 const headerInfo = {
@@ -27,7 +28,7 @@ const headerInfo = {
 export default function Home() {
   return (
     <main>
-      <div className="mb-50 mt-50">
+      <div className="mt-50">
         <SectionHeaderTop headerInfo={headerInfo} />
       </div>
       <Team teamSectionData={GensecData} />
@@ -39,6 +40,7 @@ export default function Home() {
       <Team teamSectionData={pclubTeamData} />
       <Team teamSectionData={outreachTeamData} />
       <Team teamSectionData={mediaTeamData} />
+      <Team teamSectionData={webTeamData} />
     </main>
   );
 }

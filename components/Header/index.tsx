@@ -36,29 +36,29 @@ const Header = () => {
       className={`fixed left-0 top-0 z-99999 w-full py-7 ${
         stickyMenu
           ? "bg-white !py-4 shadow transition duration-100 dark:bg-black"
-          : "bg-white !py-4 opacity-75 shadow transition duration-100 dark:bg-black"
+          : "bg-white !py-4 opacity-100 shadow transition duration-100 dark:bg-black"
       }`}
     >
       <div className="relative mx-auto max-w-c-1390 items-center justify-between px-4 md:px-8 xl:flex 2xl:px-0">
-        <div className="flex w-full items-center justify-between xl:w-1/4">
-          <Link href="/">
+        <div className="flex items-center justify-between w-full xl:w-3/5">
+          <Link className="relative mr-3" href="/">
             <Image
-              src="/images/logo/logo-dark.svg"
+              src="/images/logo/anc_logo2.png"
               alt="logo"
-              width={119.03}
+              width={50.03}
               height={30}
               className="hidden w-full dark:block"
             />
             <Image
-              src="/images/logo/logo-light.svg"
+              src="/images/logo/anc_logo2.png"
               alt="logo"
-              width={119.03}
+              width={50.03}
               height={30}
               className="w-full dark:hidden"
             />
           </Link>
-
-          {/* <!-- Hamburger Toggle BTN --> */}
+          <p className="relative text-black dark:text-white font-bold text-xl sm:text-2xl ">Academics and Career Council</p>
+          {/* Hamburger Toggle BTN */}
           <button
             aria-label="hamburger Toggler"
             className="block xl:hidden"
@@ -96,18 +96,18 @@ const Header = () => {
               </span>
             </span>
           </button>
-          {/* <!-- Hamburger Toggle BTN --> */}
+          {/* Hamburger Toggle BTN */}
         </div>
 
-        {/* Nav Menu Start   */}
+        {/* Nav Menu Start */}
         <div
-          className={`invisible h-0 w-full items-center justify-between xl:visible xl:flex xl:h-auto xl:w-full ${
+          className={` xl:left-100 invisible h-0 w-full items-center justify-between xl:visible xl:flex xl:h-auto xl:w-full  ${
             navigationOpen &&
             "navbar !visible mt-4 h-auto max-h-[400px] rounded-md bg-white p-7.5 shadow-solid-5 dark:bg-blacksection xl:h-auto xl:p-0 xl:shadow-none xl:dark:bg-transparent"
           }`}
         >
           <nav>
-            <ul className="flex flex-col gap-5 xl:flex-row xl:items-center xl:gap-10">
+            <ul className="relative left-10 flex flex-col gap-5 xl:flex-row xl:items-center xl:gap-10">
               {menuData.map((menuItem, key) => (
                 <li key={key} className={menuItem.submenu && "group relative "}>
                   {menuItem.submenu ? (
