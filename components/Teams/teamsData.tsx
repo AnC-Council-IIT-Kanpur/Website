@@ -38,7 +38,7 @@ const IsecMembers: Team[] = [
     icon: "/images/wings/Isecy/ayush.jpeg",
     title: "Ayush Gupta",
     designation: "Institute Secretary",
-    role: "Academics and Research (UG)",
+    role: "Academics and Research (PG)",
     description: "",
     phone: "+91 7905092460",
     email: "ayushgupta20@iitk.ac.in",
