@@ -49,7 +49,7 @@ const IsecMembers: Team[] = [
     icon: "/images/wings/Isecy/ayan.jpeg",
     title: "Ayan Mullick",
     designation: "Institute Secretary",
-    role: " CDev and IR (UG) ",
+    role: " CDev and IR (PG) ",
     description: "",
     phone: "+91 9330659292",
     email: "ayanm23@iitk.ac.in",
