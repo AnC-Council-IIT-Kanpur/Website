@@ -200,6 +200,14 @@ const DepartmentGuideHeader = {
 
 const DepartmentGuideData = [
   {
+    id: 0,
+    icon: "/images/icon/icon-ee.png",
+    title: "CSE Department Guide",
+    description:
+      "Discover the matrix of possibilities in Computer Science Engineering at IIT Kanpur. Explore the department's history, courses, and opportunities that dive deep into the world of computing. Click 'View' to learn more about the curriculum and exciting departmental opportunities",
+    pdfUrl: "https://heyzine.com/flip-book/5e09a4b178.html",
+  },
+  {
     id: 1,
     icon: "/images/icon/icon-phy.png",
     title: "Physics Department Guide",
