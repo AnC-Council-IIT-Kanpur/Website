@@ -64,7 +64,7 @@ export default function KnowYourFacultyPage() {
         const videos = await fetchPlaylistVideos();
         setPlaylistVideos(videos);
       } catch (error) {
-        setError("Error fetching video data.");
+        
       } finally {
         setLoading(false);
       }
