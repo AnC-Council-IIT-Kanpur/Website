@@ -4,6 +4,8 @@ import { motion } from "framer-motion";
 import ReactPlayer from "react-player/lazy"; 
 import Link from "next/link";
 
+
+
 const FacultyVideoSection = ({ faculties }) => {
   const [isMounted, setIsMounted] = useState(false);
 
@@ -35,7 +37,7 @@ const FacultyVideoSection = ({ faculties }) => {
               <div className="flex flex-col md:flex-row">
                 <div className="md:w-1/2">
                   <h4 className="mb-4.5 text-lg font-medium text-black dark:text-white">
-                    {faculty.name}, Department - {faculty.department}
+                    {faculty.title}
                   </h4>
                   <p className="mb-4 text-black dark:text-white">
                     {faculty.description}
