@@ -75,9 +75,14 @@ const menuData: Menu[] = [
       }
     ],
   },
-
   {
     id: 4,
+    title: "Know Your Faculty",
+    newTab: false,
+    path: "/KnowYourFaculty",
+  },
+  {
+    id: 5,
     title: "Contact Us",
     newTab: false,
     path: "/team",

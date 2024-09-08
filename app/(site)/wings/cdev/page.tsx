@@ -9,6 +9,7 @@ import CCGKits from "@/components/CdevCCG/CCGKitCard";
 import Testimonial from "@/components/Testimonial";
 import { testimonialData } from "@/components/Testimonial/moreYouKnowData";
 import { moreYouKnowHeaderInfo } from "@/components/Testimonial/moreyouKnowHeaderInfo";
+
 import {
   faComments,
   faBullhorn,
@@ -382,6 +383,7 @@ const ResearchPage = () => {
           headerInfo={moreYouKnowHeaderInfo}
         />
       </section>
+      
 
       {/* <ResearchGazette headerInfo={CareerCHeader} data={CareerCData} /> */}
     </div>
