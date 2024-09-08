@@ -2,7 +2,6 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import ReactPlayer from "react-player/lazy"; 
-import Link from "next/link";
 
 
 
@@ -42,14 +41,7 @@ const FacultyVideoSection = ({ faculties }) => {
                   <p className="mb-4 text-black dark:text-white">
                     {faculty.description}
                   </p>
-                  <Link href={faculty.homepage} legacyBehavior passHref>
-                    <a
-                      target="_blank"
-                      className="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-600"
-                    >
-                      Visit Homepage
-                    </a>
-                  </Link>
+                  
                 </div>
 
                 <div className="mt-6 md:mt-0 md:w-1/2">

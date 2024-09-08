@@ -42,7 +42,7 @@ async function fetchPlaylistVideos() {
         
         description: description || "No description available",
         videoUrl: `https://www.youtube.com/watch?v=${resourceId.videoId}`,
-        homepage: `https://www.example.com/faculty/${name.replace(/\s+/g, "-").toLowerCase()}`,
+        
       };
     }).filter(video => video !== null);
 
@@ -71,7 +71,7 @@ export default function KnowYourFacultyPage() {
     }
 
     loadPlaylistVideos();
-  }, []); // Empty dependency array means this runs once on component mount
+  }, []); 
 
   return (
     <div className="pb-20 pt-40">
