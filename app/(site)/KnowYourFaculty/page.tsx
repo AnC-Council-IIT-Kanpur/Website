@@ -3,11 +3,13 @@ import React, { useState, useEffect } from 'react';
 import FacultyVideoSection from '@/components/VideoPlayer';
 import SectionHeader from '@/components/Common/SectionHeader';
 
+
 const YOUTUBE_PLAYLIST_ITEMS_API = 'https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=25';
 
 async function fetchPlaylistVideos() {
   try {
-    const apiKey = process.env.NEXT_PUBLIC_YOUTUBE_API_KEY;
+    const apiKey = `AIzaSyBoYi8FBV7Ngi7pmHCKEZYqe_nkV14c4xo`;
+    console.log(apiKey)
     
     if (!apiKey) {
       console.log("WHY THE FUCK IS THE API KEY MISSING?")
