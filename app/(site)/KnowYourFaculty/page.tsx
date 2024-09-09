@@ -8,7 +8,7 @@ const YOUTUBE_PLAYLIST_ITEMS_API = 'https://www.googleapis.com/youtube/v3/playli
 
 async function fetchPlaylistVideos() {
   try {
-    const apiKey = `AIzaSyBoYi8FBV7Ngi7pmHCKEZYqe_nkV14c4xo`;
+    const apiKey = process.env.YOUTUBE_API_KEY;
     console.log(apiKey)
     
     if (!apiKey) {
