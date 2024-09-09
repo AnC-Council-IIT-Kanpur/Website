@@ -10,6 +10,7 @@ import ResearchGazette from "@/components/ResearchGazette";
 import PastSessions from "@/components/PastSessions";
 import DirectorNote from "@/components/Quote/DirectorNote";
 import { Note } from "@/types/note";
+
 import {
   faComments,
   faBullhorn,
@@ -350,6 +351,9 @@ const researchGazetteData = [
   },
   // Add more gazette data as needed
 ];
+
+  
+
 const bannerlogos = {
   src: "/images/logo/research.png",
   alt: "Research wing logo",
@@ -413,9 +417,12 @@ const ResearchPage = () => {
       <section id="testimonial">
         <RTestimonial />
       </section>
+      
+
 
       {/* <NoteSection notes={noteData}/> */}
     </div>
+    
   );
 };
 
