@@ -15,7 +15,7 @@ async function fetchPlaylistVideos() {
     }
 
     const response = await fetch(
-      `${YOUTUBE_PLAYLIST_ITEMS_API}&playlistId=PL30blqFldQN6N0PmEPr9vFUxOY0W0omg8&key=${apiKey}`
+      `${YOUTUBE_PLAYLIST_ITEMS_API}&playlistId=PLHjfQQKppXb4UPejowKFft6qgy0PFRmK2&key=${apiKey}`
     );
 
     if (!response.ok) {
