@@ -35,16 +35,16 @@ const FacultyVideoSection = ({ faculties }) => {
             >
               <div className="flex flex-col md:flex-row">
                 <div className="md:w-1/2">
-                  <h4 className="mb-4.5 text-lg font-medium text-black dark:text-white">
+                  <h4 className="mb-4.5 text-2xl font-medium text-black dark:text-white">
                     {faculty.title}
                   </h4>
-                  <p className="mb-4 text-black dark:text-white">
+                    <p className="mb-4 text-black dark:text-white line-clamp-5">
                     {faculty.description}
-                  </p>
+                    </p>
                   
                 </div>
 
-                <div className="mt-6 md:mt-0 md:w-1/2">
+                <div className="mt-6 ml-10 md:mt-0 md:w-1/2">
                   {faculty.videoUrl ? (
                     <ReactPlayer
                       url={faculty.videoUrl}
