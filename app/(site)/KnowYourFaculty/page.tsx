@@ -8,16 +8,14 @@ const YOUTUBE_PLAYLIST_ITEMS_API = 'https://www.googleapis.com/youtube/v3/playli
 
 async function fetchPlaylistVideos() {
   try {
-    const apiKey = process.env.YOUTUBE_API_KEY;
-    console.log(apiKey)
-    
+    const apiKey = process.env.NEXT_PUBLIC_YOUTUBE_API_KEY;
     if (!apiKey) {
-      console.log("WHY THE FUCK IS THE API KEY MISSING?")
+      console.log("Missing Youtube API Key?")
       throw new Error('YouTube API key is missing. Please set the YOUTUBE_API_KEY environment variable.');
     }
 
     const response = await fetch(
-      `${YOUTUBE_PLAYLIST_ITEMS_API}&playlistId=PLbMVogVj5nJSd25WnSU144ZyGmsqjuKr3&key=${apiKey}`
+      `${YOUTUBE_PLAYLIST_ITEMS_API}&playlistId=PL30blqFldQN6N0PmEPr9vFUxOY0W0omg8&key=${apiKey}`
     );
 
     if (!response.ok) {
