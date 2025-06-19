@@ -101,7 +101,7 @@ const cdevTeamMebers: Team[] = [
   },
   {
     id: 3,
-    icon: "/images/wings/CareerWing/Aayush.jpg",
+    icon: "/images/wings/CareerWing/Ayush_Kumar.jpg",
     title: "Ayush Kumar",
     designation: "Manager",
     role: "Career Development Wing",
