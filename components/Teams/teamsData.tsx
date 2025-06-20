@@ -160,7 +160,7 @@ const researchTeamMebers: Team[] = [
 
   {
     id: 6,
-    icon: "/images/wings/research/Mayank.png",
+    icon: "/images/wings/research/mayank.jpg",
     title: "Mayank Agrawal",
     designation: "Manager",
     role: "Reserach Wing (U.G.)",
@@ -203,7 +203,7 @@ const acadesTeamMebers: Team[] = [
   },
   {
     id: 3,
-    icon: "/images/wings/AcademicsWing/Chirag.jpeg",
+    icon: "/images/wings/AcademicsWing/chirag.jpg",
     title: "Chirag Goyal",
     designation: "Manager",
     role: "Academics Wing",
