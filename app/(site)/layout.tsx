@@ -9,11 +9,11 @@ import "../globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export const metadata = {
-  verification: {
-    google: "cDZiuecVhr0neGXyQwLYAYkv_2zT5CfCiVJHkmnnFuU",
-  },
-};
+// export const metadata = {
+//   verification: {
+//     google: "cDZiuecVhr0neGXyQwLYAYkv_2zT5CfCiVJHkmnnFuU",
+//   },
+// };
 
 export default function RootLayout({
   children,
