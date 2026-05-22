@@ -12,7 +12,7 @@ import { faHandshake, faBullhorn, faCoins, faMagnifyingGlass, faCalendarAlt, faS
 
 
 export const metadata: Metadata = {
-  title: "Outreach and Finance Wing Page",
+  title: "Finance and Logistics Wing Page",
   description: "This is the Outreach and Finance Wing page for ANC council",
   // other metadata
 };
@@ -63,7 +63,7 @@ const socialLinks = [
 const description = {
   title: "Empowering Careers",
   highlight: "",
-  text: "The Outreach and Finance Vertical of AnC Council at IIT Kanpur is dedicated to driving success through strategic sponsorships, efficient financial management, impactful outreach and bring global opportunities for our students. We secure valuable collaborations, manage the council’s finances, and handle all outreach activities, ensuring the seamless execution and growth of our initiatives, empowering student achievements and fostering innovation."
+  text: "The Finance and Logistics Vertical of AnC Council at IIT Kanpur is dedicated to driving success through strategic sponsorships, efficient financial management, impactful outreach and bring global opportunities for our students. We secure valuable collaborations, manage the council’s finances, and handle all outreach and Logistical activities, ensuring the seamless execution and growth of our initiatives, empowering student achievements and fostering innovation."
 };
 
 
