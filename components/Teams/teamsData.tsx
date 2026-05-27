@@ -68,7 +68,7 @@ const IsecData: TeamSection = {
 const cdevTeamMebers: Team[] = [
   {
     id: 6,
-    icon: "/images/wings/CareerWing/Karmanya Goyal.jpeg",
+    icon: "/images/wings/CareerWing/Granth_Kothari.jpeg",
     title: "Granth Kothari",
     designation: "Manager",
     role: "Career Development Wing",
