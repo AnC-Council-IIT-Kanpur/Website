@@ -79,14 +79,14 @@ const cdevTeamMebers: Team[] = [
   },
   {
     id: 2,
-    icon: "/images/wings/CareerWing/Aayush.jpg",
-    title: "Aayush Kumar",
+    icon: "/images/wings/CareerWing/Piyush_Prashant_Wagh.jpeg",
+    title: "Piyush Prashant Wagh",
     designation: "Manager",
     role: "Career Development Wing",
     description: "",
-    phone: "+91 8423459315",
+    phone: "+91 7796694430",
     email: "",
-    linkedin: "https://www.linkedin.com/in/aayush-kumar-18a69b289/",
+    linkedin: "www.linkedin.com/in/piyushpwagh",
   },
   {
     id: 5,
