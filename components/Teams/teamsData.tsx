@@ -408,14 +408,14 @@ const webTeamMebers: Team[] = [
   {
     id: 2,
     icon: "/images/wings/web/Abhinav_Pandey.jpg",
-    title: "Abhinav Pandey",
+    title: "Omprakash Netam",
     designation: "Coordinator",
     role: "Web Wing",
     description: "",
-    phone: "+91 9923123118",
+    phone: "+91 6264577461",
     email: "",
     linkedin:
-      "https://www.linkedin.com/in/abhinav-pandey-109a2424b/",
+      "https://www.linkedin.com/in/omprakash-netam-b2b019368/?skipRedirect=true",
   },
 ];
 
