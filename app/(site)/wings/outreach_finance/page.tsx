@@ -155,7 +155,7 @@ const ResearchPage = () => {
     <div>
         <Banner banners={banners} 
         logo={bannerlogos}
-      title="Welcome to IIT-Kanpur's Finance and Logistics Wing" 
+      title="Welcome to IIT-Kanpur's Finance and Logistics Wing " 
       description={description} 
       socialLinks={socialLinks} />
         <ObjectivesSection title="Our Objectives" 
