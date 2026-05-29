@@ -60,9 +60,9 @@ const featuresData: Feature[] = [
   {
     id: 7,
     icon: "/images/logo/outreach_new.png",
-    title: "Outreach & Finance Wing",
+    title: "Finance and logistics Wing",
     description:
-      "The Outreach and Finance Wing is the one responsible for the keeping precise financial records, managing budgets and overseeing cash flow in the overall activities of the AnC Council.",
+      "The Finance and logistics Wing is the one responsible for the keeping precise financial records, managing budgets and overseeing cash flow in the overall activities of the AnC Council.",
     link: "/wings/outreach_finance",
   },
 ];
