@@ -353,7 +353,7 @@ const outreachTeamMebers: Team[] = [
 
 const outreachTeamData: TeamSection = {
   title: "Meet Our",
-  subtitle: "Outreach and Finance Wing",
+  subtitle: "Finance and Logistics Wing",
   description: "Boost your outreach efforts, contact our experts today",
   teams: outreachTeamMebers,
 };
