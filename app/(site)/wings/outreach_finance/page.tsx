@@ -13,7 +13,7 @@ import { faHandshake, faBullhorn, faCoins, faMagnifyingGlass, faCalendarAlt, faS
 
 export const metadata: Metadata = {
   title: "Finance and Logistics Wing Page",
-  description: "This is the  Finance and Logistics Wing page for ANC council",
+  description: "This is the  Finance and Logistics Wing page for ANC council ",
   // other metadata
 };
 
