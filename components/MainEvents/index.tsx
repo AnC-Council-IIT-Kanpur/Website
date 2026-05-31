@@ -2,13 +2,14 @@
 import Image from "next/image";
 import SectionHeader from "../Common/SectionHeader";
 import Link from 'next/link'
+
 const MainEvents = () => {
   return (
     <>
-      {/* <!-- ===== Pricing Table Start ===== --> */}
+      {/* */}
       <section id="mainevents" className="overflow-hidden pb-20 pt-15 lg:pb-25 xl:pb-30">
         <div className="mx-auto max-w-c-1315 px-4 md:px-8 xl:px-0">
-          {/* <!-- Section Title Start --> */}
+          {/* */}
           <div className="animate_top mx-auto text-center">
             <SectionHeader
               headerInfo={{
@@ -18,7 +19,7 @@ const MainEvents = () => {
               }}
             />
           </div>
-          {/* <!-- Section Title End --> */}
+          {/* */}
         </div>
 
         <div className="relative mx-auto mt-15 max-w-[1207px] px-4 md:px-8 xl:mt-20 xl:px-0">
@@ -30,124 +31,19 @@ const MainEvents = () => {
               className="dark:hidden"
             />
           </div>
+          
           <div className="flex flex-wrap justify-center gap-7.5 lg:flex-nowrap xl:gap-12.5">
+            
+            {/* ==================== 1. INSTITUTE RESEARCH SYMPOSIUM (AB PEHLE NUMBER PAR HAI) ==================== */}
             <div className="animate_top group relative rounded-lg border border-stroke bg-white p-7.5 shadow-solid-10 dark:border-strokedark dark:bg-blacksection dark:shadow-none md:w-[45%] lg:w-1/3 xl:p-12.5">
-            <Image
-              src="/images/logo/carrer_connect.png"
-              width={250}
-              height={250}
-              alt="Dotted"
-            />
-              <h6 className="mb-2.5 mt-6 text-2xl font-bold text-black dark:text-white">
-                Career Connect
-              </h6>
-              <p className='mt-6'>The Academics and Career Council organized CAREER CONNECT, a three-day event for all undergraduate and postgraduate students, from 5th to 7th April 2024.</p>
-
-              <div className="mt-9 border-t border-stroke pb-12.5 pt-9 dark:border-strokedark">
-                <ul>
-                  <li className="mb-4 text-black text-lg font-bold last:mb-0 dark:text-manatee">
-               Events
-                  </li>
-                  <li className="mb-4 text-black last:mb-0 dark:text-manatee">
-                 Debugging the software role 
-                  </li>
-                  <li className="mb-4 text-black last:mb-0 dark:text-manatee">
-                   Stock Trading Competition
-                  </li>
-                  <li className="mb-4 text-black last:mb-0 dark:text-manatee">
-                    Ideation-Insomnia
-                  </li>
-                  <li className="mb-4 text-black last:mb-0 dark:text-manatee">
-                 Product Paradigm
-                  </li>
-
-                </ul>
-              </div>
-
-              <button
-                aria-label="Explore more about the event"
-                className="group/btn inline-flex items-center gap-2.5 font-medium text-primary transition-all duration-300 dark:text-white dark:hover:text-primary"
-              >
-                <Link href='https://career-connect.anciitk.in/'>
-                  <span className="duration-300 group-hover/btn:pr-2">
-                    Explore More
-                  </span>
-                </Link>
-                <svg
-                  width="14"
-                  height="14"
-                  viewBox="0 0 14 14"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M10.4767 6.16701L6.00668 1.69701L7.18501 0.518677L13.6667 7.00034L7.18501 13.482L6.00668 12.3037L10.4767 7.83368H0.333344V6.16701H10.4767Z"
-                    fill="currentColor"
-                  />
-                </svg>
-              </button>
-            </div>
-            <div className="animate_top group relative rounded-lg border border-stroke bg-white p-7.5 shadow-solid-10 dark:border-strokedark dark:bg-blacksection dark:shadow-none md:w-[45%] lg:w-1/3 xl:p-12.5">
-            <Image
-              src="/images/logo/nsrc.png"
-              width={250}
-              height={250}
-              alt="Dotted"
-            />
+              <Image
+                src="/images/logo/irs.png"
+                width={250}
+                height={250}
+                alt="Dotted"
+              />
               <h6 className="mb-2.5 text-2xl font-bold mt-6 text-black dark:text-white">
-              National Students Research Convention </h6>
-              <p className='mt-6'>The 5th National Students’ Research Convention 2023 (NSRC ’23), took place from 3-5 March, 2023, with the theme 'MedTech and Healthcare: The Welfare of Humanity'.</p>
-
-              <div className="mt-9 border-t border-stroke pb-12.5 pt-9 dark:border-strokedark">
-                <ul>
-                  <li className="mb-4 text-black text-md font-bold last:mb-0 dark:text-manatee">
-                    Competition Themes at NSRC
-                  </li>
-                  <li className="mb-4 text-black last:mb-0 dark:text-manatee">
-                    Biomechanics & Biophysics
-                  </li>
-                  <li className="mb-4 text-black last:mb-0 dark:text-manatee">
-                    Medical imaging
-                  </li>
-                  <li className="mb-4 text-black last:mb-0 dark:text-manatee">
-                    Medical instrumentations
-                  </li>
-                  <li className="mb-4 text-black last:mb-0 dark:text-manatee">
-                    Medical sensing & Implant
-                  </li>
-                </ul>
-              </div>
-
-              <button
-                aria-label="Explore more about the event"
-                className="group/btn inline-flex items-center gap-2.5 font-medium text-primary transition-all duration-300 dark:text-white dark:hover:text-primary"
-              >
-                <Link href='https://www.iitk.ac.in/new/national-students-research-convention-23'>
-                  <span className="duration-300 group-hover/btn:pr-2">
-                    Explore More
-                  </span>
-                </Link>
-                <svg
-                  width="14"
-                  height="14"
-                  viewBox="0 0 14 14"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M10.4767 6.16701L6.00668 1.69701L7.18501 0.518677L13.6667 7.00034L7.18501 13.482L6.00668 12.3037L10.4767 7.83368H0.333344V6.16701H10.4767Z"
-                    fill="currentColor"
-                  />
-                </svg>
-              </button>
-            </div>
-            <div className="animate_top group relative rounded-lg border border-stroke bg-white p-7.5 shadow-solid-10 dark:border-strokedark dark:bg-blacksection dark:shadow-none md:w-[45%] lg:w-1/3 xl:p-12.5">
-            <Image
-              src="/images/logo/irs.png"
-              width={250}
-              height={250}
-              alt="Dotted"
-            />
-              <h6 className="mb-2.5 text-2xl font-bold mt-6 text-black dark:text-white">
-              Institute Research Symposium 
+                Institute Research Symposium 
               </h6>
               <p className='mt-6'>Academics and Career Council organised IRS where the PG and UG students of IIT Kanpur from various engineering and sciences disciplines showcased their research to the larger community.</p>
 
@@ -193,10 +89,123 @@ const MainEvents = () => {
                 </svg>
               </button>
             </div>
+
+            {/* ==================== 2. CAREER CONNECT (AB DOOSRE NUMBER PAR HAI) ==================== */}
+            <div className="animate_top group relative rounded-lg border border-stroke bg-white p-7.5 shadow-solid-10 dark:border-strokedark dark:bg-blacksection dark:shadow-none md:w-[45%] lg:w-1/3 xl:p-12.5">
+              <Image
+                src="/images/logo/carrer_connect.png"
+                width={250}
+                height={250}
+                alt="Dotted"
+              />
+              <h6 className="mb-2.5 mt-6 text-2xl font-bold text-black dark:text-white">
+                Career Connect
+              </h6>
+              <p className='mt-6'>The Academics and Career Council organized CAREER CONNECT, a three-day event for all undergraduate and postgraduate students, from 5th to 7th April 2024.</p>
+
+              <div className="mt-9 border-t border-stroke pb-12.5 pt-9 dark:border-strokedark">
+                <ul>
+                  <li className="mb-4 text-black text-lg font-bold last:mb-0 dark:text-manatee">
+                    Events
+                  </li>
+                  <li className="mb-4 text-black last:mb-0 dark:text-manatee">
+                    Debugging the software role 
+                  </li>
+                  <li className="mb-4 text-black last:mb-0 dark:text-manatee">
+                    Stock Trading Competition
+                  </li>
+                  <li className="mb-4 text-black last:mb-0 dark:text-manatee">
+                    Ideation-Insomnia
+                  </li>
+                  <li className="mb-4 text-black last:mb-0 dark:text-manatee">
+                    Product Paradigm
+                  </li>
+                </ul>
+              </div>
+
+              <button
+                aria-label="Explore more about the event"
+                className="group/btn inline-flex items-center gap-2.5 font-medium text-primary transition-all duration-300 dark:text-white dark:hover:text-primary"
+              >
+                <Link href='https://career-connect.anciitk.in/'>
+                  <span className="duration-300 group-hover/btn:pr-2">
+                    Explore More
+                  </span>
+                </Link>
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 14 14"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M10.4767 6.16701L6.00668 1.69701L7.18501 0.518677L13.6667 7.00034L7.18501 13.482L6.00668 12.3037L10.4767 7.83368H0.333344V6.16701H10.4767Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </button>
+            </div>
+
+            {/* ==================== 3. NATIONAL STUDENTS RESEARCH CONVENTION ==================== */}
+            <div className="animate_top group relative rounded-lg border border-stroke bg-white p-7.5 shadow-solid-10 dark:border-strokedark dark:bg-blacksection dark:shadow-none md:w-[45%] lg:w-1/3 xl:p-12.5">
+              <Image
+                src="/images/logo/nsrc.png"
+                width={250}
+                height={250}
+                alt="Dotted"
+              />
+              <h6 className="mb-2.5 text-2xl font-bold mt-6 text-black dark:text-white">
+                National Students Research Convention 
+              </h6>
+              <p className='mt-6'>The 5th National Students’ Research Convention 2023 (NSRC ’23), took place from 3-5 March, 2023, with the theme 'MedTech and Healthcare: The Welfare of Humanity'.</p>
+
+              <div className="mt-9 border-t border-stroke pb-12.5 pt-9 dark:border-strokedark">
+                <ul>
+                  <li className="mb-4 text-black text-md font-bold last:mb-0 dark:text-manatee">
+                    Competition Themes at NSRC
+                  </li>
+                  <li className="mb-4 text-black last:mb-0 dark:text-manatee">
+                    Biomechanics & Biophysics
+                  </li>
+                  <li className="mb-4 text-black last:mb-0 dark:text-manatee">
+                    Medical imaging
+                  </li>
+                  <li className="mb-4 text-black last:mb-0 dark:text-manatee">
+                    Medical instrumentations
+                  </li>
+                  <li className="mb-4 text-black last:mb-0 dark:text-manatee">
+                    Medical sensing & Implant
+                  </li>
+                </ul>
+              </div>
+
+              <button
+                aria-label="Explore more about the event"
+                className="group/btn inline-flex items-center gap-2.5 font-medium text-primary transition-all duration-300 dark:text-white dark:hover:text-primary"
+              >
+                <Link href='https://www.iitk.ac.in/new/national-students-research-convention-23'>
+                  <span className="duration-300 group-hover/btn:pr-2">
+                    Explore More
+                  </span>
+                </Link>
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 14 14"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M10.4767 6.16701L6.00668 1.69701L7.18501 0.518677L13.6667 7.00034L7.18501 13.482L6.00668 12.3037L10.4767 7.83368H0.333344V6.16701H10.4767Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </button>
+            </div>
+
           </div>
         </div>
       </section>
-      {/* <!-- ===== Pricing Table End ===== --> */}
+      {/* */}
     </>
   );
 };
