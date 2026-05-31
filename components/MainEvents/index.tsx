@@ -34,7 +34,7 @@ const MainEvents = () => {
           
           <div className="flex flex-wrap justify-center gap-7.5 lg:flex-nowrap xl:gap-12.5">
             
-            {/* ==================== 1. INSTITUTE RESEARCH SYMPOSIUM (AB PEHLE NUMBER PAR HAI) ==================== */}
+            {/* ==================== 1. INSTITUTE RESEARCH SYMPOSIUM ==================== */}
             <div className="animate_top group relative rounded-lg border border-stroke bg-white p-7.5 shadow-solid-10 dark:border-strokedark dark:bg-blacksection dark:shadow-none md:w-[45%] lg:w-1/3 xl:p-12.5">
               <Image
                 src="/images/logo/irs.png"
@@ -90,7 +90,7 @@ const MainEvents = () => {
               </button>
             </div>
 
-            {/* ==================== 2. CAREER CONNECT (AB DOOSRE NUMBER PAR HAI) ==================== */}
+            {/* ==================== 2. CAREER CONNECT ==================== */}
             <div className="animate_top group relative rounded-lg border border-stroke bg-white p-7.5 shadow-solid-10 dark:border-strokedark dark:bg-blacksection dark:shadow-none md:w-[45%] lg:w-1/3 xl:p-12.5">
               <Image
                 src="/images/logo/carrer_connect.png"
