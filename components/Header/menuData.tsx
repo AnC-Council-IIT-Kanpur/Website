@@ -83,6 +83,12 @@ const menuData: Menu[] = [
   },
   {
     id: 5,
+    title: "Press & Media",
+    newTab: false,
+    path: "/PressAndMedia",
+  },
+  {
+    id: 6,
     title: "Contact Us",
     newTab: false,
     path: "/team",
