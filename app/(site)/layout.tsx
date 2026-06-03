@@ -1,33 +1,14 @@
-<<<<<<< HEAD
 "use client";
 
-=======
->>>>>>> 150203a0cbbedc276a19bc358be4375f4612e336
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Lines from "@/components/Lines";
 import ScrollToTop from "@/components/ScrollToTop";
-<<<<<<< HEAD
-import { ThemeProvider } from "next-themes";
-import { Inter } from "next/font/google";
-import "../globals.css";
-const inter = Inter({ subsets: ["latin"] });
-
-import ToasterContext from "../context/ToastContext";
-=======
 import Providers from "@/components/Providers";
-
 import { Inter } from "next/font/google";
 import "../globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
-
-// export const metadata = {
-//   verification: {
-//     google: "cDZiuecVhr0neGXyQwLYAYkv_2zT5CfCiVJHkmnnFuU",
-//   },
-// };
->>>>>>> 150203a0cbbedc276a19bc358be4375f4612e336
 
 export default function RootLayout({
   children,
@@ -37,30 +18,14 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={`dark:bg-black ${inter.className}`}>
-<<<<<<< HEAD
-        <ThemeProvider
-          enableSystem={false}
-          attribute="class"
-          defaultTheme="light"
-        >
-          <Lines />
-          <Header />
-          <Lines />
-          <ToasterContext />
-          {children}
-          <Footer />
-          <ScrollToTop />
-        </ThemeProvider>
-      </body>
-    </html>
-  );
-}
-=======
+        {/* GitHub ka naya secure Providers setup */}
         <Providers>
           <Lines />
           <Header />
           <Lines />
+          
           {children}
+          
           <Footer />
           <ScrollToTop />
         </Providers>
@@ -68,4 +33,3 @@ export default function RootLayout({
     </html>
   );
 }
->>>>>>> 150203a0cbbedc276a19bc358be4375f4612e336

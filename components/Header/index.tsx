@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 
 import ThemeToggler from "./ThemeToggler";
-import menuData from "./menuData";
+import menuData from "@/app/press-media/Page";
 
 const Header = () => {
   const [navigationOpen, setNavigationOpen] = useState(false);

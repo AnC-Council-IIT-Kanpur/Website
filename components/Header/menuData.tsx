@@ -85,7 +85,7 @@ const menuData: Menu[] = [
     id: 4.5,
     title: "Press & Media",
     newTab: false,
-    path: "/PressAndMedia",
+    path: "/press-media",
   },
   {
     id: 5,
