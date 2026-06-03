@@ -50,15 +50,38 @@ const Footer = () => {
                 The AnC Council of the IIT Kanpur is a council directly placed under the Student's Gymkhana, that aims to foster all needs related to academics and research for the campus dwellers.
                 </p>
 
-                <p className="mb-1.5 text-sectiontitle uppercase tracking-[5px]">
-                  contact
-                </p>
-                <Link
-                  href="mailto:ug_anc@iitk.ac.in"
-                  className="font-medium text-black text-itemtitle dark:text-white"
-                >
-                  ug_anc@iitk.ac.in
-                </Link>
+<p 
+  className="mb-1.5 text-sectiontitle uppercase tracking-[5px] text-black dark:text-white" 
+  style={{ fontWeight: '900', display: 'block', width: '100%' }}
+>
+  contact
+</p>
+
+<div className="space-y-3">
+  <div>
+    <p className="text-xs uppercase tracking-[4px] text-gray-500 dark:text-gray-400">
+      UG email
+    </p>
+    <Link
+      href="mailto:ug_anc@iitk.ac.in"
+      className="font-medium text-black text-itemtitle dark:text-white hover:underline"
+    >
+      ug_anc@iitk.ac.in
+    </Link>
+  </div>
+
+  <div>
+    <p className="text-xs uppercase tracking-[4px] text-gray-500 dark:text-gray-400">
+      PG email
+    </p>
+    <Link
+      href="mailto:pg_anc@iitk.ac.in"
+      className="font-medium text-black text-itemtitle dark:text-white hover:underline"
+    >
+      pg_anc@iitk.ac.in
+    </Link>
+  </div>
+</div>
               </motion.div>
 
               <div className="flex w-full gap-8 flex-row justify-between lg:w-2/3 xl:w-7/12">
