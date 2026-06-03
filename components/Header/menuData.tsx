@@ -82,12 +82,6 @@ const menuData: Menu[] = [
     path: "/KnowYourFaculty",
   },
   {
-    id: 4.5,
-    title: "Press & Media",
-    newTab: false,
-    path: "/PressAndMedia",
-  },
-  {
     id: 5,
     title: "Contact Us",
     newTab: false,
