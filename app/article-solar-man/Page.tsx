@@ -48,7 +48,7 @@ export default function ArticleSolarManPage() {
           {/* Main Newspaper Cutting Showcase section */}
           <div className="rounded-xl overflow-hidden bg-white mb-10 border border-stroke max-w-lg mx-auto shadow-sm">
             <img 
-              src="/WhatsApp Image 2026-05-31 at 16.27.19.jpeg" 
+              src="/images/press-and-media/press-and-media.jpeg" 
               className="w-full h-auto object-cover" 
               alt="Dainik Jagran News Article" 
             />
@@ -72,7 +72,7 @@ export default function ArticleSolarManPage() {
             <div className="grid gap-4">
               {/* Card 1: Dainik Jagran */}
               <a 
-                href="/WhatsApp Image 2026-05-31 at 16.27.19.jpeg" 
+                href="/images/press-and-media/press-and-media.jpeg" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="group block p-4 bg-gray-50 rounded-xl border border-stroke hover:border-primary hover:bg-gray-50/50 transition duration-200"
@@ -88,7 +88,7 @@ export default function ArticleSolarManPage() {
 
               {/* Card 2: Amar Ujala */}
               <a 
-                href="/WhatsApp Image 2026-05-31 at 16.27.9.jpeg" 
+                href="/images/press-and-media/amar-ujala.jpeg" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="group block p-4 bg-gray-50 rounded-xl border border-stroke hover:border-primary hover:bg-gray-50/50 transition duration-200"
@@ -104,7 +104,7 @@ export default function ArticleSolarManPage() {
 
               {/* Card 3: Times of India */}
               <a 
-                href="/WhatsApp Image 2026-05-31 at 16.27.18.jpeg" 
+                href="/images/press-and-media/times-of-india.jpeg" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="group block p-4 bg-gray-50 rounded-xl border border-stroke hover:border-primary hover:bg-gray-50/50 transition duration-200"
@@ -120,7 +120,7 @@ export default function ArticleSolarManPage() {
 
               {/* Card 4: Amrit Vichar */}
               <a 
-                href="/WhatsApp Image 2026-05-31 at 16.27.1.jpg" 
+                href="/images/press-and-media/amrit-vichar.jpeg" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="group block p-4 bg-gray-50 rounded-xl border border-stroke hover:border-primary hover:bg-gray-50/50 transition duration-200"
@@ -136,7 +136,7 @@ export default function ArticleSolarManPage() {
 
               {/* Card 5: AAJ Paper */}
               <a 
-                href="/WhatsApp Image 2026-05-31 at 16.27.20.jpg" 
+                href="/images/press-and-media/aaj.jpeg" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="group block p-4 bg-gray-50 rounded-xl border border-stroke hover:border-primary hover:bg-gray-50/50 transition duration-200"
