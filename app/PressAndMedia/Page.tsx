@@ -12,7 +12,7 @@ const PRESS_RELEASES_DATA = [
     description: "In a joint collaboration with Vigyan Bharati and Student Gymkhana, IIT Kanpur's Academic and Career Council (PG) hosted an impactful climate action seminar covered extensively by national newspapers.",
     publishDate: "May 22, 2026",
     badge: "Mega Event",
-    featuredImage: "/WhatsApp Image 2026-05-31 at 16.27.19.jpeg", // Pulled from your static/public directory
+    featuredImage: "/images/press-and-media/press-and-media.jpeg", // Pulled from your static/public directory
     publications: ["Dainik Jagran", "Amar Ujala", "Times of India", "Amrit Vichar", "AAJ"]
   }
 ];
