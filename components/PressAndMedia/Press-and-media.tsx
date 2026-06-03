@@ -22,7 +22,7 @@ export default function PressMedia() {
           <div className="h-64 md:h-full min-h-[400px] bg-slate-900 relative">
             {/* React me image import ya direct public path se use hoti hai */}
             <img 
-              src="/WhatsApp Image 2026-05-31 at 16.27.19_2.jpeg" 
+              src="/images/press-and-media/press-and-media.jpeg" 
               className="w-full h-full object-contain bg-white" 
               alt="Dainik Jagran Coverage - Solar Man Event" 
             />
