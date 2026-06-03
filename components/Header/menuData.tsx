@@ -63,7 +63,7 @@ const menuData: Menu[] = [
       },
       {
         id: 37,
-        title: "Outreach and Finance",
+        title: "Finance and Logistics",
         newTab: false,
         path: "/wings/outreach_finance", //change
       },
@@ -80,6 +80,12 @@ const menuData: Menu[] = [
     title: "Know Your Faculty",
     newTab: false,
     path: "/KnowYourFaculty",
+  },
+  {
+    id: 4.5,
+    title: "Press & Media",
+    newTab: false,
+    path: "/PressAndMedia",
   },
   {
     id: 5,
