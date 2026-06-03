@@ -80,7 +80,7 @@ const menuData: Menu[] = [
     title: "Know Your Faculty",
     newTab: false,
     path: "/KnowYourFaculty",
-  },
+  }, 
   {
     id: 5,
     title: "Contact Us",
@@ -89,4 +89,4 @@ const menuData: Menu[] = [
   }
 ];
 
-export default menuData;
+export default menuData
