@@ -32,7 +32,7 @@ export default function ArticleSolarMan() {
 
         {/* Core Newspaper Cut Box */}
         <div className="rounded-2xl overflow-hidden bg-white mb-10 shadow-sm border border-slate-100 max-w-xl mx-auto">
-          <img src="/WhatsApp Image 2026-05-31 at 16.27.19_2.jpeg" className="w-full h-auto object-cover" alt="Dainik Jagran News Article" />
+          <img src="/images/press-and-media/press-and-media.jpeg" className="w-full h-auto object-cover" alt="Dainik Jagran News Article" />
         </div>
 
         <div className="text-slate-700 leading-relaxed space-y-6 text-base sm:text-lg">
@@ -52,7 +52,7 @@ export default function ArticleSolarMan() {
           <div className="space-y-4">
             
             {/* Dainik Jagran Link */}
-            <a href="/WhatsApp Image 2026-05-31 at 16.27.19_2.jpeg" target="_blank" rel="noopener noreferrer" className="block p-4 bg-slate-50 rounded-xl border border-slate-100 hover:border-blue-300 hover:bg-blue-50/30 transition duration-200 group">
+            <a href="/images/press-and-media/press-and-media.jpeg" target="_blank" rel="noopener noreferrer" className="block p-4 bg-slate-50 rounded-xl border border-slate-100 hover:border-blue-300 hover:bg-blue-50/30 transition duration-200 group">
               <div className="flex justify-between items-start">
                 <div>
                   <strong class="text-sm text-blue-600 block mb-1 group-hover:underline">Dainik Jagran (Kanpur City Page-I)</strong>
